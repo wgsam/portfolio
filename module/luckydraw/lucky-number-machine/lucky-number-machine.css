@@ -1,0 +1,74 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+
+*{
+  box-sizing: border-box;
+}
+body,html{
+  text-align:center;
+  background:#FFCB00;
+}
+#bigholder{
+  background:#fff;
+  margin-top:10%;
+  padding:20px;
+  font-family:open sans;
+  font-size:30px;
+  font-weight:thin;
+  text-transform:capitalize;
+}
+#bigholdeer{
+  border-bottom:solid 3px #000;
+  margin-top:6%;
+  padding:10px;
+  font-family:open sans;
+  font-size:20px;
+  font-weight:thin;
+  text-transform:capitalize;
+  width:300px;
+  margin:0 auto;
+}
+.gen{
+  background:#000;
+  color:#fff;
+  padding:4px;
+  font-family:oswald;
+  font-size:20px;
+}
+.holder{
+  display:inline-block;
+  height:100px;
+  width:auto;
+  text-align:center;
+  overflow:hidden;
+  background:#fff;
+  color:#000;
+  padding:0;
+}
+.digitHolder{
+  line-height:100px;
+  margin:0 8px 0 8px;
+  font-size:100px;
+  font-family:oswald;
+  -webkit-transition:margin-top 1s ease;
+  -moz-transition:margin-top 1s ease;
+  -o-transition:margin-top 1s ease;
+  transition:margin-top 1s ease;
+}
+button{
+  width:80px;
+  height:40px;
+  color:#fff;
+  background:#000;
+  border:none;
+  font-family:oswald;
+  font-size:16px;
+  margin-top:5%;
+}
+button:hover{
+
+  -webkit-transform:scale(1.1,1.1);
+  -moz-transform:scale(1.1,1.1);
+  -o-transform:scale(1.1,1.1);
+  transform:scale(1.1,1.1);
+  
+}
