@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Quattrocento Sans' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <title>Family Tree</title>
+
+    <link rel="stylesheet" href="css/member-tree.css">
+    <link rel="stylesheet" href="css/cd-panel.css">
+    <link rel="stylesheet" href="css/legend-chart-animation.css">
+    <link rel="stylesheet" href="css/jOrgChart.css">
+    <link rel="stylesheet" href="css/circle-animation.css">
+    <link rel="stylesheet" href="css/circle-container-flip.css">
+    <link rel="stylesheet" href="css/plus-minus-expand-toggle.css">
+    <link rel="stylesheet" href="css/cus-check-box.css">
+    <link rel="stylesheet" href="css/cd-hover-menu.css">
+    <link rel="stylesheet" href="css/stretchy-nav.css">
+    <link rel="stylesheet" href="../../../css/animations.css">
+
+    <!-- jQuery includes -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/jquery/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <!-- Drop down menu -->
+        <header>
+            <nav class="cd-stretchy-nav">
+                <a class="cd-nav-trigger" href="#0">
+                    Menu
+                    <span aria-hidden="true"></span>
+                </a>
+
+                <ul>
+                    <li>
+                        <a href="#0" class="mml" onclick="showRankMember()">
+                            <span class="menuTxt">Member</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0" class="bzl" onclick="showRankBronze()">
+                            <span class="menuTxt">Bronze</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0" class="svl" onclick="showRankSilver()">
+                            <span class="menuTxt">Silver</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0" class="gdl" onclick="showRankGold()">
+                            <span class="menuTxt">Gold</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0" class="ptl" onclick="showRankPlatinum()">
+                            <span class="menuTxt">Platinum</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0" class="dstl" onclick="deselectedAllRank()">
+                            <span class="menuTxt">Deselected All</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0" class="line"></a>
+                    </li>
+                    <li>
+                        <a href="#0" class="arrow-up" onclick="goTop()">
+                            <span class="menuTxt">To Top</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0" class="arrow-down" onclick="goBottom()">
+                            <span class="menuTxt">To Bottom</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0" class="arrow-down-left" onclick="goDownLeft()">
+                            <span class="menuTxt">To Left</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0" class="arrow-down-right" onclick="goDownRight()">
+                            <span class="menuTxt">To Right</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <span aria-hidden="true" class="stretchy-nav-bg"></span>
+            </nav>
+        </header>
+        <!-- End of Drop down menu -->
+
+        <!-- cus-CheckBox Show info -->
+        <div class="cusCheckBox">
+            <input id="toggleCheckBox" type="checkbox" onclick="toggleShowInfo()">
+            <label for="toggleCheckBox">Show All Info!</label>
+        </div>
+        <!-- end cus-CheckBox Show info -->
+
+        <!-- cd-panel -->
+        <div id="cd-side-panel"></div>
+        <!-- cd-panel -->
+
+        <!-- family tree -->
+        <div id="tree"></div>
+        <div class="family-tree-container">
+            <div id="family-tree-chart" class="orgChart" style="padding: 150px 70px 70px;"></div>
+        </div>
+        <!-- end family-tree -->
+    </div>
+
+    <script>
+        jQuery(document).ready(function () {
+            // draw Side Panel
+            renderCdSidePanel();
+
+            // draw Family Tree
+            renderTree();
+            $("#org").jOrgChart({
+                chartElement: '#family-tree-chart',
+            });
+
+            // triggle Side Panel Event 
+            cdSidePanel();
+
+            // triggle Fliped node
+            ccFlipedInfo();
+        });
+    </script>
+
+    <script src="js/member-tree.js"></script>
+    <script src="js/cd-panel.js"></script>
+    <script src="js/cd-morph-dropdown.js"></script>
+    <script src="js/circle-fliped-effect.js"></script>
+    <script src="js/jOrgChart.js"></script>
+    <script src="js/cd-hover-menu.js"></script>
+    <script src="js/stretchy-nav.js"></script>
+</body>
+
+</html>

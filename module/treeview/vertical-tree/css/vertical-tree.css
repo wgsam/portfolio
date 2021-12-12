@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+body {
+    font-family: Abel, Arial, Verdana, sans-serif;
+    background-color: #a3bded;
+}
+
+i {
+    cursor: pointer;
+}
+
+.tree {
+    min-height: 20px;
+    margin-bottom: 20px;
+    background-color: #a3bded;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.tree li {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 5px 0 5px;
+    position: relative
+}
+
+.tree li::before, .tree li::after {
+    content: '';
+    left: -20px;
+    position: absolute;
+    right: auto
+}
+
+.tree li::before {
+    border-left: 1px solid #999;
+    bottom: 50px;
+    height: 100%;
+    top: 0;
+    width: 1px
+}
+
+.tree li::after {
+    border-top: 1px solid #999;
+    height: 20px;
+    top: 30px;
+    width: 25px
+}
+
+.tree li div.card {
+    border: 1px solid #999;
+    width: 165px;
+    height: 35px;
+    background-color: #fff;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+.tree li.parent_li>div.card {
+    cursor: pointer
+}
+
+.tree>ul>li::before, .tree>ul>li::after {
+    border: 0
+}
+
+.tree li:last-child::before {
+    height: 30px
+}
+
+.tree li.parent_li>div.card:hover, .tree li.parent_li>div.card:hover+ul li div.card {
+    background: #CACAC8;
+    color: #FFFFFD;
+}
+
+.toggle-open {
+    width: 350px !important;
+    transition: width 1s;
+}
+
+.toggle-close {
+    width: 165px !important;
+    transition: width 1s;
+}
+
+.card .general {
+    position: absolute;
+    z-index: 2;
+    color: #FFFFFD;
+    background: #e8931f;
+}
+
+.card .general .user-card {
+    width: 140px;
+    height: 100%;
+    position: relative;
+    float: left;
+    padding: 7px;
+}
+
+.card .general .user-card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: -2px;
+    height: 80%;
+    border-left: 2px solid rgba(0, 0, 0, 0.025);
+}
+
+.card .additional {
+    width: 210px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 7px;
+}
+
+.card .more-info {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.fa-user-circle {
+    font-size: 1.2em;
+}
+
+.line {
+    margin: 0 5px;
+    padding: 2px;
+    border-left: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.fa-angle-double-right {
+    position: absolute;
+    left: 193px;
+    font-size: 20px;
+}
+
+.fa-angle-double-left {
+    position: absolute;
+    left: 190px;
+    font-size: 20px;
+}
+
+.username-txtfield {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    40% {
+        -webkit-transform: translateX(-7px);
+        transform: translateX(-7px);
+    }
+    60% {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+}
+
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-7px);
+    }
+    60% {
+        transform: translateX(-5px);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+    40% {
+        -ms-transform: translateX(-7px);
+        transform: translateX(-7px);
+    }
+    60% {
+        -ms-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+}

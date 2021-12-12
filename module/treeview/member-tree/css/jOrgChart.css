@@ -1,0 +1,53 @@
+/* jOrgChart Draw the lines */
+.jOrgChart .line {
+  height              : 20px;
+  width               : 4px;
+}
+
+.jOrgChart .down {
+  background-color 		: black;	
+  margin 				      : 0px auto;
+}
+
+.jOrgChart .top {
+  border-top          : 3px solid black;
+}
+
+.jOrgChart .left {
+  border-right        : 2px solid black;
+}
+
+.jOrgChart .right {
+  border-left         : 2px solid black;
+}
+
+/* jOrgChart node cell */
+.jOrgChart td {
+  text-align          : center;
+  vertical-align      : top;
+  padding             : 0;
+}
+
+/* jOrgChart node */
+.jOrgChart .node {
+  background-color    : #35363B;
+  display             : inline-block;
+  width               : 200px;
+  height              : 200px;
+  z-index 				    : 1;
+  margin              : 0 50px;
+
+  border-radius       : 50%;
+  box-shadow          : 0px 0px 20px rgba(0,0,0,0.4);
+}
+
+/* jOrgChart drag & drop feature css */
+
+.drag-active {
+  border-style		  	: dotted !important;
+}
+
+.drop-hover {
+  border-style		  	: solid !important;
+  border-color 		  	: #E05E00 !important;
+}

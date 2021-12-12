@@ -1,0 +1,155 @@
+* {
+    position                        : relative
+  }
+
+html {
+    line-height                     : 1.15; /* 1 */
+    -ms-text-size-adjust            : 100%; /* 2 */
+    -webkit-text-size-adjust        : 100%; /* 2 */
+    box-sizing                      : border-box;
+    -webkit-box-sizing              : border-box;
+  }
+  
+body {
+    font-family			            : "Lato", sans-serif;
+    background-color	            : #a3bded;
+    /* background-color:rgb(57, 81, 107) ; */
+    /* background-image: linear-gradient( #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%); */
+    /* background-image: linear-gradient(to top, #a3bded 0%, #6991c7 100%); */
+}
+
+a {
+    text-decoration		            : none;
+}
+
+ol, ul {
+    list-style                      : none;
+}
+
+.family-tree-container {
+    display                         : -ms-flexbox;
+    display                         : -webkit-box;
+    /* display               : flex; */
+    -ms-flex-align                  : center;
+    -ms-flex-pack                   : center;
+    -webkit-box-align               : center;
+    align-items                     : center;
+    -webkit-box-pack                : center;
+    justify-content                 : center;
+}
+  
+/* hightlight effect  */
+.box-highlight {
+    align-self                      : flex-end;
+    animation-duration              : 2s;
+    animation-iteration-count       : infinite;
+    /* background-color: #F44336; */
+    height                          : 200px;
+    /* margin: 0 auto 0 auto; */
+    transform-origin                : bottom;
+    width                           : 200px;
+}
+
+.bounce-effect {
+    animation-name: bounce-effect;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-effect {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-30px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}
+/* end of highlight effect */
+
+/* register button animation */
+a.animated-button:link, a.animated-button:visited {
+	position                        : relative;
+	display                         : block;
+    margin                          : 70px 20px 0 20px;
+	padding                         : 14px 10px;
+	color                           : black;
+	font-size                       : 13px;
+	font-weight                     : bold;
+	text-align                      : center;
+	text-decoration                 : none;
+	text-transform                  : uppercase;
+	overflow                        : hidden;
+	letter-spacing                  : .08em;
+	border-radius                   : 0;
+	text-shadow                     : 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition              : all 1s ease;
+	-moz-transition                 : all 1s ease;
+	-o-transition                   : all 1s ease;
+	transition                      : all 1s ease;
+}
+
+a.animated-button:link:after, a.animated-button:visited:after {
+	content                         : "";
+	position                        : absolute;
+	height                          : 0%;
+	left                            : 50%;
+	top                             : 50%;
+	width                           : 150%;
+	z-index                         : -1;
+	-webkit-transition              : all 0.75s ease 0s;
+	-moz-transition                 : all 0.75s ease 0s;
+	-o-transition                   : all 0.75s ease 0s;
+	transition                      : all 0.75s ease 0s;
+}
+
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color                           : black;
+	text-shadow                     : none;
+}
+
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height                          : 450%;
+}
+
+a.animated-button.thar-two {
+    padding                         : 10px;
+    margin                          : 20px;
+    top                             : 65px;
+    z-index                         : 0;
+	color                           :black;
+	cursor                          : pointer;
+	display                         : block;
+    position                        : relative;
+    border-radius                   : 8px;
+	border                          : 2px solid #F7CA18;
+	transition                      : all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+a.animated-button.thar-two:hover {
+	color                           : #000 !important;
+	background-color                : transparent;
+}
+
+a.animated-button.thar-two:hover:before {
+	top                             : 0%;
+	bottom                          : auto;
+	height                          : 100%;
+}
+
+a.animated-button.thar-two:before {
+	display                         : block;
+	position                        : absolute;
+	left                            : 0px;
+	bottom                          : 0px;
+	height                          : 0px;
+	width                           : 100%;
+	z-index                         : -1;
+	content                         : '';
+	color                           : #000 !important;
+	background                      : #F7CA18;
+	transition                      : all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+/* end of register button animation */
+
+  
+    

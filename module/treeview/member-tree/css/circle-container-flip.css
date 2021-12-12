@@ -1,0 +1,98 @@
+
+.circle-container {
+	position						: relative;
+	-webkit-perspective				: 800px;
+	-moz-perspective				: 800px;
+	-o-perspective					: 800px;
+	perspective						: 800px;
+	-webkit-transition				: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition						: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	/* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); */
+}
+  
+.circle-container:hover {
+	-webkit-transform				: scale(1.05, 1.05);
+	transform						: scale(1.06, 1.06);
+}
+.circle-container:hover::after {
+    opacity							: 1;
+}
+
+.outer-ring {
+	position						: absolute;
+	top								: -10px;
+	left							: -10px;
+	border-radius					: 50%;
+	border							: 2px solid #fff;
+	width							: 220px;
+	height							: 220px;
+	background-color				: rgba(255,255,255,0);
+	box-shadow						: 0px 0px 20px rgba(0,0,0,0.4);
+}
+
+.circle-container, .front, .back {
+	width							: 200px;
+	height							: 200px;
+}
+
+.cc-fliped-icon {
+	position						: absolute;
+	top								: 0;
+	right							: -24px;
+}
+	
+.card {
+	width							: 200px;
+	height							: 200px;
+	position						: absolute;
+	-webkit-transition				: 0.5s;
+	-moz-transition					: 0.5s;
+	-ms-transition					: 0.5s;
+	-o-transition					: 0.5s;
+	transition						: 0.5s;
+	-webkit-transform-style			: preserve-3d;
+	-moz-transform-style			: preserve-3d;
+	-ms-transform-style			    : preserve-3d;
+	-o-transform-style				: preserve-3d;
+	transform-style					: preserve-3d;
+	/* -webkit-transform-origin: 50% 50%; */
+}
+
+.front, .back {
+	background						: rgba(0, 0, 0, 1);
+	border-radius					: 50%;
+	box-shadow						: 0px 0px 0px rgba(0,0,0,0.8);
+	position						: absolute;
+	-webkit-backface-visibility		: hidden;
+	-moz-backface-visibility		: hidden;
+	-ms-backface-visibility		    : hidden;
+	-o-backface-visibility			: hidden;
+	backface-visibility				: hidden;
+	top								: 0;
+	left							: 0;
+}
+
+.back {
+	/* visibility: hidden; */
+	-webkit-transform				: rotate3d(45,45,0,180deg);
+	-moz-transform					: rotate3d(45,45,0,180deg);
+	-o-transform					: rotate3d(45,45,0,180deg);
+	-ms-transform					: rotate3d(45,45,0,180deg);
+	transform						: rotate3d(45,45,0,180deg);
+}
+
+.flipped {
+	-webkit-transform				: rotate3d(45, 45, 0, 180deg);
+	-moz-transform					: rotate3d(45, 45, 0, 180deg);
+	-ms-transform					: rotate3d(45, 45, 0, 180deg);
+	-o-transform					: rotate3d(45, 45, 0, 180deg);
+	transform						: rotate3d(45, 45, 0, 180deg);
+}
+
+.front-hide{
+	visibility: hidden;
+}
+
+.back-show{
+	visibility: visible;
+}

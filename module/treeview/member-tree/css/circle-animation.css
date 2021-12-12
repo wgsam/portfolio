@@ -1,0 +1,269 @@
+.chart {
+    position                : relative;
+    display                 : inline-block;
+    color                   : #999;
+    font-size               : 20px;
+    text-align              : center;
+}
+
+.chart figcaption {
+    padding                 : 50px 25px;
+    width                   : 100px;
+    height                  : 50px;
+    border                  : 20px solid #f0f0f0;
+    border-radius           : 100px;
+    line-height             : 50px;
+}
+
+.chart img {
+    position                : absolute;
+    max-width               : 100px;
+    max-height              : 100px;
+}
+
+/* Diffrent legend text color  */
+.member-txt-color{
+    color                   :#9FA0A4;
+}
+
+.bronze-txt-color{
+    color                   :#60C7EA;
+}
+
+.silver-txt-color{
+    color                   :#96C26D;
+}
+
+.gold-txt-color{
+    color                   :#DC7DA7;
+}
+
+.platinum-txt-color{
+    color                   :#f0e040;
+}
+
+/* Colors for the circles and positions for the graphics */
+.member-circle {
+    top                     : 45px;
+    left                    : 45px;
+}
+
+.member-circle + svg .outer {
+    stroke                  : #9FA0A4;
+}
+
+.bronze-circle {
+    top                     : 45px;
+    left                    : 45px;
+}
+
+.bronze-circle + svg .outer {
+    stroke                  :#60C7EA;
+}
+
+.silver-circle {
+    top                     : 45px;
+    left                    : 45px;
+}
+
+.silver-circle + svg .outer {
+    stroke                  :#96C26D;
+}
+
+.gold-circle {
+    top                     : 45px;
+    left                    : 45px;
+}
+
+.gold-circle + svg .outer {
+    stroke                  : #DC7DA7;
+}
+
+.platinum-circle {
+    top                     : 45px;
+    left                    : 45px;
+}
+
+.platinum-circle + svg .outer {
+    stroke                  : #f0e040;
+}
+
+.chart svg {
+    position                : absolute;
+    top                     : 0;
+    left                    : 0;
+}
+
+.outer {
+    fill                    : transparent;
+    stroke                  : #333;
+    stroke-width            : 20;
+    stroke-dasharray        : 534;
+    transition              : stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+
+    /* firefox bug fix - won't rotate at 90deg angles */
+    -moz-transform          : rotate(-89deg) translateX(-190px);
+}
+
+.chart:hover .outer {
+    stroke-dashoffset       : 534 !important;
+    -webkit-animation-play-state: paused;
+}
+/* END Circle colors and graphic positions */
+
+
+/* Set the initial values for the animation */
+.chart[data-percent='100'] .outer {
+    stroke-dashoffset       : 0;
+    -webkit-animation       : show100 2s;
+    animation               : show100 2s;
+}
+
+.chart[data-percent='90'] .outer {
+    stroke-dashoffset       : 135;
+    -webkit-animation       : show90 2s;
+    animation               : show90 2s;
+}
+
+.chart[data-percent='50'] .outer {
+    stroke-dashoffset       : 267;
+    -webkit-animation       : show50 2s;
+    animation               : show50 2s;
+}
+
+.chart[data-percent='30'] .outer {
+    stroke-dashoffset       : 395;
+    -webkit-animation       : show30 2s;
+    animation               : show30 2s;
+}
+
+.chart[data-percent='0'] .outer {
+    stroke-dashoffset       : 525;
+    -webkit-animation       : show0 2s;
+    animation               : show0 2s;
+}
+/* END set initial animation values */
+
+/* close logo img */
+.badge{
+    transition              : all 0.4s ease-in-out;
+}
+
+.chart:hover .badge {
+	transform               : scale(0);
+	opacity                 : 0;
+}
+
+.legend-txt{
+    transition              : all 0.4s ease-in;
+    opacity                 : 0;
+}
+
+.chart:hover .legend-txt {
+    font-size               : 18px;
+    opacity                 : 1;
+}
+/* END close logo img */
+
+/* Keyframes for the initial animation */
+@-webkit-keyframes show100 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 0;
+    }
+}
+
+@keyframes show100 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 0;
+    }
+}
+
+@-webkit-keyframes show90 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 135;
+    }
+}
+
+@keyframes show90 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 135;
+    }
+}
+
+@-webkit-keyframes show50 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 267;
+    }
+}
+
+@keyframes show50 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 267;
+    }
+}
+
+@-webkit-keyframes show30 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 395;
+    }
+}
+
+@keyframes show30 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 395;
+    }
+}
+
+@-webkit-keyframes show0 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 525;
+    }
+}
+
+@keyframes show0 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 525;
+    }
+}
+/* END Keyframes for the initial animation */

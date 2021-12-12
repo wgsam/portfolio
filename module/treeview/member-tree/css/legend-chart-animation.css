@@ -1,0 +1,281 @@
+/* Expanding-overlay */
+
+.exp-center{
+	text-align              : center;
+}
+
+.exp-txt-color{
+    color                   :white;
+}
+
+ /* header exp-legend-chart legend */
+.exp-legend-chart {
+    position                : relative;
+    display                 : inline-block;
+    color                   : #999;
+    font-size               : 20px;
+    text-align              : center;
+}
+
+.exp-legend-chart figcaption {
+    padding: 50px 25px;
+    width: 190px;
+    height: 190px;
+    border: 20px solid #f0f0f0;
+    border-radius: 100px;
+    line-height: 50px;
+}
+
+.exp-legend-chart img {
+    position                : absolute;
+    max-width               : 100px;
+    max-height              : 100px;
+}
+
+
+.member-txt-color{
+    color                   :#9FA0A4;
+    font-size               : 13px
+}
+
+.bronze-txt-color{
+    color                   :#60C7EA;
+    font-size               : 13px
+}
+
+.silver-txt-color{
+    color                   :#96C26D;
+    font-size               : 13px
+}
+
+.gold-txt-color{
+    color                   :#DC7DA7;
+    font-size               : 13px
+}
+
+.platinum-txt-color{
+    color                   :#f0e040;
+    font-size               : 13px
+}
+
+/* Colors for the circles and positions for the graphics */
+.member + svg .outer {
+    stroke                  : #9FA0A4;
+}
+
+
+.bronze + svg .outer {
+    stroke                  :#60C7EA;
+}
+
+
+.silver + svg .outer {
+    stroke                  :#96C26D;
+}
+
+.gold + svg .outer {
+    stroke                  : #DC7DA7;
+}
+
+.platinum + svg .outer {
+    stroke                  : #f0e040;
+}
+
+.exp-legend-chart svg {
+    position                : absolute;
+    top                     : 0;
+    left                    : 0;
+}
+ 
+.outer {
+    fill                    : transparent;
+    stroke                  : #333;
+    stroke-width            : 20;
+    stroke-dasharray        : 534;
+    transition              : stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+
+    /* firefox bug fix - won't rotate at 90deg angles */
+    -moz-transform          : rotate(-89deg) translateX(-190px);
+}
+
+.exp-legend-chart:hover .outer {
+    stroke-dashoffset       : 534 !important;
+    -webkit-animation-play-state: paused;
+}
+/* END Circle colors and graphic positions */
+
+
+/* Set the initial values for the animation */
+.exp-legend-chart[data-percent='100'] .outer {
+    stroke-dashoffset       : 0;
+    -webkit-animation       : show100 2s;
+    animation               : show100 2s;
+}
+
+.exp-legend-chart[data-percent='90'] .outer {
+    stroke-dashoffset       : 135;
+    -webkit-animation       : show90 2s;
+    animation               : show90 2s;
+}
+
+.exp-legend-chart[data-percent='50'] .outer {
+    stroke-dashoffset       : 267;
+    -webkit-animation       : show50 2s;
+    animation               : show50 2s;
+}
+
+.exp-legend-chart[data-percent='30'] .outer {
+    stroke-dashoffset       : 395;
+    -webkit-animation       : show30 2s;
+    animation               : show30 2s;
+}
+
+.exp-legend-chart[data-percent='0'] .outer {
+    stroke-dashoffset       : 525;
+    -webkit-animation       : show0 2s;
+    animation               : show0 2s;
+}
+/* END set initial animation values */
+
+/* Close logo img */
+.badge{
+    transition              : all 0.4s ease-in-out;
+}
+
+.exp-legend-chart:hover .badge {
+	transform               : scale(0);
+	opacity                 : 0;
+}
+
+.legend-txt{
+    transition              : all 0.4s ease-in-out;
+    opacity                 : 0;
+}
+
+.exp-legend-chart:hover .legend-txt {
+    font-size               : 25px;
+    opacity                 : 1;
+}
+
+/* END close logo img */
+
+/* Keyframes for the initial animation */
+@-webkit-keyframes show100 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 0;
+    }
+}
+
+@keyframes show100 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 0;
+    }
+}
+
+@-webkit-keyframes show90 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 135;
+    }
+}
+
+@keyframes show90 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 135;
+    }
+}
+
+@-webkit-keyframes show50 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 267;
+    }
+}
+
+@keyframes show50 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 267;
+    }
+}
+
+@-webkit-keyframes show30 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 395;
+    }
+}
+
+@keyframes show30 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 395;
+    }
+}
+
+@-webkit-keyframes show0 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 525;
+    }
+}
+
+@keyframes show0 {
+    from {
+        stroke-dashoffset   : 537;
+    }
+
+    to {
+        stroke-dashoffset   : 525;
+    }
+}
+/* END Keyframes for the initial animation */
+
+
+/* User Information Details */
+.exp-info-data{
+    letter-spacing          : 0.07em;
+}
+
+.row {
+    display                 : flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+    flex                    : 50%;
+    padding                 : 10px;
+}
+
+
