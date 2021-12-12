@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Avenir;
+    background: #7049f7;
+    width: 100%;
+    height: 100vh;
+    background-color: #F9F9FC;
+}
+
+.txt-org {
+    color: #FF7F21;
+}
+
+#js-lotto-drawbox table {
+    border-collapse: separate;
+    border-spacing: 10px;
+    background: url(img/spin.png);
+    background-size: 100% 100%;
+    padding: 20px;
+}
+
+#js-lotto-drawbox table td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: rgb(255, 236, 0, 0.5);
+    padding: 8px 10px;
+}
+
+#js-lotto-drawbox table td.active {
+    background-color: #FFEC00;
+}
+
+#js-lotto-drawbox table td.bold {
+    text-decoration: line-through;
+}
+
+.square.is-active {
+    border: 20px solid gold;
+}
+
+.square__start-btn {
+    margin: 20px auto;
+    background: gold;
+    color: #e97573;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.square__start-btn:hover {
+    background: #ffeb80;
+}
+
+
+.draw-history-content {
+    margin: 50px 0;
+}
+
+#star-draw-content .header-content {
+    display: flex;
+    align-items: center;
+}
+
+#star-draw-content .header-content .header-img-content {
+    padding: 10px 30px;
+}
+
+#star-draw-content .header-content .header-txt-content span:nth-child(1) {
+    font-size: 0.8rem;
+}
+
+#star-draw-content tbody {
+    background-color: #FFFFFF;
+}
+
+.rank-content {
+    padding: 10px 0px;
+}
+
+.rank-content span {
+    margin: auto 30px;
+}
+
+ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    /* optional */
+}
+
+ul li {
+    display: table-cell;
+    width: auto;
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.super-5-content ul li {
+    font-size: 1rem;
+}
+
+.super-5-special-content ul li {
+    font-size: 0.8rem;
+}
+
+.super-5-consolation-content ul li {
+    font-size: 0.8rem;
+}

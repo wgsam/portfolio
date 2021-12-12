@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lottery prize generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lottery-draw-number.css">
+
+<body>
+    <div class="container">
+        <button class="square square__start-btn" id="js-start">START</button>
+
+        <h4 class="txt-org text-center">TODAY 002/19 Fri 20 March 2019</h4>
+
+        <div id="js-lotto-drawbox"></div>
+
+        <div class="draw-history-content">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div id="star-draw-content">
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th colspan="5">
+                                        <div class="header-content">
+                                            <div class="header-img-content">
+                                                <img src="./img/logo-stardraw.png" alt="star-draw-logo"
+                                                    class="img-fluid" width="70">
+                                            </div>
+                                            <div class="header-txt-content">
+                                                <span>Star Draw:</span><br>
+                                                <span class="txt-org">001/19 Wed 18 March 2019</span>
+                                            </div>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="5" class="text-center">
+                                        <div class="rank-content">
+                                            <img src="./img/star-1st.png" alt="" width="70">
+                                            <span class="font-weight-bold">1100</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5" class="text-center">
+                                        <div class="rank-content">
+                                            <img src="./img/star-2nd.png" alt="" width="70">
+                                            <span class="font-weight-bold">1188</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5" class="text-center">
+                                        <div class="rank-content">
+                                            <img src="./img/star-3rd.png" alt="" width="70">
+                                            <span class="font-weight-bold">1189</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5" class="text-center">
+                                        <div class="star-special-content">
+                                            <p class="font-weight-bold txt-org">Star Special</p>
+                                            <ul>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                            </ul>
+                                            <ul>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="5" class="text-center">
+                                        <div class="star-consolation-content">
+                                            <p class="font-weight-bold txt-org">Star Consolation</p>
+
+                                            <ul>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                            </ul>
+                                            <ul>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                                <li>1234</li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div id="super-5-draw-content">
+                        <div id="star-draw-content">
+                            <table class="table">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th colspan="5">
+                                            <div class="header-content">
+                                                <div class="header-img-content">
+                                                    <img src="./img/logo-stardraw.png" alt="star-draw-logo"
+                                                        class="img-fluid" width="60">
+                                                </div>
+                                                <div class="header-txt-content">
+                                                    <span>Super 5 Draw:</span><br>
+                                                    <span class="txt-org">001/19 Wed 18 March 2019</span>
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5" class="text-center">
+                                            <div class="super-5-content">
+                                                <p class="font-weight-bold txt-org">Super 5</p>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5" class="text-center">
+                                            <div class="super-5-special-content">
+                                                <p class="font-weight-bold txt-org">Super 5 Special</p>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="5" class="text-center">
+                                            <div class="super-5-consolation-content">
+                                                <p class="font-weight-bold txt-org">Super 5 Consolation</p>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                                <ul>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                    <li>1234</li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script src='https://unpkg.com/sweetalert/dist/sweetalert.min.js'></script>
+        <script src="lottery-draw-number.js"></script>
+</body>
+
+</html>
