@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(32, 35, 48);
+
+}
+
+section {
+    color: white;
+    font-family: Poppins;
+    text-align: center;
+    margin: 100px;
+}
+
+.svg-box {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    animation: scaling 0.8s forwards;
+}
+
+.green-stroke {
+    stroke: #7CB342;
+}
+
+.red-stroke {
+    stroke: #FF6245;
+}
+
+.yellow-stroke {
+    stroke: #FFC107;
+}
+
+.circular circle.path {
+    stroke-dasharray: 330;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    opacity: 0.4;
+    animation: draw-circle 1s ease-out;
+}
+
+/*------- Checkmark ---------*/
+
+.checkmark {
+    stroke-width: 6.25;
+    stroke-linecap: round;
+    position: absolute;
+    top: 56px;
+    left: 49px;
+    width: 52px;
+    height: 40px;
+}
+
+.checkmark path {
+    animation: 1.1s draw-check ease-out;
+}
+
+@keyframes scaling {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes draw-circle {
+    0% {
+        stroke-dasharray: 0, 330;
+        opacity: 1;
+    }
+
+    80% {
+        stroke-dasharray: 330, 330;
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes draw-check {
+    0% {
+        stroke-dasharray: 49, 80;
+        stroke-dashoffset: 48;
+        opacity: 0;
+    }
+
+    50% {
+        stroke-dasharray: 49, 80;
+        stroke-dashoffset: 48;
+        opacity: 0.1;
+    }
+
+    100% {
+        stroke-dasharray: 130, 80;
+        stroke-dashoffset: 48;
+    }
+}
+
+/*---------- Cross ----------*/
+.cross {
+    stroke-width: 6.25;
+    stroke-linecap: round;
+    position: absolute;
+    top: 54px;
+    left: 54px;
+    width: 40px;
+    height: 40px;
+}
+
+.cross .first-line {
+    animation: 1.1s draw-first-line ease-out;
+}
+
+.cross .second-line {
+    animation: 1.1s draw-second-line ease-out;
+}
+
+@keyframes draw-first-line {
+    0% {
+        stroke-dasharray: 0, 56;
+        stroke-dashoffset: 0;
+        opacity: 0;
+
+    }
+
+    50% {
+        stroke-dasharray: 0, 56;
+        stroke-dashoffset: 0;
+        opacity: 0;
+
+    }
+
+    100% {
+        stroke-dasharray: 56, 330;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw-second-line {
+    0% {
+        stroke-dasharray: 0, 55;
+        stroke-dashoffset: 1;
+        opacity: 0;
+    }
+
+    50% {
+        stroke-dasharray: 0, 55;
+        stroke-dashoffset: 1;
+        opacity: 0;
+    }
+
+    100% {
+        stroke-dasharray: 55, 0;
+        stroke-dashoffset: 70;
+    }
+}
+
+.alert-sign {
+    stroke-width: 6.25;
+    stroke-linecap: round;
+    position: absolute;
+    top: 40px;
+    left: 68px;
+    width: 15px;
+    height: 70px;
+    /* animation: 1.1s alert-sign-bounce cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+
+}
+
+.alert-sign .line {
+    stroke-dasharray: 50;
+    animation: alert-path 0.8s ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.alert-sign .dot {
+    stroke: none;
+    fill: #FFC107;
+    animation: alert-dot 0.9s ease-out;
+
+}
+
+@keyframes alert-path {
+    from {
+        stroke-dashoffset: 50;
+        opacity: 0;
+    }
+
+    to {
+        stroke-dashoffset: 95;
+        opacity: 1;
+    }
+}
+
+@keyframes alert-dot {
+    from {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
