@@ -1,0 +1,93 @@
+/* global style */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+    background-color: #0F1932;
+    color: #fff;
+}
+
+body {
+    font-size: 0.85rem;
+}
+
+input {
+    color: #fff;
+}
+
+a {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+/* custom hover >a */
+a:hover {
+    text-decoration: none;
+    color: #00C0C7;
+}
+
+a:focus {
+    outline: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.font-small {
+    font-size: .9rem;
+}
+
+hr {
+    border-top: 1px solid #506175;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.6;
+}
+
+/* ---- color theme ---- */
+
+.bg-default {
+    background-color: #0F1932;
+}
+
+.bg-theme-grad {
+    background-image: linear-gradient(145deg, #009DB7, #221373);
+}
+
+.bg-theme-grad-2 {
+    background-image: linear-gradient(40deg, #221373, #009DB7);
+}
+
+.table-bg-default {
+    background-color: rgba(18, 34, 144, 65%);
+}
+
+.text-sub-color {
+    color: #8CA2E5 !important;
+}
+
+.text-caption-color {
+    color: #B9D2F4 !important;
+}
+
+.text-footer-sub-color {
+    color: #96a8b6 !important;
+}
+
+/* End of global style */

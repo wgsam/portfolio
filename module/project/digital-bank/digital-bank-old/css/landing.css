@@ -1,0 +1,883 @@
+#nav-bar {
+    background: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav-bar:hover {
+    background: rgba(1, 1, 1, 0.5);
+    box-shadow: 0 0 20px 0 rgba(18, 24, 58, 0.08);
+}
+
+.navbar-bg {
+    background-color: rgb(4, 9, 31);
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    border-color: transparent !important;
+}
+
+/* ---- Banner ---- */
+
+.digital-bank-banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/images/bg-img.png);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+.sec-banner-en-mobile {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    background: url(../assets/images/en/mobile-banner.png);
+    box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+.banner-caption {
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.banner-caption h1 {
+    font-size: 4rem;
+}
+
+.banner-caption h3 {
+    font-size: 2.5rem;
+}
+
+.banner-caption .header-caption {
+    font-size: 1rem;
+}
+
+
+
+/* ----  Main  ---- */
+
+
+.intro-about-bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/images/about-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.intro-about-bg-2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/images/about-bg-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    color: #000;
+    letter-spacing: 1px;
+    line-height: 2;
+    padding: 3rem;
+}
+
+.about-container p {
+    color: #504E4C;
+    padding-top: 20px;
+}
+
+.about-content .semi {
+    width: 50px;
+    height: 50px;
+}
+
+.icon-circle {
+    border-radius: 50%;
+    background-color: #F7F7F7;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.icon-circle img {
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+.financial-content-01 {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(../assets/images/financial-01.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.financial-content-02 {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(../assets/images/financial-02.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.financial-content-03 {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(../assets/images/financial-03.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.financial-content img {
+    width: 50px;
+    height: 50px;
+}
+
+.financial-content h5 {
+    color: #ffffff;
+}
+
+.register-section {
+    height: 100vh;
+}
+
+.bg-register {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: url(../assets/images/register-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+.register-header {
+    padding-bottom: 5rem;
+}
+
+.register-container {
+    border-style: solid;
+    border-radius: 10px;
+    width: 290px;
+    height: 220px;
+    margin: auto;
+    border-color: #A6173B;
+    background-color: #ffffff;
+}
+
+.register-container img {
+    width: 50px;
+    height: 50px;
+}
+
+.register-container p {
+    /* text-align-last: justify; */
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.service-ctg-list {
+    flex-direction: row;
+}
+
+.service-ctg-list li {
+    color: #504E4C;
+    font-size: 1rem;
+}
+
+.service-section {
+    height: 100vh;
+}
+
+.bg-service {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    background: url(../assets/images/service-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    align-items: center;
+    display: flex;
+}
+
+.icon-service {
+    width: 30px;
+
+}
+
+.service-container {
+    background-color: #F7F7F7;
+    height: 230px;
+}
+
+.team-resume-container {
+    margin: 1em 0;
+    border: 1px solid #A6173B;
+    padding: .35em .625em 2em;
+}
+
+.team-resume-content {
+    padding: 10px 30px;
+}
+
+legend {
+    display: block;
+    width: 100%;
+    /* max-width: 100%; */
+    padding: 0;
+    /* margin-bottom: .5rem; */
+    font-size: 1.5rem;
+    line-height: inherit;
+    color: inherit;
+    white-space: normal;
+    margin-bottom: 0 !important;
+    max-width: fit-content;
+    border-bottom: none !important;
+}
+
+.form-section {
+    font-weight: 300;
+    color: black;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.bg-install {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    background: url(../assets/images/install-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+.progress-bg {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    background: url(../assets/images/progress-img-bg.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-size: cover; */
+}
+
+.prgoress-caption-circle {
+    border-radius: 50%;
+    background-color: #A6173B;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.progress-list {
+    list-style: none;
+}
+
+.barcode-container {
+    background-color: #ffffff;
+    width: 350px;
+    margin: auto;
+}
+
+.barcode-footer {
+    background-color: #A6173B;
+    color: #ffffff;
+    width: 350px;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+
+.bg-footer {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background: url(../assets/images/footer-bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+.footer-main img {
+    width: 200px;
+}
+
+.footer-link:hover {
+    color: rgb(148, 148, 148) !important;
+}
+
+.footer-media {
+    background-color: #A6173B;
+    letter-spacing: 5px;
+}
+
+.full-height {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .full-height {
+        height: auto !important;
+    }
+}
+
+
+/* ipad pro portrait */
+@media only screen and (max-width: 1024px) and (max-height: 1366px) {}
+
+/* ipad pro landscape */
+@media only screen and (max-width: 1366px) and (max-height: 1024px) {}
+
+/* ipad portrait */
+@media only screen and (max-width: 768px) and (max-height: 1024px) {}
+
+/* ipad landscape */
+@media only screen and (max-width: 1024px) and (max-height: 768px) {}
+
+/* iphone x portrait */
+@media only screen and (max-width: 375px) and (max-height: 812px) {
+    .digital-bank-banner {
+        width: 100%;
+        height: 500px;
+    }
+
+    .banner-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    .banner-caption .header-caption {
+        font-size: 0.6rem;
+    }
+
+    .about-container {
+        padding: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .about-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-container p {
+        color: #504E4C;
+        padding-top: 10px;
+    }
+
+    .bg-register {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        background: url(../assets/images/register-mobile-bg.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+    }
+
+    .register-section {
+        height: auto;
+    }
+
+    .service-section {
+        height: auto;
+    }
+
+    .bg-service {
+        position: relative;
+        width: 100%;
+        height: 580px;
+        background: url(../assets/images/service-bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+        align-items: center;
+        display: inline-table;
+    }
+
+    .team-resume-content {
+        padding: 10px 10px;
+    }
+
+    .bg-footer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url(../assets/images/footer-bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+    }
+
+    .footer-camp h5 {
+        font-size: 0.8rem !important;
+    }
+
+    .footer-camp p a {
+        font-size: 0.7rem !important;
+    }
+
+    .barcode-container {
+        background-color: #ffffff;
+        width: 300px;
+        margin: auto;
+    }
+
+    .barcode-footer {
+        background-color: #A6173B;
+        color: #ffffff;
+        width: 300px;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+}
+
+/* iphone x landscape */
+@media only screen and (max-width: 812px) and (max-height: 375px) {}
+
+/* iphone 6/7/8 plus portrait */
+@media only screen and (max-width: 414px) and (max-height: 736px) {
+    .digital-bank-banner {
+        width: 100%;
+        height: 500px;
+    }
+
+    .banner-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    .banner-caption .header-caption {
+        font-size: 0.6rem;
+    }
+
+    .about-container {
+        padding: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .about-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-container p {
+        color: #504E4C;
+        padding-top: 10px;
+    }
+
+    .bg-register {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        background: url(../assets/images/register-mobile-bg.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+    }
+
+    .register-section {
+        height: auto;
+    }
+
+    .service-section {
+        height: auto;
+    }
+
+    .bg-service {
+        position: relative;
+        width: 100%;
+        height: 580px;
+        background: url(../assets/images/service-bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+        align-items: center;
+        display: inline-table;
+    }
+
+    .team-resume-content {
+        padding: 10px 10px;
+    }
+
+    .bg-footer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url(../assets/images/footer-bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+    }
+
+    .footer-camp h5 {
+        font-size: 0.8rem !important;
+    }
+
+    .footer-camp p a {
+        font-size: 0.7rem !important;
+    }
+}
+
+/* iphone 6/7/8 plus landscape */
+@media only screen and (max-width: 736px) and (max-height: 414px) {}
+
+/* iphone 6/7/8  portrait */
+@media only screen and (max-width: 375px) and (max-height: 667px) {}
+
+/* iphone 6/7/8 landscape */
+@media only screen and (max-width: 667px) and (max-height: 375px) {}
+
+/* iphone 5SE  portrait */
+@media only screen and (max-width: 320px) and (max-height: 568px) {
+    .digital-bank-banner {
+        width: 100%;
+        height: 500px;
+    }
+
+    .banner-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    .banner-caption .header-caption {
+        font-size: 0.6rem;
+    }
+
+    .about-container {
+        padding: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .about-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-container p {
+        color: #504E4C;
+        padding-top: 10px;
+    }
+
+    .bg-register {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        background: url(../assets/images/register-mobile-bg.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+    }
+
+    .register-section {
+        height: auto;
+    }
+
+    .service-section {
+        height: auto;
+    }
+
+    .bg-service {
+        position: relative;
+        width: 100%;
+        height: 580px;
+        background: url(../assets/images/service-bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+        align-items: center;
+        display: inline-table;
+    }
+
+    .team-resume-content {
+        padding: 10px 10px;
+    }
+
+    .bg-footer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url(../assets/images/footer-bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+    }
+
+    .footer-camp h5 {
+        font-size: 0.8rem !important;
+    }
+
+    .footer-camp p a {
+        font-size: 0.7rem !important;
+    }
+
+    .barcode-container {
+        background-color: #ffffff;
+        width: 250px;
+        margin: auto;
+    }
+
+    .barcode-footer {
+        background-color: #A6173B;
+        color: #ffffff;
+        width: 250px;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+}
+
+/* iphone 5SE landscape */
+@media only screen and (max-width: 568px) and (max-height: 320px) {}
+
+/* PIXEL 2XL portrait */
+@media only screen and (max-width: 411px) and (max-height: 823px) {
+    .digital-bank-banner {
+        width: 100%;
+        height: 500px;
+    }
+
+    .banner-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    .banner-caption .header-caption {
+        font-size: 0.6rem;
+    }
+
+    .about-container {
+        padding: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .about-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-container p {
+        color: #504E4C;
+        padding-top: 10px;
+    }
+
+    .bg-register {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        background: url(../assets/images/register-mobile-bg.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+    }
+
+    .register-section {
+        height: auto;
+    }
+
+    .service-section {
+        height: auto;
+    }
+
+    .bg-service {
+        position: relative;
+        width: 100%;
+        height: 580px;
+        background: url(../assets/images/service-bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+        align-items: center;
+        display: inline-table;
+    }
+
+    .team-resume-content {
+        padding: 10px 10px;
+    }
+
+    .bg-footer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url(../assets/images/footer-bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+    }
+
+    .footer-camp h5 {
+        font-size: 0.8rem !important;
+    }
+
+    .footer-camp p a {
+        font-size: 0.7rem !important;
+    }
+}
+
+/* PIXEL 2XL landscape */
+@media only screen and (max-width: 823px) and (max-height: 411px) {}
+
+/*  PIXEL 2 portrait */
+@media only screen and (max-width: 411px) and (max-height: 731px) {}
+
+/*  PIXEL 2 landscape */
+@media only screen and (max-width: 731px) and (max-height: 411px) {}
+
+/*  Galaxy S5  portrait */
+@media only screen and (max-width: 360px) and (max-height: 640px) {
+    .digital-bank-banner {
+        width: 100%;
+        height: 500px;
+    }
+
+    .banner-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner-caption h3 {
+        font-size: 1.5rem;
+    }
+
+    .banner-caption .header-caption {
+        font-size: 0.6rem;
+    }
+
+    .about-container {
+        padding: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .about-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-container p {
+        color: #504E4C;
+        padding-top: 10px;
+    }
+
+    .bg-register {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        background: url(../assets/images/register-mobile-bg.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+    }
+
+    .register-section {
+        height: auto;
+    }
+
+    .service-section {
+        height: auto;
+    }
+
+    .bg-service {
+        position: relative;
+        width: 100%;
+        height: 580px;
+        background: url(../assets/images/service-bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+        align-items: center;
+        display: inline-table;
+    }
+
+    .team-resume-content {
+        padding: 10px 10px;
+    }
+
+    .bg-footer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url(../assets/images/footer-bg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        /* background-attachment: fixed; */
+        background-size: cover;
+    }
+
+    .footer-camp h5 {
+        font-size: 0.8rem !important;
+    }
+
+    .footer-camp p a {
+        font-size: 0.7rem !important;
+    }
+
+    .barcode-container {
+        background-color: #ffffff;
+        width: 250px;
+        margin: auto;
+    }
+
+    .barcode-footer {
+        background-color: #A6173B;
+        color: #ffffff;
+        width: 250px;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+}
+
+/*  Galaxy S5 landscape */
+@media only screen and (max-width: 640px) and (max-height: 360px) {}
