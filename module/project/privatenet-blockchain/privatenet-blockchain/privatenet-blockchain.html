@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PrivateNet Blockchain</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="assests/vendor/malihu-custom-scrollbar-plugin/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="assests/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel=" stylesheet" href="css/color-theme.css"> -->
+    <link rel="stylesheet" href="css/global-style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main-body-content.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+
+<body>
+    <header class="is-transparent">
+        <div class="header-main">
+            <div class="header-container container">
+                <div class="header-wrap">
+                    <nav class="navbar navbar-expand-lg navbar-bg px-3 py-3">
+                        <div class="header-logo">
+                            <a class="navbar-brand" href="#">
+                                <img class="logo-light mx-1" src="assests/images/logo.png" alt="logo">
+                                LOGO
+                            </a>
+                        </div>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa fa-bars"></i>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto text-right text-uppercase">
+                                <li class="nav-item">
+                                    <a class="nav-link ml-4" href="#">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link ml-4 dropdown-toggle" href="#" id="blockChain" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Blockchain
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">View Txns</a>
+                                        <a class="dropdown-item" href="#">View Pending Txns</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">View Blocks</a>
+                                        <a class="dropdown-item" href="#">Forked Blocks (Reorgs)</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link ml-4 dropdown-toggle" href="#" id="tokens" role="button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Tokens
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">ERC-20 Top Tokens</a>
+                                        <a class="dropdown-item" href="#">View ERC-20 Top Transfers</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link ml-4 " href="#">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Header Banner -->
+        <div class="header-banner bg-theme-grad has-ovm has-mask">
+            <div class="nk-banner">
+                <div class="banner banner-fs">
+                    <div class="banner-wrap">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center">
+                                <div class="col-lg-5 col-md-12 col-sm-12 order-lg-first text-lg-left text-center">
+                                    <div class="banner-caption mt-3 mt-lg-0">
+                                        <div class="caption-content">
+                                            <div class="caption-head">
+                                                <h1>PrivateNet Blockchain Explorer</h1>
+                                            </div>
+                                            <div class="caption-text text-caption-color ">
+                                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+                                                    atque
+                                                    rerum iure at maxime ratione nisi nihil amet voluptate tempore.
+                                                    Cumque
+                                                    fuga ipsam veniam, dignissimos voluptas quaerat itaque culpa
+                                                    nostrum?
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nihil
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="caption-search">
+                                            <form>
+                                                <input type="text" placeholder="SEARCH" />
+                                                <a href="javascript:void(0);" class="search-button">
+                                                    <div class="icon"></div>
+                                                </a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-12 col-sm-12 order-first">
+                                    <img class="img-fluid banner-header-img" src="assests/images/blockchain-bg-img.png"
+                                        alt="banner">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nk-ovm mask-a-dark shape-a"></div>
+
+            <div id="particles-bg" class="particles-container particles-bg"></div>
+        </div>
+    </header>
+
+    <section class="block-info bg-default">
+        <div class="block-wrap bg-earth">
+            <div class="container">
+                <div class="block-header text-center text-uppercase mb-5">
+                    <h6 class="block-title ">Block Info</h6>
+                    <p class="sub-title text-sub-color text-center text-uppercase">Current Summary</p>
+                </div>
+
+                <div class="row text-md-left text-center aaa">
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                        <div class="block-info-box text-sub-color eth anim-blck-info">
+                            <h6>ETH PRICE</h6>
+                            <p>$ <span class="timer count-title count-number" data-to="2589000"
+                                    data-speed="3500"></span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                        <div class="block-info-box text-sub-color mrk anim anim-blck-info">
+                            <h6>MARKET CAP</h6>
+                            <p><span class="timer count-title count-number" data-to="2683233888"
+                                    data-speed="3500"></span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                        <div class="block-info-box text-sub-color blck anim-blck-info">
+                            <h6>Block</h6>
+                            <p><span class="timer count-title count-number" data-to="7858550" data-speed="3500"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                        <div class="block-info-box text-sub-color txns anim-blck-info">
+                            <h6>TRANSACTIONS</h6>
+                            <p><span class="timer count-title count-number" data-to="48591221" data-speed="3500"></span>
+                                M</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                        <div class="block-info-box text-sub-color diff anim-blck-info">
+                            <h6>DIFFICULTY</h6>
+                            <p><span class="timer count-title count-number" data-to="207817800"
+                                    data-speed="3500"></span> TH</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 my-2">
+                        <div class="block-info-box text-sub-color hash anim-blck-info">
+                            <h6>HASH RATE</h6>
+                            <p><span class="timer count-title count-number" data-to="1600" data-speed="3500"></span> k
+                                GH/s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="table-content bg-theme-grad">
+        <section class="block-txns bg-theme-grad-2">
+            <div class="container">
+                <div class="block-header text-center text-uppercase mb-5">
+                    <h6 class="block-title">Block & Transactions</h6>
+                    <p class="sub-title text-sub-color text-center text-uppercase">LATEST LIST</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-lg-0 mb-4">
+                        <div class="block-txns-table card table-bg-default h-100">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h4 class="card-title">Latest Blocks</h4>
+                                <a class="header-btn btn btn-default pull-right" href="#">All Blocks</a>
+                            </div>
+                            <div class="js-scrollbar card-body overflow-hidden" style="height: 685px;">
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round">B</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none'>Block</span>
+                                                <a href='#'>7762384</a>
+                                                <span
+                                                    class='d-sm-block small text-caption-color  ml-1 ml-sm-0 text-nowrap'>
+                                                    28 secs ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap'>
+                                                <span class='d-block mb-1 mb-sm-0'>
+                                                    Miner <a class='hash-tag text-truncate' href='#'>F2Pool 2</a>
+                                                </span>
+                                                <a href="#" title="Transactions in this Block">97 txns</a>
+                                                <span class="small text-caption-color ">in 3 secs</span>
+                                                <span class='d-inline-block d-sm-none'>
+                                                    <span class='eth-num-label text-center text-nowrap'
+                                                        title='Block Reward'>2<b>.</b>051 Eth</span>
+                                                </span>
+                                            </div>
+                                            <div class='d-none d-sm-block'>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Block Reward'>2<b>.</b>051 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round">B</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none'>Block</span>
+                                                <a href='#'>7762383</a>
+                                                <span
+                                                    class='d-sm-block small text-caption-color  ml-1 ml-sm-0 text-nowrap'>
+                                                    29 secs ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap'>
+                                                <span class='d-block mb-1 mb-sm-0'>
+                                                    Miner
+                                                    <a class='hash-tag text-truncate' href='#'>Spark Pool</a>
+                                                </span>
+                                                <a href="#" title="Transactions in this Block">97 txns</a>
+                                                <span class="small text-caption-color ">in 5 secs</span>
+                                                <span class='d-inline-block d-sm-none'>
+                                                    <span class='eth-num-label text-center text-nowrap'
+                                                        title='Block Reward'>2<b>.</b>04841 Eth</span>
+                                                </span>
+                                            </div>
+                                            <div class='d-none d-sm-block'>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Block Reward'>2<b>.</b>04841 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round">B</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none'>Block</span>
+                                                <a href='#'>7762382</a>
+                                                <span
+                                                    class='d-sm-block small text-caption-color  ml-1 ml-sm-0 text-nowrap'>
+                                                    30 secs ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap'>
+                                                <span class='d-block mb-1 mb-sm-0'>
+                                                    Miner <a class='hash-tag text-truncate' href='#'>MiningPoolHub</a>
+                                                </span>
+                                                <a href="#" title="Transactions in this Block">178 txns</a>
+                                                <span class="small text-caption-color ">in 10 secs</span>
+                                                <span class='d-inline-block d-sm-none'>
+                                                    <span class='eth-num-label text-center text-nowrap'
+                                                        title='Block Reward'>2<b>.</b>07138 Eth</span>
+                                                </span>
+                                            </div>
+                                            <div class='d-none d-sm-block'>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Block Reward'>2<b>.</b>07138 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round">B</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none'>Block</span>
+                                                <a href='#'>7762381</a>
+                                                <span
+                                                    class='d-sm-block small text-caption-color  ml-1 ml-sm-0 text-nowrap'>
+                                                    30 secs ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap'>
+                                                <span class='d-block mb-1 mb-sm-0'>Miner
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x1b5b5906306c96b842dc03105e3b38636a4eda0b</a>
+                                                </span>
+                                                <a href="#" title="Transactions in this Block">106 txns</a>
+                                                <span class="small text-caption-color ">in 3 secs</span>
+                                                <span class='d-inline-block d-sm-none'>
+                                                    <span class='eth-num-label text-center text-nowrap'
+                                                        title='Block Reward'>2<b>.</b>05262 Eth</span>
+                                                </span>
+                                            </div>
+                                            <div class='d-none d-sm-block'>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Block Reward'>2<b>.</b>05262 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round">B</span>
+                                            </div>
+                                            <div class='media-body'><span class='d-inline-block d-sm-none'>Block</span>
+                                                <a href='#'>7762380</a>
+                                                <span
+                                                    class='d-sm-block small text-caption-color  ml-1 ml-sm-0 text-nowrap'>
+                                                    40 secs ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap'>
+                                                <span class='d-block mb-1 mb-sm-0'>Miner
+                                                    <a class='hash-tag text-truncate' href='#'>firepool</a>
+                                                </span>
+                                                <a href="#" title="Transactions in this Block">236 txns</a>
+                                                <span class="small text-caption-color ">in 9 secs</span>
+                                                <span class='d-inline-block d-sm-none'>
+                                                    <span class='eth-num-label text-center text-nowrap'
+                                                        title='Block Reward'>2<b>.</b>06809 Eth</span>
+                                                </span>
+                                            </div>
+                                            <div class='d-none d-sm-block'>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Block Reward'>2<b>.</b>06809 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round">B</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none'>Block</span>
+                                                <a href='#'>7762379</a>
+                                                <span
+                                                    class='d-sm-block small text-caption-color  ml-1 ml-sm-0 text-nowrap'>
+                                                    45 secs ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap'>
+                                                <span class='d-block mb-1 mb-sm-0'>Miner
+                                                    <a class='hash-tag text-truncate' href='#'>zhizhu.top</a>
+                                                </span>
+                                                <a href="#" title="Transactions in this Block">56 txns</a>
+                                                <span class="small text-caption-color ">in 25 secs</span>
+                                                <span class='d-inline-block d-sm-none'>
+                                                    <span class='eth-num-label text-center text-nowrap'
+                                                        title='Block Reward'>2<b>.</b>07571 Eth</span>
+                                                </span>
+                                            </div>
+                                            <div class='d-none d-sm-block'>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Block Reward'>2<b>.</b>07571 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round">B</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none'>Block</span>
+                                                <a href='#'>7762378</a>
+                                                <span
+                                                    class='d-sm-block small text-caption-color  ml-1 ml-sm-0 text-nowrap'>
+                                                    50 secs ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap'>
+                                                <span class='d-block mb-1 mb-sm-0'>Miner
+                                                    <a class='hash-tag text-truncate' href='#'>Spark Pool</a>
+                                                </span>
+                                                <a href="#" title="Transactions in this Block">178 txns </a>
+                                                <span class="small text-caption-color ">in 14 secs</span>
+                                                <span class='d-inline-block d-sm-none'>
+                                                    <span class='eth-num-label text-center text-nowrap'
+                                                        title='Block Reward'>2<b>.</b>13872 Eth</span>
+                                                </span>
+                                            </div>
+                                            <div class='d-none d-sm-block'>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Block Reward'>2<b>.</b>13872 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round">B</span>
+                                            </div>
+                                            <div class='media-body'><span class='d-inline-block d-sm-none'>Block</span>
+                                                <a href='#'>7762377</a>
+                                                <span
+                                                    class='d-sm-block small text-caption-color  ml-1 ml-sm-0 text-nowrap'>
+                                                    55 secs ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap'>
+                                                <span class='d-block mb-1 mb-sm-0'>Miner
+                                                    <a class='hash-tag text-truncate' href='#'>F2Pool 2</a>
+                                                </span>
+                                                <a href="# " title="Transactions in this Block">203 txns</a>
+                                                <span class="small text-caption-color ">in 17 secs</span>
+                                                <span class='d-inline-block d-sm-none'>
+                                                    <span class='eth-num-label text-center text-nowrap'
+                                                        title='Block Reward'>2<b>.</b>21841 Eth</span>
+                                                </span>
+                                            </div>
+                                            <div class='d-none d-sm-block'>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Block Reward'>2<b>.</b>21841 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round">B</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none'>Block</span>
+                                                <a href='#'>7762376</a>
+                                                <span
+                                                    class='d-sm-block small text-caption-color  ml-1 ml-sm-0 text-nowrap'>
+                                                    1 mins ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap'>
+                                                <span class='d-block mb-1 mb-sm-0'>Miner
+                                                    <a class='hash-tag text-truncate' href='#'>Nanopool</a>
+                                                </span>
+                                                <a href="#" title="Transactions in this Block">121 txns</a>
+                                                <span class="small text-caption-color ">in 1 sec</span>
+                                                <span class='d-inline-block d-sm-none'>
+                                                    <span class='eth-num-label text-center text-nowrap'
+                                                        title='Block Reward'>2<b>.</b>08866 Eth</span>
+                                                </span>
+                                            </div>
+                                            <div class='d-none d-sm-block'>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Block Reward'>2<b>.</b>08866 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round">B</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none'>Block</span>
+                                                <a href='#'>7762375</a>
+                                                <span
+                                                    class='d-sm-block small text-caption-color  ml-1 ml-sm-0 text-nowrap'>
+                                                    1 mins ago
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap'><span class='d-block mb-1 mb-sm-0'>Miner
+                                                    <a class='hash-tag text-truncate' href='#'>Spark Pool</a>
+                                                </span>
+                                                <a href="#" title="Transactions in this Block">89 txns </a>
+                                                <span class="small text-caption-color ">in 5 secs</span>
+                                                <span class='d-inline-block d-sm-none'>
+                                                    <span class='eth-num-label text-center text-nowrap'
+                                                        title='Block Reward'>2<b>.</b>0532 Eth</span>
+                                                </span>
+                                            </div>
+                                            <div class='d-none d-sm-block'>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Block Reward'>2<b>.</b>0532 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <hr class='hr-space'> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="block-txns-table card table-bg-default h-100">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h4 class="card-title">Transactions</h4>
+                                <a class="header-btn btn btn-default pull-right" href="#">All Transactions</a>
+                            </div>
+                            <div class="js-scrollbar card-body overflow-hidden" style="height: 685px;">
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round round-success">T</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none mr-1'>TX#</span>
+                                                <a class='hash-tag hash-tag--xs text-truncate'
+                                                    href='#'>0xd4674c0171fe58a131c782972fde659333111d81febd12b696e80c4d48ffc89c</a>
+                                                <span class='d-none d-sm-block small text-caption-color '>
+                                                    <div data-countdown='22000'></div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-sm-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap mr-4 mb-1 mb-sm-0'>
+                                                <span>From
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x37538a28629b5a1b0db1727419bbe2a99cafc10f</a>
+                                                </span>
+                                                <span class='d-sm-block'>To
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x4f28ae93eff1980911cfa78bea376e2af693c640</a>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Amount'>0<b>.</b>84205 Eth</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round round-success">T</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none mr-1'>TX#</span>
+                                                <a class='hash-tag hash-tag--xs text-truncate'
+                                                    href='#'>0xebfec0a553f773489a41201f7ac821bf9117ffe7b5f623ad381bb39668f72aea</a>
+                                                <span class='d-none d-sm-block small text-caption-color '>
+                                                    <div data-countdown='22000'></div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-sm-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap mr-4 mb-1 mb-sm-0'>
+                                                <span>From
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x206cf3b16fc2ce5a961bc2d6ce99223dc37fff40</a>
+                                                </span>
+                                                <span class='d-sm-block'>To
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x4fed1fc4144c223ae3c1553be203cdfcbd38c581</a>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Amount'>0<b>.</b>04975 Eth</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round round-success">T</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none mr-1'>TX#</span>
+                                                <a class='hash-tag hash-tag--xs hash-tag-xs-down--md text-truncate'
+                                                    href='#'>0x4b72750dda3fafd4abe6f66745e78e6ca783f1d9e8a5f78185e4c2b55e2ad6d5</a>
+                                                <span class='d-none d-sm-block small text-caption-color '>
+                                                    <div data-countdown='22000'></div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-sm-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap mr-4 mb-1 mb-sm-0'>
+                                                <span>From
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0xc1bba764c2e597b59a7584bd2e6e2e0a5be122e8</a>
+                                                </span>
+                                                <span class='d-sm-block'>To
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0xa5e99ad202bdd71d3518306cf4dd163261981af1</a>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class='eth-num-label text-center text-nowrap' title='Amount'>0
+                                                    Eth</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round round-success">T</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none mr-1'>TX#</span>
+                                                <a class='hash-tag hash-tag--xs text-truncate'
+                                                    href='#'>0x655eef9591540645de080d28d0acb2a01e7e58df427f94b81bc255118b20c05b</a>
+                                                <span class='d-none d-sm-block small text-caption-color '>
+                                                    <div data-countdown='22000'></div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-sm-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap mr-4 mb-1 mb-sm-0'>
+                                                <span>From
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0xd48b6809465ce94951a4218a279d5351ecd15715</a>
+                                                </span>
+                                                <span class='d-sm-block'>To
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0xf0d9fcb4fefdbd3e7929374b4632f8ad511bd7e3</a>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Amount'>1<b>.</b>50915 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round round-success">T</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none mr-1'>TX#</span>
+                                                <a class='hash-tag hash-tag--xs text-truncate'
+                                                    href='#'>0xda1b2ddb264797466f799e338665424542d95e1211dc10adb8d7c8e24c4e0842</a>
+                                                <span class='d-none d-sm-block small text-caption-color '>
+                                                    <div data-countdown='22000'></div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-sm-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap mr-4 mb-1 mb-sm-0'>
+                                                <span>From
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x0a053bc04195ac665e4a61f63c4e6bf7fc864540</a>
+                                                </span>
+                                                <span class='d-sm-block'>To
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x9e281ca662700203fcde4a7ac9a5526653b8fb14</a>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Amount'>1<b>.</b>2923 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round round-success">T</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none mr-1'>TX#</span>
+                                                <a class='hash-tag hash-tag--xs text-truncate'
+                                                    href='#'>0x9f3719b650a3c0a80194d8f2b2faada6130306fe599635494a20aa4e740e3e9e</a>
+                                                <span class='d-none d-sm-block small text-caption-color '>
+                                                    <div data-countdown='22000'></div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-sm-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap mr-4 mb-1 mb-sm-0'>
+                                                <span>From
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x765cadd0accea05498b5c28c59a7931b3de70965</a>
+                                                </span>
+                                                <span class='d-sm-block'>To
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0xf0d9fcb4fefdbd3e7929374b4632f8ad511bd7e3</a>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Amount'>0<b>.</b>72256 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round round-success">T</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none mr-1'>TX#</span>
+                                                <a class='hash-tag hash-tag--xs text-truncate'
+                                                    href='#'>0x2df4adf66b96f4b230b0ae23e6756dbdbaaf8c0fe087a307971631346b4fa3d7</a>
+                                                <span class='d-none d-sm-block small text-caption-color '>
+                                                    <div data-countdown='22000'></div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-sm-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap mr-4 mb-1 mb-sm-0'>
+                                                <span>From
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x8a436d2643c1b7ff0067d1c820ca04684d1fbdc8</a>
+                                                </span>
+                                                <span class='d-sm-block'>To
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0xf0d9fcb4fefdbd3e7929374b4632f8ad511bd7e3</a>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Amount'>0<b>.</b>12973 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round round-success">T</span>
+
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none mr-1'>TX#</span>
+                                                <a class='hash-tag hash-tag--xs text-truncate'
+                                                    href='#'>0x2177296a23a2cbb8093faa70b2d43fd4ade3ec63be96cffda738ef7a014e68ab</a>
+                                                <span class='d-none d-sm-block small text-caption-color '>
+                                                    <div data-countdown='22000'></div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-sm-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap mr-4 mb-1 mb-sm-0'>
+                                                <span>From
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x5de1798c0496c1019e23e48dd74a0fbd23b7f243</a>
+                                                </span>
+                                                <span class='d-sm-block'>To
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x1b44a61b0b8e83587533c955a43fb7076ab9ec38</a>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class='eth-num-label text-center text-nowrap'
+                                                    title='Amount'>0<b>.</b>00493 Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round round-success">T</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none mr-1'>TX#</span>
+                                                <a class='hash-tag hash-tag--xs text-truncate'
+                                                    href='#'>0x70cc9b0a0bbc88c499b97367005137eb5e997b81343eadbdde836d6c50eb33e9</a>
+                                                <span class='d-none d-sm-block small text-caption-color '>
+                                                    <div data-countdown='22000'></div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-sm-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap mr-4 mb-1 mb-sm-0'>
+                                                <span>From
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0xed8959b2dbc8705ca6db570df49cc2a185892590</a>
+                                                </span>
+                                                <span class='d-sm-block'>To
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x345e5427a6183df9a1c883dd8dfd05cf6b0e7c87</a>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class='eth-num-label text-center text-nowrap' title='Amount'>0
+                                                    ETH</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class='hr-space'>
+                                <div class='row blocklist-content'>
+                                    <div class='col-sm-4'>
+                                        <div class='media align-items-sm-center mr-4 mb-1 mb-sm-0'>
+                                            <div class='d-none d-sm-flex mr-3'>
+                                                <span class="round round-success">T</span>
+                                            </div>
+                                            <div class='media-body'>
+                                                <span class='d-inline-block d-sm-none mr-1'>TX#</span>
+                                                <a class='hash-tag hash-tag--xs text-truncate'
+                                                    href='#'>0x3be99440579ea8c9713c78b11fd61f76d97823df0a29f54e96bdd3b7c23d3a80</a>
+                                                <span class='d-none d-sm-block small text-caption-color '>
+                                                    <div data-countdown='22000'></div>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='col-sm-8'>
+                                        <div class='d-sm-flex align-items-sm-center justify-content-between mt-1'>
+                                            <div class='text-nowrap mr-4 mb-1 mb-sm-0'>
+                                                <span>From
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0x30aefa631acd1c94ddc7ef4f38ff01c22c1d87ca</a>
+                                                </span>
+                                                <span class='d-sm-block'>To
+                                                    <a class='hash-tag text-truncate'
+                                                        href='#'>0xb9843e5de0f37d1e22c8075e5814e13565fe7c22</a>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class='eth-num-label text-center text-nowrap' title='Amount'>0
+                                                    Eth
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <hr class='hr-space'> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="nk-ovm shape-dot shape-b"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-default">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left mt-3 pb-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer-main">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">ETH</h6>
+                    <p class="text-footer-sub-color">Here you can use rows and columns to organize your footer content.
+                        Lorem
+                        ipsum dolor sit
+                        amet,
+                        consectetur
+                        adipisicing elit.</p>
+                </div>
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 footer-camp">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Company</h6>
+                    <p>
+                        <a class="text-footer-sub-color" href="#!">XXXXXXX</a>
+                    </p>
+                    <p>
+                        <a class="text-footer-sub-color" href="#!">XXXXXXX</a>
+                    </p>
+                    <p>
+                        <a class="text-footer-sub-color" href="#!">XXXXXXXX</a>
+                    </p>
+                    <p>
+                        <a class="text-footer-sub-color" href="#!">XXXXXX</a>
+                    </p>
+                </div>
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 footer-community">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Community</h6>
+                    <p>
+                        <a class="text-footer-sub-color" href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a class="text-footer-sub-color" href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a class="text-footer-sub-color" href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a class="text-footer-sub-color" href="#!">Help</a>
+                    </p>
+                </div>
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 footer-contact">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact Us</h6>
+                    <div class="text-footer-sub-color">
+                        <p>
+                            <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                        <p>
+                            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p>
+                            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row footer-media d-flex align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p class="text-center text-md-left">© 2018 Copyright
+                        <a href="#">
+                            <strong> @wgsam</strong>
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Social Media Grid -->
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+                    <div class=" text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm mx-1">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm mx-1">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm mx-1">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-sm mx-1">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- script -->
+    <script src="assests/vendor/popper/popper.min.js"></script>
+    <script src="assests/vendor/jquery/jquery-3.4.1.min.js"></script>
+    <script src="assests/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assests/vendor/particles/particles.js"></script>
+    <script src="assests/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assests/vendor/number-counter/number-counter.js"></script>
+    <script src="js/eth-main-page.js"></script>
+</body>
+
+</html>
