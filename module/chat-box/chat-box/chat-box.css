@@ -1,0 +1,356 @@
+* {
+  outline: none;
+}
+
+body,
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  background: #bdc3c7;
+  background: -webkit-linear-gradient(to right bottom, #bdc3c7, #2c3e50);
+  background: linear-gradient(to right bottom, #bdc3c7, #2c3e50);
+}
+
+body {
+  font-family: "Microsoft JhengHei", Arial, sans-serif;
+  background: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  letter-spacing: 1px;
+}
+
+body,
+body .messages-content .message.typing::after,
+body .messages-content .message.typing span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body .chat-title::after,
+body .action-box::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* custom scroll */
+.mCSB_container {
+  margin: 0 !important;
+}
+
+.mCSB_scrollTools {
+  margin-right: -3px;
+}
+
+.mCSB_inside>.mCSB_container {
+  margin-right: 0px;
+  padding: 0 10px;
+}
+
+/* Floating msg icon */
+#chat-circle {
+  position: fixed;
+  z-index: 1;
+  bottom: 50px;
+  right: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: white;
+  padding: 25px;
+  cursor: pointer;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.6), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+#chat-overlay {
+  background: rgba(126, 24, 24, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: none;
+}
+
+/* Chat Box */
+.chat {
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 2;
+  width: 300px;
+  height: 80vh;
+  max-height: 500px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.chat-title {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 100%;
+  height: 50px;
+}
+
+.chat-box-toggle {
+  position: absolute;
+  z-index: 1;
+  top: 9px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.chat-title h2 {
+  margin: 10px 0;
+  padding: 0;
+  color: #f0f0f0;
+  font-weight: normal;
+  font-size: 16px;
+  display: inline-block;
+  line-height: 30px;
+}
+
+.chat-title .avatar {
+  float: left;
+  margin: 10px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.chat-title .avatar img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+/* Message container  */
+.messages {
+  width: 100%;
+  height: calc(100% - 90px);
+}
+
+.messages-content {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.messages-content .message {
+  max-width: calc(100% - 76px);
+  color: #e3e3e3;
+  word-break: break-all;
+  animation: pop 0.3s forwards;
+  clear: both;
+  float: left;
+  padding: 6px 10px 7px;
+  border-radius: 10px 10px 10px 0;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 8px 0;
+  font-size: 11px;
+  line-height: 1.4;
+  margin-left: 35px;
+  position: relative;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.messages-content .message .timestamp {
+  position: absolute;
+  right: -40px;
+  bottom: 0;
+  font-size: 12px;
+  color: #bababa;
+}
+
+.messages-content .message::before {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  border-top: 6px solid rgba(0, 0, 0, 0.3);
+  left: 0;
+  border-right: 7px solid transparent;
+}
+
+.messages-content .message .avatar {
+  position: absolute;
+  z-index: 1;
+  bottom: -15px;
+  left: -38px;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 2px solid rgba(255, 255, 255, 0.24);
+}
+
+.messages-content .message .timestamp {
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.messages-content .message:last-child {
+  margin-bottom: 30px;
+}
+
+.messages-content .message .avatar img {
+  width: 100%;
+  height: auto;
+}
+
+.messages-content .message.personal {
+  float: right;
+  margin: 8px 12px 8px 0;
+}
+
+.messages-content .message.personal .timestamp {
+  right: auto;
+  left: -40px;
+}
+
+.messages-content .message.typing {
+  width: 30px;
+  height: 16px;
+}
+
+.messages-content .message.typing::after {
+  content: "";
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  animation: ball 1.2s infinite linear;
+}
+
+.messages-content .message.typing span {
+  width: 3px;
+  height: 3px;
+  transform: translate(-50%, -50%);
+}
+
+.messages-content .message.typing span::before,
+body .messages-content .message.typing span::after {
+  content: "";
+  border-radius: 50%;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  background-color: white;
+  animation: ball 1.2s infinite linear;
+}
+
+.messages-content .message.typing span::before {
+  left: 8px;
+  animation-delay: 0.3s;
+}
+
+.messages-content .message.typing span::after {
+  right: 8px;
+  animation-delay: -0.3s;
+}
+
+/* End of Message container  */
+.action-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 40px;
+}
+
+.action-box-input,
+.action-box-attch,
+.action-box-submit {
+  box-sizing: border-box;
+  border: 0;
+  float: left;
+}
+
+.action-box-input {
+  width: calc(100% - 80px);
+  height: 20px;
+  background-color: transparent;
+  resize: none;
+  color: white;
+  margin: 10px 0;
+  padding: 0 10px;
+  line-height: 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.action-box-input::-webkit-input-placeholder {
+  line-height: 20px;
+  font-size: 13px;
+}
+
+/* Attachment & Send Button */
+.action-box-attch {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(189, 195, 199, 0.2);
+  color: white;
+  cursor: pointer;
+}
+
+.action-box-submit {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(189, 195, 199, 0.2);
+  color: white;
+  cursor: pointer;
+}
+
+button.action-box-attch:active {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+button.action-box-submit:active {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* ----- Animation ----- */
+@keyframes ball {
+  0% {
+    margin-top: 0;
+  }
+
+  20% {
+    margin-top: 3px;
+  }
+
+  80% {
+    margin-top: -5px;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.6);
+  }
+
+  30% {
+    transform: scale(1.1);
+  }
+
+  60% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

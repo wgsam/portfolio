@@ -1,0 +1,16 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    justify-items: center;
+}
+
+#success,
+#error,
+#warning {
+    width: 250px;
+}

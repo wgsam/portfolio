@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lottie {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition: -webkit-filter .25s ease-in;
+    transition: filter .25s ease-in;
+    transition: filter .25s ease-in, -webkit-filter .25s ease-in;
+}
+
+.lottie.is-active {
+    -webkit-filter: none;
+    filter: none;
+}
