@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Reward</title>
+
+    <!--Google font-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppoin&display=swap" rel="stylesheet">
+
+    <!-- link css-->
+    <link rel="stylesheet" href="css/global-style.css">
+    <link rel="stylesheet" href="css/header-nav.css">
+    <link rel="stylesheet" href="css/custom-component.css">
+
+    <!-- plugin -->
+    <link rel="stylesheet" href="assets/vendor/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/vendor/slick/slick.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- Nav Header -->
+        <header>
+            <div class="header-container">
+                <div class="header-content">
+                    <!-- Header Bar -->
+                    <div class="header-bar bg-black">
+                        <div class="container">
+                            <div class="text-uppercase txt-white">
+                                <div class="bar-item" data-toggle="modal" data-target="#signInModal">
+                                    <span>Login</span>
+                                </div>
+                                <div class="bar-item">
+                                    <span class="navbar-light-separator"></span>
+                                </div>
+                                <div class="bar-item" data-toggle="modal" data-target="#signUpModal">
+                                    <span>Signup</span>
+                                </div>
+                                <div id="language" class="bar-item">
+                                    <span>EN</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <div class="language-container">
+                                    <div class="language-opt shadow">
+                                        <ul class="language-opt-items text-left">
+                                            <li><a class="txt-grey" href="#!">EN</a></li>
+                                            <li><a class="txt-grey" href="#!">Chinese</a></li>
+                                            <li><a class="txt-grey" href="#!">Malay</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Heaedr-Nav -->
+                    <div class="nav-main bg-header-nav bg-shadow">
+                        <nav class="navbar navbar-expand-lg px-0">
+                            <div class="container">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars txt-white"></i>
+                                </button>
+
+                                <div class="nav-logo mb-3">
+                                    <a href="index.html">
+                                        <img class="img-fluid" src="assets/images/icons/sr-icon.png"
+                                            alt="HyperDao Small Logo">
+                                    </a>
+                                </div>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                                    <!-- Search Box -->
+                                    <div class="search-box-wrapper pl-3">
+                                        <input type="text" placeholder="Search" />
+                                        <button class="fa fa-search search-icon"> </button>
+                                    </div>
+
+                                    <ul class="navbar-nav ml-auto text-right">
+                                        <li class="nav-item">
+                                            <a class="nav-link ml-1" href="index.html">
+                                                <img class="img-fluid icon-img-1" src="assets/images/icons/home.png"
+                                                    alt="Home">
+                                            </a>
+                                        </li>
+
+                                        <li class="dropdown mega-dropdown">
+                                            <a class="nav-link ml-1 dropdown-toggle" href="#!" id="navbarDropdown"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <img class="img-fluid icon-img-1"
+                                                    src="assets/images/icons/categories.svg" alt="Shop">
+                                            </a>
+                                            <!-- Mega Menu -->
+                                            <div class="dropdown-menu mega-dropdown-menu p-5 bg-grey bg-shadow"
+                                                aria-labelledby="navbarDropdown">
+                                                <ul class="row mx-0">
+                                                    <li class="col-lg-3">
+                                                        <ul>
+                                                            <li>
+                                                                <img src="assets/images/mega-menu-ads-01.png" alt="">
+                                                            </li>
+                                                            <li class="dropdown-header txt-orange">Home & Lifestyle</li>
+                                                            <li><a href="#!">Lighting</a></li>
+                                                            <li><a href="#!">Kitchen & Dinning</a></li>
+                                                            <li><a href="#!">Outdoor & Garden</a></li>
+                                                            <li><a href="#!">Tool & Home Improvement</a></li>
+                                                            <li><a href="#!">Bath</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="col-lg-3">
+                                                        <ul>
+                                                            <li>
+                                                                <img src="assets/images/mega-menu-ads-02.png" alt="">
+                                                            </li>
+                                                            <li class="dropdown-header txt-orange">Fashion Accessories
+                                                            </li>
+                                                            <li><a href="#!">Women Clothing</a></li>
+                                                            <li><a href="#!">Women Shoes</a></li>
+                                                            <li><a href="#!">Men’s Watch</a></li>
+                                                            <li><a href="#!">Men’s Shoes</a></li>
+                                                            <li><a href="#!">Travel & Luggage</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="col-lg-3">
+                                                        <ul>
+                                                            <li>
+                                                                <img src="assets/images/mega-menu-ads-03.png" alt="">
+                                                            </li>
+                                                            <li class="dropdown-header txt-orange">Sport & Lifestyle
+                                                            </li>
+                                                            <li><a href="#!">Badminton</a></li>
+                                                            <li><a href="#!">Football</a></li>
+                                                            <li><a href="#!">Outdoor Recreation</a></li>
+                                                            <li><a href="#!">Sports Apparel Men</a></li>
+                                                            <li><a href="#!">Sports Apparel Women</a></li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="col-lg-3">
+                                                        <ul>
+                                                            <li>
+                                                                <img src="assets/images/mega-menu-banner.png" alt="">
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link ml-1 dropdown-toggle" href="#!" id="notificationDropdown"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                <img class="img-fluid icon-img-1" src="assets/images/icons/reminder.png"
+                                                    alt="Notification">
+                                            </a>
+                                            <!-- Dropdown - Notification -->
+                                            <div class="dropdown-list dropdown-menu dropdown-notification bg-shadow"
+                                                aria-labelledby="notificationDropdown">
+                                                <a class="dropdown-item unread d-flex align-items-center" href="#!">
+                                                    <div class="mr-3">
+                                                        <div class="notif-item-box bg-primary">
+                                                            <img src="assets/images/notif.png" alt="Notification Item">
+                                                        </div>
+                                                    </div>
+                                                    <div class="notif-info txt-grey">
+                                                        <h6 class="mb-0">Great Sale</h6>
+                                                        <span class="xs-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy</span>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item read d-flex align-items-center" href="#!">
+                                                    <div class="mr-3">
+                                                        <div class="notif-item-box bg-primary">
+                                                            <img src="assets/images/notif.png" alt="Notification Item">
+                                                        </div>
+                                                    </div>
+                                                    <div class="notif-info txt-grey">
+                                                        <h6 class="mb-0">Great Sale</h6>
+                                                        <span class="xs-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy</span>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item unread d-flex align-items-center" href="#!">
+                                                    <div class="mr-3">
+                                                        <div class="notif-item-box bg-primary">
+                                                            <img src="assets/images/notif.png" alt="Notification Item">
+                                                        </div>
+                                                    </div>
+                                                    <div class="notif-info txt-grey">
+                                                        <h6 class="mb-0">Great Sale</h6>
+                                                        <span class="xs-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy</span>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item unread d-flex align-items-center" href="#!">
+                                                    <div class="mr-3">
+                                                        <div class="notif-item-box bg-primary">
+                                                            <img src="assets/images/notif.png" alt="Notification Item">
+                                                        </div>
+                                                    </div>
+                                                    <div class="notif-info txt-grey">
+                                                        <h6 class="mb-0">Great Sale</h6>
+                                                        <span class="xs-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy</span>
+                                                    </div>
+                                                </a>
+                                                <a class="dropdown-item read d-flex align-items-center" href="#!">
+                                                    <div class="mr-3">
+                                                        <div class="notif-item-box bg-primary">
+                                                            <img src="assets/images/notif.png" alt="Notification Item">
+                                                        </div>
+                                                    </div>
+                                                    <div class="notif-info txt-grey">
+                                                        <h6 class="mb-0">Great Sale</h6>
+                                                        <span class="xs-text">Lorem ipsum dolor sit amet,
+                                                            consetetur sadipscing elitr, sed diam nonumy</span>
+                                                    </div>
+                                                </a>
+                                                <div class="text-center py-3">
+                                                    <button class="btn-sm-orange text-center text-uppercase"
+                                                        onclick="window.location.href = 'notification.html';">View
+                                                        More</button>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link ml-1" href="checkout-step01.html">
+                                                <img class="img-fluid icon-img-1" src="assets/images/icons/cartlist.png"
+                                                    alt="Cartlist">
+                                            </a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a id="side-menu-open" class="nav-link ml-1" href="#!">
+                                                <img class="img-fluid icon-img-1" src="assets/images/icons/acc.png"
+                                                    alt="Account">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sign In Modal -->
+        <div class="modal fade" id="signInModal">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="signin-modal modal-content">
+                    <div class="px-4 py-3">
+                        <div class="modal-header">
+                            <a data-toggle="modal" data-target="#signInModal" data-dismiss="modal">
+                                <h5 class="modal-title text-uppercase txt-orange font-weight-bold pr-3">Sign in</h5>
+                            </a>
+                            <span class="navbar-dark-separator"></span>
+                            <a data-toggle="modal" data-target="#signUpModal" data-dismiss="modal">
+                                <h5 class="modal-title text-uppercase txt-light-grey font-weight-bold pl-3">Sign Up</h5>
+                            </a>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label class="txt-orange sm-text" for="loginPhoneNumber">Mobile</label>
+                                    <input type="email" class="form-control" id="loginPhoneNumber"
+                                        placeholder="Mobile Phone">
+                                </div>
+                                <div class="form-group">
+                                    <label class="txt-orange sm-text" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="form-check d-flex justify-content-between">
+                                    <div class="form-checkbox">
+                                        <input type="checkbox" class="form-check-input" id="loginRememberMe">
+                                        <label class="form-check-label txt-orange" for="loginRememberMe">Remember
+                                            Me</label>
+                                    </div>
+                                    <div>
+                                        <a class="txt-orange" data-toggle="modal" data-dismiss="modal"
+                                            data-target="#resetPasswordModal">
+                                            Forgot Password?
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="text-center pt-4 pb-3">
+                                    <button type="submit" class="btn-lg-orange text-uppercase btn-block">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sign Up Modal -->
+        <div class="modal fade" id="signUpModal">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="signiup-modal modal-content">
+                    <div class="px-4 py-3">
+                        <div class="modal-header">
+                            <a data-toggle="modal" data-target="#signInModal" data-dismiss="modal">
+                                <h5 class="modal-title text-uppercase txt-light-grey txt-orange font-weight-bold pr-3">
+                                    Sign
+                                    in</h5>
+                            </a>
+                            <span class="navbar-dark-separator"></span>
+                            <a data-toggle="modal" data-target="#signUpModal" data-dismiss="modal">
+                                <h5 class="modal-title text-uppercase txt-orange font-weight-bold pl-3">Sign Up</h5>
+                            </a>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label class="txt-orange sm-text" for="signUpPhoneNumber">Mobile</label>
+                                    <input type="email" class="form-control" id="signUpPhoneNumber"
+                                        aria-describedby="emailHelp" placeholder="Mobile Phone">
+                                </div>
+                                <div class="form-group">
+                                    <label class="txt-orange sm-text" for="signUpPassword">Password</label>
+                                    <input type="password" class="form-control" id="signUpPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label class="txt-orange sm-text" for="signUpConfirmPassword">Confirm
+                                        Password</label>
+                                    <input type="password" class="form-control" id="signUpConfirmPassword"
+                                        placeholder="Confirm Password">
+                                </div>
+                                <div class="form-group">
+                                    <label class="txt-orange sm-text" for="referralCode">Referral Code</label>
+                                    <input type="text" class="form-control" id="referralCode"
+                                        placeholder="Referral Code">
+                                </div>
+                                <div class="text-center pt-4 pb-3">
+                                    <button type="submit" class="btn-lg-orange text-uppercase btn-block">Sign
+                                        up</button>
+                                    <p class="pt-3 mb-0 txt-light-grey sm-text">By clicking *Sign Up I agree the Privacy
+                                        Policy</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reset Password Modal -->
+        <div class="modal fade" id="resetPasswordModal">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="reset-password-modal modal-content">
+                    <div class="px-4 py-3">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase txt-orange font-weight-bold pr-3">Reset Password</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label class="txt-orange sm-text" for="resetPasswordPhoneNumber">Mobile</label>
+                                    <input type="email" class="form-control" id="resetPasswordPhoneNumber"
+                                        placeholder="Mobile Phone">
+                                </div>
+                                <div class="form-group">
+                                    <label class="txt-orange sm-text" for="resetPassword">Password</label>
+                                    <input type="password" class="form-control" id="resetPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label class="txt-orange sm-text" for="resetConfirmPassword">Confirm
+                                        Password</label>
+                                    <input type="password" class="form-control" id="resetConfirmPassword"
+                                        placeholder="Confirm Password">
+                                </div>
+                                <div class="text-center pt-4 pb-3">
+                                    <button type="submit" class="btn-lg-orange text-uppercase btn-block">Submit</button>
+                                </div>
+                                <div class="text-center">
+                                    <a class="pt-3 mb-0 txt-light-grey sm-text" data-toggle="modal"
+                                        data-target="#verifCodeModal" data-dismiss="modal">Verification Code</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Verification Code Modal -->
+        <div class="modal fade" id="verifCodeModal">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="verification-modal modal-content">
+                    <div class="px-4 py-3">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase txt-orange font-weight-bold pr-3">Verification Code
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <p class="txt-light-grey sm-text">We’ve sent a verification code to your mobile
+                                    <strong>6012****888</strong>
+                                </p>
+                                <div class="form-group">
+                                    <input type="number" class="form-control" id="verificationCode"
+                                        placeholder="Verification Code">
+                                </div>
+                                <div class="text-center pt-4 pb-3">
+                                    <button type="submit" class="btn-lg-orange text-uppercase btn-block">Submit</button>
+                                    <p class="pt-3 mb-0 txt-light-grey sm-text"><strong>RESEND SMS</strong> in
+                                        <strong>60s</strong></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Barcode Modal -->
+        <div class="modal fade" id="barcodeModal">
+            <div class="modal-dialog barcode-modal-dialog modal-dialog-centered" role="document">
+                <div class="barcode-modal modal-content">
+                    <div class="p-3">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="barcode-img-container text-center">
+                                <img class="barcode-big" src="assets/images/icons/barcode-big.png" alt="Barcode">
+                            </div>
+                            <div class="text-center pt-3">
+                                <div class="memberID">
+                                    <span>Member ID:</span><br>
+                                    <span>wgsam123456789</span><br>
+                                </div>
+                                <div class="refCode pt-3">
+                                    <span>Referral:</span><br>
+                                    <span>
+                                        <a class="txt-blue" href="#!">
+                                            http://wgsam123456789
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="m-footer text-center">
+                            <div class="social-media-icons py-4 d-flex justify-content-center">
+                                <div class="px-3">
+                                    <img src="assets/images/icons/facebook.png" alt="Facebook">
+                                </div>
+                                <div class="px-3">
+                                    <img src="assets/images/icons/whatapp.png" alt="Google">
+                                </div>
+                            </div>
+                            <span class="txt-light-grey sm-text">Lorem ipsum dolor sit amet, consetetur sadipscing
+                                elitr.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Side Menu -->
+        <section class="sr-side-menu">
+            <div class="sr-side-area-inner" style="overflow-y: hidden; outline: none;">
+                <div class="side-menu-header">
+                    <div class="row">
+                        <div class="col-12 text-right">
+                            <div class="sr-close-side-menu-holder">
+                                <a class="sr-contact-side-menu-closer" href="#">
+                                    <span class="sm-text txt-white text-uppercase">Close</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="side-menu-content">
+                    <div class="row mx-0">
+                        <div class="col-sm-12">
+                            <div class="account-info text-center mt-4">
+                                <img class="profile-pic" src="assets/images/profile-pic.png" alt="Profile Pic">
+                                <div class="barcode-container">
+                                    <a class="sr-contact-side-menu-closer" data-toggle="modal"
+                                        data-target="#barcodeModal">
+                                        <img class="barcode" src="assets/images/icons/barcode.png" alt="Barcode">
+                                    </a>
+                                </div>
+                                <div class="ranking-container">
+                                    <img class="ranking-icon" src="assets/images/icons/ranking.png" alt="ranking">
+                                </div>
+                                <div class="user-info">
+                                    <p class="pt-2 mb-1 txt-orange md-text">WG SAM</p>
+
+                                    <div class="skill-unit">
+                                        <div class="level-scale">
+                                            <div class="level-bar"></div>
+                                        </div>
+                                        <span class="skill-label">Gold User</span>
+                                    </div>
+
+                                    <p class="pt-2 txt-light-grey">Lorem ipsum dolor sit amet, consetetur sadipscinge
+                                    </p>
+                                </div>
+                            </div>
+                            <hr class="stroke-black">
+                            <div class="wallet-container py-3 px-4">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="wallet-box text-left">
+                                            <h5 class="txt-white">E-Point</h5>
+                                            <h5 class="txt-white">$10000.00</h5>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="wallet-box text-left">
+                                            <h5 class="txt-white">V-Point</h5>
+                                            <h5 class="txt-white">$10000.00</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-container text-left pb-4">
+                                <div class="menu-slt py-2 px-4">
+                                    <a class="txt-black" href="account-setting.html">
+                                        <img src="assets/images/icons/account-setting.png" alt="Account Setting">
+                                        <span class="px-2">Account Setting</span>
+                                    </a>
+                                </div>
+
+                                <div class="menu-slt py-2 px-4">
+                                    <a class="txt-black" href="address-book.html">
+                                        <img src="assets/images/icons/address-book.png" alt="Address Book">
+                                        <span class="px-2">Address Book</span>
+                                    </a>
+                                </div>
+                                <div class="menu-slt py-2 px-4">
+                                    <a class="txt-black" href="my-order.html">
+                                        <img src="assets/images/icons/my-orders.png" alt="My Orders">
+                                        <span class="px-2">My Orders</span>
+                                    </a>
+                                </div>
+                                <div class="menu-slt py-2 px-4">
+                                    <a class="txt-black" href="wallet.html">
+                                        <img src="assets/images/icons/sr-wallet.png" alt="SR Wallet">
+                                        <span class="px-2">Sr Wallet</span>
+                                    </a>
+                                </div>
+                                <!-- <div class="menu-slt py-2 px-4">
+                                            <a class="txt-black" href="#!">
+                                                <img src="assets/images/icons/notification .png" alt="Notification">
+                                                <span class="px-2">Notification</span>
+                                            </a>
+                                        </div> -->
+                                <div class="menu-slt py-2 px-4">
+                                    <a class="txt-black" href="my-friend.html">
+                                        <img src="assets/images/icons/myfriend.png" alt="My Friends">
+                                        <span class="px-2">My Friends</span>
+                                    </a>
+                                </div>
+                                <div class="menu-slt py-2 px-4">
+                                    <a class="txt-black" href="#!">
+                                        <img src="assets/images/icons/logout.png" alt="Logout">
+                                        <span class="px-2">Logout</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- content-->
+        <section class="myaddress-section top-padding">
+            <div class="container">
+                <div class="text-uppercase sm-text txt-light-grey">
+                    <span>home / setting /</span>
+                    <span class="txt-orange">Address Book</span>
+                </div>
+                <div class="d-flex justify-content-between pt-5">
+                    <div>
+                        <h5 class="page__subtitle">Address Book</h5>
+                    </div>
+                    <div>
+                        <a class="txt-blue" href="add-new-address.html">Add New Address +</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="new-address-form">
+                            <div class="ship-bill-container mt-4">
+                                <div class="d-flex col-auto">
+                                    <div class="align-self-center">
+                                        <span class="txt-dark-grey font-weight-bold">Home Address</span>
+                                    </div>
+                                    <div class="ml-auto align-self-center text-right">
+                                        <a class="txt-blue">Edit</a>
+                                        <div class="bar-item">
+                                            <span class="navbar-dark-separator"></span>
+                                        </div>
+                                        <a class="txt-black" data-toggle="modal"
+                                            data-target="#confirmUpdateModal">Delete</a>
+                                    </div>
+                                </div>
+                                <div class="col-auto py-3"><span>WG SAM</span></div>
+                                <div class="d-flex col-auto">
+                                    <div class="align-self-center">
+                                        <span class="txt-light-grey font-weight-bold">
+                                            8F-2, Tower 2 @ PFCC, Jalan Puteri 1/2,
+                                            Bandar Puteri Puchong, 47100 Puchong, Selangor
+                                        </span>
+                                    </div>
+                                    <div class="ml-auto align-self-center text-right">
+                                        <span class="txt-light-grey">6012-88888888</span>
+                                        <br>
+                                        <span class="txt-light-grey">support@iscity.com.my</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex col-auto mt-4">
+                                    <div class="bolder-red-box mr-3">
+                                        Default Shipping
+                                    </div>
+                                    <div class="bolder-green-box mr-3">
+                                        Default Billing
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="new-address-form">
+                            <div class="ship-bill-container mt-4">
+                                <div class="d-flex col-auto">
+                                    <div class="align-self-center">
+                                        <span class="txt-dark-grey font-weight-bold">Office Address</span>
+                                    </div>
+                                    <div class="ml-auto align-self-center text-right">
+                                        <a class="txt-blue">Edit</a>
+                                        <div class="bar-item">
+                                            <span class="navbar-dark-separator"></span>
+                                        </div>
+                                        <a class="txt-black" data-toggle="modal"
+                                            data-target="#confirmUpdateModal">Delete</a>
+                                    </div>
+                                </div>
+                                <div class="col-auto py-3"><span>WG SAM</span></div>
+                                <div class="d-flex col-auto">
+                                    <div class="align-self-center">
+                                        <span class="txt-light-grey font-weight-bold">
+                                            8F-2, Tower 2 @ PFCC, Jalan Puteri 1/2,
+                                            Bandar Puteri Puchong, 47100 Puchong, Selangor
+                                        </span>
+                                    </div>
+                                    <div class="ml-auto align-self-center text-right">
+                                        <span class="txt-light-grey">6012-88888888</span>
+                                        <br>
+                                        <span class="txt-light-grey">support@iscity.com.my</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="new-address-form">
+                            <div class="ship-bill-container mt-4">
+                                <div class="d-flex col-auto">
+                                    <div class="align-self-center">
+                                        <span class="txt-dark-grey font-weight-bold">Office Address</span>
+                                    </div>
+                                    <div class="ml-auto align-self-center text-right">
+                                        <a class="edit-address txt-blue" href="#!">Edit</a>
+                                        <div class="bar-item">
+                                            <span class="navbar-dark-separator"></span>
+                                        </div>
+                                        <a class="txt-black" data-toggle="modal"
+                                            data-target="#confirmUpdateModal">Delete</a>
+                                    </div>
+                                </div>
+                                <div class="col-auto py-3"><span>WG SAM</span></div>
+                                <div class="d-flex col-auto">
+                                    <div class="align-self-center">
+                                        <span class="txt-light-grey font-weight-bold">
+                                            8F-2, Tower 2 @ PFCC, Jalan Puteri 1/2,
+                                            Bandar Puteri Puchong, 47100 Puchong, Selangor
+                                        </span>
+                                    </div>
+                                    <div class="ml-auto align-self-center text-right">
+                                        <span class="txt-light-grey">6012-88888888</span>
+                                        <br>
+                                        <span class="txt-light-grey">support@iscity.com.my</span>
+                                    </div>
+                                </div>
+
+                                <div class="address-item-body">
+                                    <hr>
+                                    <form>
+                                        <div class="form-group pt-3">
+                                            <label class="txt-orange sm-text" for="fullName">Full Name</label>
+                                            <input type="text" class="form-control" id="fullName"
+                                                placeholder="Full Name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="txt-orange sm-text" for="emailAddress">Email Address</label>
+                                            <input type="email" class="form-control" id="emailAddress"
+                                                placeholder="Email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="txt-orange sm-text" for="phoneNum">Phone</label>
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="form-group">
+                                                        <div class="dropdown-form">
+                                                            <select class="form-control" id="phoneNumDropdown">
+                                                                <option>60</option>
+                                                                <option>60</option>
+                                                                <option>60</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-9">
+                                                    <input type="email" class="form-control" id="phoneNum"
+                                                        placeholder="Phone">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="txt-orange sm-text" for="address">Address</label>
+                                            <input type="text" class="form-control" id="address"
+                                                placeholder="Street Address">
+                                            <input type="text" class="form-control mt-3" id="address02"
+                                                placeholder="Apartment, suite, unit etc. (optional)">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="txt-orange sm-text" for="townCity">Town / City*</label>
+                                            <input type="text" class="form-control" id="townCity"
+                                                placeholder="Town / City">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label class="txt-orange sm-text" for="postcode">Postcode</label>
+                                                    <input type="text" class="form-control" id="postcode"
+                                                        placeholder="Postcode">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <div class="dropdown-form">
+                                                        <label class="txt-orange sm-text" for="countryDropdown"
+                                                            id="country-dropdown-label">Country</label>
+                                                        <br>
+                                                        <select class="form-control" id="countryDropdown">
+                                                            <option>Malaysia</option>
+                                                            <option>Singapore</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="update-container pt-3">
+                                            <div class="text-center py-2">
+                                                <a type="submit" class="btn-cancel text-uppercase btn-block">Cancel</a>
+                                            </div>
+                                            <div class="text-center py-2">
+                                                <a type="submit" class="btn-lg-orange text-uppercase btn-block"
+                                                    data-toggle="modal" data-target="#confirmUpdateModal">Update</a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Services Section 02 -->
+        <section class="footer-services-section py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 my-3">
+                        <div class="d-flex align-items-center justify-content-around">
+                            <div class="icons-container">
+                                <img class="services-icons" src="assets/images/icons/delivery-icons.png" alt="Delivery">
+                            </div>
+                            <div class="services-info">
+                                <span class="txt-dark-grey font-weight-bold text-uppercase">Free Delivery</span>
+                                <p class="txt-light-grey sm-text mb-0">For all order over $100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <div class="d-flex align-items-center justify-content-around">
+                            <div class="icons-container">
+                                <img class="services-icons" src="assets/images/icons/refund-icons.png" alt="Delivery">
+                            </div>
+                            <div class="services-info">
+                                <span class="txt-dark-grey font-weight-bold text-uppercase">30 DAYS RETURN</span>
+                                <p class="txt-light-grey sm-text mb-0 ">If goods have problems</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <div class="d-flex align-items-center justify-content-around">
+                            <div class="icons-container">
+                                <img class="services-icons" src="assets/images/icons/payment-icons.png" alt="Delivery">
+                            </div>
+                            <div class="services-info">
+                                <span class="txt-dark-grey font-weight-bold text-uppercase">SECURE PAYMENT</span>
+                                <p class="txt-light-grey sm-text mb-0">100% secure patient</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 my-3">
+                        <div class="d-flex align-items-center justify-content-around">
+                            <div class="icons-container">
+                                <img class="services-icons" src="assets/images/icons/support-icons.png" alt="Delivery">
+                            </div>
+                            <div class="services-info">
+                                <span class="txt-dark-grey font-weight-bold text-uppercase">24/7 SUPPORT</span>
+                                <p class="txt-light-grey sm-text mb-0">Dedicated Support</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-4 bg-grey">
+            <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left mt-3 pb-3">
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer-camp">
+                        <h6 class="text-uppercase mb-4 font-weight-bold txt-dark-grey">Customer Services</h6>
+                        <div>
+                            <p><a class="txt-light-grey" href="#!">Help Center</a></p>
+                            <p><a class="txt-light-grey" href="#!">Return & Refund</a></p>
+                            <p><a class="txt-light-grey" href="#!">Contact Us</a></p>
+                        </div>
+                    </div>
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer-community">
+                        <h6 class="text-uppercase mb-4 font-weight-bold txt-dark-grey">About Us</h6>
+                        <div>
+                            <p><a class="txt-light-grey" href="#!">About Us</a></p>
+                            <p><a class="txt-light-grey" href="#!">Privacy Policy</a></p>
+                            <p><a class="txt-light-grey" href="#!">Seller Center</a></p>
+                        </div>
+                    </div>
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 footer-contact">
+                        <h6 class="text-uppercase mb-4 font-weight-bold txt-dark-grey">Follow Us</h6>
+                        <div>
+                            <p><a class="txt-light-grey" href="#!">Facebook</a></p>
+                            <p><a class="txt-light-grey" href="#!">Instagram</a></p>
+                            <p><a class="txt-light-grey" href="#!">LinkedIn</a></p>
+                        </div>
+                    </div>
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 footer-main">
+                        <h6 class="text-uppercase mb-4 font-weight-bold txt-dark-grey">Payment</h6>
+                        <div>
+                            <a href="#!">
+                                <img class="img-fluid icon-img-2" src="assets/images/icons/mastercard.png"
+                                    alt="Mastercard">
+                            </a>
+                            <a href="#!">
+                                <img class="img-fluid icon-img-2" src="assets/images/icons/visa.png" alt="Visa">
+                            </a>
+                            <a href="#!"><img class="img-fluid icon-img-2" src="assets/images/icons/paypal.png"
+                                    alt="PayPal">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row footer-media d-flex align-items-center">
+                    <div class="col-md-7 col-lg-8">
+                        <p class="text-center text-md-left txt-light-grey">Copyright © 2020 Powered by @wg_sam</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- End of Footer -->
+
+    <!-- script -->
+    <script src="assets/vendor/jquery/jquery-3.4.1.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/slick/slick.min.js"></script>
+    <script src="js/main-landing.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <!-- <script src="js/tweenMax-amination.js"></script> -->
+</body>
+
+</html>

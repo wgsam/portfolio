@@ -1,0 +1,30 @@
+.reg-section {
+    padding: 5rem;
+}
+
+.reg-input-box {
+    border: 1px solid #FF844D;
+    border-radius: 10px;
+    height: 20px;
+    width: 500px;
+    padding: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 0.9rem;
+}
+
+.reg-input-field input{
+    width: auto;
+}
+
+@media (min-width: 992px) {
+    .reg-input-field input{
+        width: 250px;
+    }
+}
+
+@media (min-width: 768px) {
+    .reg-input-field input{
+        width: 250px;
+    }
+}

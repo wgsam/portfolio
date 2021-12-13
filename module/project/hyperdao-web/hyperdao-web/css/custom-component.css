@@ -1,0 +1,190 @@
+/*--- Select Field ----*/
+.custom-select {
+    border: 1px solid #fff !important;
+    font-size: 0.8rem !important;
+    height: calc(2.5em + .75rem + 2px) !important;
+}
+
+.custom-input {
+    padding: 0.8rem .75rem;
+    border: 1px solid #fff;
+    border-radius: .25rem;
+    width: 100%;
+}
+
+.custom-input-2 {
+    padding: 0.8rem .75rem;
+    border: 1px solid #E3E3E3;
+    border-radius: .25rem;
+    width: 100%;
+}
+
+/*--- Radio Button ----*/
+
+.radio-btn-selection ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.radio-btn-selection ul li {
+    color: #AAAAAA;
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.radio-btn-selection ul li input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.radio-btn-selection ul li label {
+    display: block;
+    position: relative;
+    padding: 10px 10px 10px 80px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+}
+
+.radio-btn-selection ul li:hover label {
+    color: #FFFFFF;
+}
+
+.radio-btn-selection ul li .check {
+    display: block;
+    position: absolute;
+    border: 5px solid #7FC4FD;
+    border-radius: 100%;
+    height: 33px;
+    width: 33px;
+    top: 9px;
+    left: 20px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+.radio-btn-selection ul li:hover .check {
+    border: 5px solid #FFFFFF;
+}
+
+.radio-btn-selection ul li .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    top: 4px;
+    left: 4px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked~.check {
+    border: 5px solid #7FC4FD;
+}
+
+input[type=radio]:checked~.check::before {
+    background: #2699FB;
+}
+
+input[type=radio]:checked~label {
+    color: #fff;
+}
+
+/*---- Nav Tab ----*/
+
+.tabs {
+    margin-bottom: 2em;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.tabs .tab-navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.tabs .tab-navigation .tab-button {
+    /* color: currentColor; */
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1em 2em;
+    text-decoration: none;
+}
+
+.tabs .tab-navigation .tab-button:focus {
+    background: none;
+}
+
+.tabs .tab-navigation .tab-button.js-active {
+    border-bottom: 3px solid #382094;
+    font-weight: 700;
+}
+
+.tabs .tab-content {
+    display: none;
+    margin-top: 1.5em;
+}
+
+.tabs .tab-content.js-active {
+    display: block;
+}
+
+/* ----- Custom Table ----- */
+th {
+    font-weight: 200;
+    word-break: break-word;
+}
+
+
+.nav-search {
+    position: relative;
+    width: 100px;
+    max-width: 100px;
+}
+
+.nav-search.active {
+    box-shadow: 0 4px 4px rgba(79, 79, 79, 0.21);
+}
+
+.nav-search.active .search-dropdown {
+    display: block;
+}
+
+.nav-search .search-input {
+    transition: left 0.2s ease-in-out;
+    transition: width 0s ease-in-out;
+}
+
+.nav-search .search-input .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 13px;
+    z-index: 999;
+    color: #898989;
+}
+
+.nav-search .search-input input {
+    font: 16px/1.875 "Avenir Next W01", "Avenir Next", "Helvetica Neue", Helvetica, sans-serif;
+    height: 50px;
+    border: 1px solid #E3E3E3;
+    border-radius: 4px;
+    min-width: 300px;
+    width: 100%;
+    padding-left: 50px;
+}
+
+.nav-search .search-input input:focus {
+    outline: none;
+}

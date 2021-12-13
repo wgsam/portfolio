@@ -1,0 +1,169 @@
+.main-logo-sz {
+    width: 130px
+}
+
+.gm-caption {
+    margin: 50px;
+}
+
+.gm-text {
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.gm-barcode-wrap .store-sz {
+    width: 130px;
+}
+
+.gm-barcode-wrap .barcode-sz {
+    width: 130px
+}
+
+/* ---- header bg banner phone ---- */
+.bg-ovelay {
+    z-index: 1;
+}
+
+.bg-ovelay:before {
+    z-index: 1;
+}
+
+.bg-ovelay,
+.bg-ovelay:before {
+    background-repeat: no-repeat;
+}
+
+.bg-ovelay,
+.bg-ovelay:before {
+    position: absolute;
+    bottom: -150px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.bg-ovelay:before {
+    content: "";
+    bottom: -1px;
+    left: -1px;
+}
+
+.bg-phone:before {
+    background-position: bottom center !important;
+    background-image: url(../assets/images/iphone-hero.png);
+}
+
+/* end of header bg banner phone */
+
+.guidance-section {
+    padding: 12rem 0 5rem;
+}
+
+.guidance-content .gd-img-sz {
+    width: 150px;
+}
+
+.benifit-section {
+    padding: 7rem 0;
+}
+
+.info-wrap {
+    padding: 3rem;
+}
+
+.aboutus-section {
+    padding: 5rem 0;
+}
+
+.reg-section {
+    padding: 8rem 0;
+}
+
+.contact-wrap img {
+    width: 18px;
+}
+
+.bg-parallax-reg {
+    background: url(../assets/images/phone-bg.jpg) center center no-repeat;
+    background-attachment: fixed;
+    background-position: top center !important;
+    background-size: cover;
+}
+
+/* Register custom input field */
+.form-group {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.form-group.hasError input {
+    border-color: #f95959 !important;
+}
+
+.form-group.hasError label {
+    color: #f95959 !important;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    transform: translateY(40px);
+    transition: all 0.4s;
+    cursor: text;
+    z-index: -1;
+}
+
+.form-group label.active {
+    transform: translateY(10px);
+    font-size: 0.8rem;
+}
+
+.form-group input:not([type=submit]) {
+    background: none;
+    outline: none;
+    border: none;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    color: #fff;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.form-group select:not([type=submit]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    color: #fff;
+    font-size: 15px;
+    z-index: 1;
+}
+
+.form-group input:not([type=submit]).hasError {
+    border-color: #f95959;
+}
+
+.form-group select:not([type=submit]).hasError {
+    border-color: #f95959;
+}
+
+.signup-form span.error {
+    color: #f95959;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    position: absolute;
+    bottom: -18px;
+    right: 0;
+    display: none;
+}
+
+/* End of Register custom input field */

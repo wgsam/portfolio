@@ -1,0 +1,189 @@
+/* ---- Banner Section ---- */
+
+.banner-section {
+    padding-top: 120px;
+    padding-bottom: 75px;
+}
+
+.banner-logo {
+    opacity: 1;
+    transition: all .4s;
+}
+
+.banner-logo.hideLogo {
+    opacity: 0;
+}
+
+.banner-form {
+    margin-top: 60px;
+}
+
+.banner-input-field input {
+    height: 50px;
+    font-weight: 100;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0 50px 0 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.otp-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.otp-field input {
+    height: 50px;
+    font-weight: 100;
+    font-size: 1rem;
+    width: 200px;
+    padding: 0 50px 0 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.otp-number img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.refresh-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+}
+
+.refresh-btn img {
+    width: 35px;
+    height: 35px;
+}
+/* Floating Diamond */
+
+.diamond {
+    z-index: 2;
+    position: absolute;
+    top: 480px;
+}
+
+/* ---- Transaction Section ---- */
+
+.transaction-section {
+    margin-top: 180px;
+}
+
+.transaction-item {
+    background-image: url(../assets/images/hexagon.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-size: contain;
+    height: 250px;
+    margin-bottom: 40px;
+    padding: 32px 60px 0;
+}
+
+.transaction-item div {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.title {
+    padding-top: 35px;
+}
+
+.buy {
+    padding-top: 10px;
+}
+
+.sell {
+    padding-top: 10px;
+}
+
+/* ---- Wallet Banner Section ---- */
+
+.wallet-banner-section {
+    padding: 120px 0 100px;
+}
+
+.wallet-info .wallet-title {
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+.wallet-info .wallet-title p {
+    margin: 0;
+}
+
+.wallet-info .wallet-block {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.wallet-info .wallet-block p {
+    margin: 0;
+}
+
+.wallet-info .wallet-des {
+    font-weight: 200;
+}
+
+.wallet-right-content {
+    position: absolute;
+    top: -240px;
+    right: -180px;
+    z-index: 2;
+}
+
+/* ---- Features Section ---- */
+
+.features-section {
+    padding: 80px 0;
+}
+
+.features-title {
+    font-size: 1.6rem;
+}
+
+.features-list-info ul li {
+    line-height: 30px;
+}
+
+/* ---- Responsive Media ---- */
+
+@media (max-width: 1200px) {
+    .diamond {
+        display: none;
+    }
+
+    .transaction-section {
+        margin-top: 100px;
+    }
+
+    .wallet-right-content {
+        position: unset;
+    }
+}
+
+@media (max-width: 992px) {
+    .transaction-section {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .features-img img {
+        width: 300px;
+    }
+
+    .featues-info {
+        padding-top: 30px;
+    }
+}

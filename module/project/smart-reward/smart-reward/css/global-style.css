@@ -1,0 +1,449 @@
+/*======================================
+
+[  Global Style  ]
+
+  01. Reset
+  02. Typography & Global Color
+  03. Images
+  04. Bg-Style
+  05. Bg-Color
+  06. Icons Size
+  07. Text Color
+  08. Button Style
+  09. Separotor & Stroke
+  10. Page section padding
+  11. Bg-Image
+  12. Overwrite & Custom Bootstrap
+  13. Responsive Media
+
+[ End Global Style ]
+======================================*/
+
+/*
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Poppins', sans-serif;
+*/
+
+/*------------------
+  01. Reset
+--------------------*/
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:active,
+a:focus {
+    outline: 0;
+    border: none;
+}
+
+*:focus {
+    outline: none !important
+}
+
+textarea:active,
+input:active,
+textarea:focus,
+input:focus {
+    border-color: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/*------------------
+  02. Typography & Global Color
+--------------------*/
+
+html,
+body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+body {
+    --whiteColor: #fff;
+    --lighGreyAColor: #F5F5F5;
+    --lighGreyBColor: #A9A9A9;
+    --lighGreyCColor: #D8D8D8;
+    --greyColor: #666666;
+    --darkGreyColor: #4C4E53;
+    --lightOrangeColor: #FCDFD5;
+    --redColor: #F71B1B;
+    --lighRedColor: #FD4B4B;
+    --orangeColor: #fd442f;
+    --yellowColor: #FFD846;
+    --goldColor: #DCC345;
+    --blueColor: #51B5FC;
+    --greenColor: #80D12F;
+    --blackColor: #000;
+}
+
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+::placeholder {
+    color: #fff !important;
+}
+
+.title-font {
+    font-family: "Poppin", sans-serif !important;
+}
+
+.xs-text {
+    font-size: 0.75rem;
+}
+
+.sm-text {
+    font-size: 0.9rem;
+}
+
+.md-text {
+    font-size: 1.2rem;
+}
+
+.xl-text {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+.lg-text {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/*---------------------
+  03. Images
+----------------------*/
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/*---------------------
+  04. Bg-Style
+----------------------*/
+
+.bg-shadow {
+    box-shadow: 0 0 20px 0 rgba(18, 24, 58, 0.08);
+}
+
+.bg-shadow-2 {
+    box-shadow: 0 0 20px 0 rgba(0, 3, 6, 0.06);
+}
+
+/*---------------------
+  05. Bg-Color
+----------------------*/
+
+.bg-black {
+    background-color: var(--blackColor) !important;
+}
+
+.bg-yellow {
+    background: var(--yellowColor) !important;
+}
+
+.bg-light-orange {
+    background: var(--lightOrangeColor) !important;
+}
+
+.bg-orange {
+    background: var(--orangeColor) !important;
+}
+
+.bg-red {
+    background: var(--redColor) !important;
+}
+
+.bg-grey {
+    background-color: var(--lighGreyAColor) !important;
+}
+
+/*--------------------------
+  06. Icons Size
+----------------------------*/
+
+.icon-img-1 {
+    width: 25px;
+}
+
+.icon-img-2 {
+    width: 40px;
+}
+
+.fa-chevron-down {
+    font-size: 12px;
+}
+
+.services-icons {
+    width: 60px;
+}
+
+.social-media-icons img {
+    width: 50px;
+}
+
+/*---------------------
+  07. Text Color
+-----------------------*/
+
+.txt-white {
+    color: var(--whiteColor) !important;
+}
+
+.txt-red {
+    color: var(--redColor) !important;
+}
+
+.txt-green {
+    color: var(--greenColor) !important;
+}
+
+.txt-orange {
+    color: var(--orangeColor) !important;
+}
+
+.txt-light-grey {
+    color: var(--lighGreyBColor) !important;
+}
+
+.txt-grey {
+    color: var(--greyColor) !important;
+}
+
+.txt-dark-grey {
+    color: var(--darkGreyColor) !important;
+}
+
+.txt-blue {
+    color: var(--blueColor) !important;
+}
+
+.txt-gold {
+    color: var(--goldColor) !important;
+}
+
+.txt-black {
+    color: var(--blackColor) !important;
+}
+
+/*---------------------
+  08. Button Style
+-----------------------*/
+
+.btn-sm-orange {
+    background-color: var(--orangeColor) !important;
+    padding: 10px 60px;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease-out 0s;
+}
+
+.btn-outline-orange {
+    border: 1px solid var(--orangeColor) !important;
+    padding: 15px;
+    font-size: 1rem !important;
+    border: none;
+}
+
+.btn-lg-orange {
+    background-color: var(--orangeColor) !important;
+    padding: 15px 50px;
+    font-size: 1rem !important;
+    border: none;
+    color: #fff !important;
+    transition: all 0.3s ease-out 0s;
+}
+
+.upload-button {
+    background-color: var(--lighGreyAColor) !important;
+    border-radius: 100%;
+    padding: 3px;
+    position: absolute;
+    top: 140px;
+    right: 320px;
+}
+
+.btn-cancel {
+    background-color: var(--lighGreyBColor) !important;
+    padding: 15px 50px;
+    font-size: 1rem !important;
+    border: none;
+    color: #fff !important;
+    transition: all 0.3s ease-out 0s;
+}
+
+.btn-sm-orange:hover,
+.btn-lg-orange:hover,
+.btn-cancel:hover {
+    transform: scale(1.02);
+}
+
+.sortingProduct {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #C7C7C7;
+    background-color: #F8F8F8;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.bolder-red-box {
+    border-radius: 20px;
+    padding:5px 20px;
+    background-color: var(--lighRedColor);
+    color: #fff;
+}
+
+.bolder-green-box {
+    border-radius: 20px;
+    padding:5px 20px;
+    background-color: var(--greenColor);
+    color: #fff;
+}
+
+/*---------------------
+  09. Separotor & Stroke
+-----------------------*/
+
+.navbar-dark-separator {
+    border-right: 2px solid #666666;
+    height: 1.8rem;
+}
+
+/*---------------------
+  10. Page section padding
+-----------------------*/
+
+.top-padding {
+    padding-top: 180px;
+    padding-bottom: 50px;
+}
+
+/*---------------------
+  11. Bg-Image
+-----------------------*/
+
+.bg-header-banner {
+    background: url(../assets/images/header-banner.png) center center no-repeat;
+    background-size: cover;
+    height: 260px;
+}
+
+/*---------------------
+  12. Overwrite & Custom Bootstrap
+-----------------------*/
+
+/* ---- Pop Up Modal  ---- */
+.close {
+    color: var(--orangeColor) !important;
+    opacity: 0.5 !important;
+}
+
+.close:hover {
+    opacity: 1 !important;
+}
+
+.modal-header {
+    border-bottom: none !important;
+    padding: 0px;
+}
+
+/* ---- Form Control Input  ---- */
+.form-control {
+    height: calc(2.3em + .9rem + 2px) !important;
+    padding: .375rem 1rem !important;
+}
+
+.form-control::placeholder {
+    color: #A9A9A9 !important;
+}
+
+/* ---- Nav Tab ---- */
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff !important;
+    background-color: var(--orangeColor) !important;
+}
+
+.nav-pills a {
+    color: var(--greyColor) !important;
+}
+
+.nav-tab-container nav {
+    border-bottom: 3px solid var(--orangeColor) !important;
+}
+
+.nav-pills .nav-link {
+    border-radius: .25rem .25rem 0 0 !important;
+}
+
+/* ---- table ---- */
+.borderless td {
+    border: none !important;
+}
+
+.borderless th {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.table-bordered {
+    border: none !important;
+}
+
+tbody tr:hover {
+    background: var(--lightOrangeColor) !important;
+}
+
+/* ---- Custom Carousel Banner ---- */
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100%;
+}
+
+/*------------------
+  13. Responsive Media
+--------------------*/
+
+@media (max-width: 992px) {}
+
+@media (max-width: 767px) {}

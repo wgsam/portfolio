@@ -15,6 +15,15 @@ h1 {
   letter-spacing: 2px;
 }
 
+h4 {
+  line-height: 70px;
+  display: inline;
+  background-color: salmon;
+  box-shadow:
+    8px 1px 0 3px salmon,
+    -8px 1px 0px 3px salmon;
+}
+
 a img {
   line-height: 80px;
   transition: .5s;
@@ -25,6 +34,8 @@ a img {
 ul li {
   list-style: none;
   margin: 70px 5px;
+  display: flex;
+  justify-content: center;
 }
 
 ul li a .fa {

@@ -1,0 +1,85 @@
+.myfr-tree {
+    min-height: 20px;
+    margin-bottom: 20px;
+    /* background-color: #a3bded; */
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.myfr-tree li {
+    list-style-type: none;
+    /* margin: 0; */
+    margin-left: 55px;
+    padding: 10px 5px 0 5px;
+    position: relative
+}
+
+.myfr-tree li::before,
+.myfr-tree li::after {
+    content: '';
+    left: -20px;
+    position: absolute;
+    right: auto
+}
+
+.myfr-tree li::before {
+    border-left: 2px solid var(--orangeColor);
+    bottom: 50px;
+    height: 100%;
+    top: 0;
+    width: 1px
+}
+
+.myfr-tree li::after {
+    border-top: 2px solid var(--orangeColor);
+    height: 20px;
+    top: 53px;
+    width: 25px
+}
+
+.myfr-tree li div.member-tree-card {
+    width: 360px;
+    padding: 18px;
+    background-color: #fff;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.myfr-tree li.parent_li>div.member-tree-card {
+    cursor: pointer
+}
+
+.myfr-tree>ul>li::before,
+.myfr-tree>ul>li::after {
+    border: 0
+}
+
+.myfr-tree li:last-child::before {
+    height: 54px
+}
+
+.myfr-tree li.parent_li>div.member-tree-card:hover,
+.myfr-tree li.parent_li>div.member-tree-card:hover+ul li div.member-tree-card {
+    background: var(--lightOrangeColor);
+}
+
+.member-tree-card .more-info {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.bolder-expand-icons {
+    width: 50%;
+}
+
+.fa-custom-plus-icons:before {
+    content: url(../assets/images/icons/border-plus.svg);
+}
+
+.fa-custom-minus-icons:before {
+    content: url(../assets/images/icons/border-minus.svg);
+}

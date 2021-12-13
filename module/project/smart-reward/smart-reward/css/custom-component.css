@@ -1,0 +1,1443 @@
+@charset "UTF-8";
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+/*======================================
+
+[  Custom Components ]
+
+  01. Slick Products Carousel
+  02. Slick Clients Carousel
+  03. Ranking Star
+  04. Best Seller Product List 
+  05. Product List Style 01
+  06. Product List Style 02
+  07. Categories Box
+  07. Side Menu
+  09. Custom Pop Up Modal
+  10. Border outline box
+  11. Checkout
+  12. Custom Checkbox
+  13. Custom Radio Button
+  14. Custom Banking Radio Button
+  15. Custom Small Radio Button
+  16. Price Slider Filter
+  17. Rating Filter
+  18. Notification Page
+  19. Address Container
+  20. Wallet Page
+  21. Product Details Swiper
+  22. Color Radio Button
+  23. Custom Quantity Input
+  24. Custom Product Details & Review Tab
+  25. Banner Offer Ribbon Box
+  26. Filter Box
+
+[ End Custom Components ]
+======================================*/
+
+/*------------------
+  01. Slick Products Carousel
+--------------------*/
+
+.slick-carousel-items {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.slick-slide {
+    margin-bottom: 18px;
+}
+
+.product-content {
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.slick-img-container:hover .slick-middle {
+    opacity: 1;
+}
+
+.slick-middle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(255, 77, 7, 0.5);
+    transition: .5s ease;
+    width: 228px;
+    height: 206px;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.slick-hover-zoom-icon {
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    width: 80px;
+}
+
+.slick-img img {
+    width: 228px;
+    height: 206px;
+}
+
+.slick-img .offer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 3px 15px;
+    font-weight: 300;
+    background: #FFD846;
+    border-radius: 5px;
+}
+
+/*------------------
+  02. Slick Clients Carousel
+--------------------*/
+
+.slick-brands-items {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.brand-icons {
+    width: 100px;
+}
+
+/*------------------
+  03. Ranking Star
+--------------------*/
+
+.stars li::before,
+.stars li.active::before,
+.stars li.active~li::before,
+.stars li:hover::before,
+.stars li:hover~li::before {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    /* -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased; */
+    vertical-align: middle;
+}
+
+.stars {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    display: inline-block;
+    text-align: left;
+}
+
+.stars li {
+    /* cursor: pointer; */
+    display: block;
+    padding: 0 0.09rem;
+    display: inline-block;
+    font-size: 20px;
+    color: #fc5643;
+}
+
+.stars li::before {
+    content: "";
+}
+
+.stars li.active,
+.stars li.active~li {
+    color: #fc5643;
+}
+
+.stars li.active::before,
+.stars li.active~li::before {
+    content: "";
+}
+
+/*------------------
+  04. Best Seller Product List 
+--------------------*/
+
+.product-img-container:hover .middle {
+    opacity: 1;
+}
+
+.middle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(255, 77, 7, 0.5);
+    transition: .5s ease;
+    width: 255px;
+    height: 265px;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.product-img img {
+    width: 255px;
+    height: 265px;
+}
+
+.product-img .offer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 3px 15px;
+    font-weight: 300;
+    background: #FFD846;
+    border-radius: 5px;
+}
+
+.hover-zoom-icon {
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    width: 100px;
+}
+
+.product-price-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.price-dc {
+    text-decoration: line-through;
+    color: #b3b3b3;
+}
+
+/*------------------
+  05. Product List Style 01
+--------------------*/
+
+.pd-list-middle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(255, 77, 7, 0.5);
+    transition: .5s ease;
+    width: 184px;
+    height: 184px;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.product-img-container:hover .pd-list-middle {
+    opacity: 1;
+}
+
+.product-list-img .offer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 3px 9px;
+    font-weight: 300;
+    background: #FFD846;
+    border-radius: 5px;
+}
+
+.hover-list-zoom-icon {
+    position: absolute;
+    top: 28%;
+    left: 30%;
+    width: 80px;
+}
+
+/*------------------
+  06. Product List Style 02
+--------------------*/
+
+.product-list-style2 {
+    border-radius: 5px;
+}
+
+.pd-img-container:hover .pd-middle {
+    opacity: 1;
+}
+
+.pd-middle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(255, 77, 7, 0.5);
+    transition: .5s ease;
+    width: 155px;
+    height: 200px;
+    overflow: hidden;
+    z-index: 3;
+    border-radius: 5px 0 0 5px;
+}
+
+.product-list-thumb img {
+    width: 155px;
+    height: 200px;
+    border-radius: 5px 0 0 5px;
+}
+
+.product-list-details {
+    padding: 20px 5px 0 20px;
+    width: 195px;
+}
+
+.product-list-details span {
+    font-size: 1.2rem;
+}
+
+.product-list-thumb .offer {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    padding: 3px 15px;
+    font-weight: 300;
+    background: #FFD846;
+}
+
+.pd-hover-zoom-icon {
+    position: absolute;
+    top: 33%;
+    left: 28%;
+    width: 70px;
+}
+
+/*------------------
+  07. Categories Box
+--------------------*/
+
+.ctg-box {
+    padding: 10px;
+    width: 140px;
+    height: 140px;
+    border-radius: 10px;
+}
+
+.ctg-box:hover {
+    background: var(--lightOrangeColor) !important;
+}
+
+.ctg-img-container {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+}
+
+.ctg-name {
+    text-align: center;
+    margin-top: 6px;
+}
+
+.ctg-name span {
+    margin: 8px 12px 0;
+    font-size: 14px;
+    height: 36px;
+    overflow: hidden;
+}
+
+/*------------------
+  08. Side Menu
+--------------------*/
+
+.main-wrapper .sr-cover {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.sr-contact-side-menu-opened .main-wrapper .sr-cover {
+    z-index: 500;
+}
+
+.sr-contact-side-menu-opened .sr-side-menu {
+    right: 0;
+    visibility: visible;
+}
+
+.sr-side-menu {
+    position: fixed;
+    top: 0;
+    right: -450px;
+    width: 450px;
+    height: 100%;
+    min-height: 100%;
+    background: var(--whiteColor);
+    overflow: hidden;
+    visibility: hidden;
+    z-index: 9999;
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    box-shadow: -3px 0 3px rgba(0, 0, 0, .04);
+    -webkit-transition: all .6s cubic-bezier(.77, 0, .175, 1);
+    -moz-transition: all .6s cubic-bezier(.77, 0, .175, 1);
+    transition: all .6s cubic-bezier(.77, 0, .175, 1);
+    text-align: center;
+}
+
+.side-menu-header {
+    background-image: linear-gradient(to right, #EC2B64, #F05B29);
+    padding: 20px;
+}
+
+.sr-side-menu .sr-side-area-inner {
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    outline: 0;
+}
+
+.sr-side-menu a.sr-contact-side-menu-closer {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    z-index: 500;
+}
+
+.sr-side-menu a.sr-contact-side-menu-closer span,
+.sr-side-menu a.sr-contact-side-menu-closer span:before {
+    display: block;
+    line-height: inherit;
+}
+
+.side-menu-content {
+    position: relative;
+    overflow-y: hidden;
+    /* height: 100%; */
+    /* overflow: auto; */
+    max-height: 100vh;
+    height: 700px;
+}
+
+.profile-pic {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #E6CE4B;
+}
+
+.barcode-container {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+
+.barcode {
+    width: 50px;
+}
+
+.skill-unit {
+    max-width: 400px;
+    margin: auto;
+    /* padding: 20px; */
+}
+
+.skill-unit .level-scale {
+    margin: auto;
+    width: 50%;
+    height: 12px;
+    border: 2px solid #DAC044;
+    border-radius: 6px;
+    background: #fff;
+    box-sizing: border-box;
+    /* padding: 2px; */
+}
+
+.skill-unit .level-scale .level-bar {
+    background: #DDC446;
+    width: 70%;
+    height: 8px;
+    border-radius: 6px;
+}
+
+.stroke-black {
+    border-top: 2px solid #000;
+    margin: 0 30px;
+}
+
+.wallet-box {
+    background-image: url(../assets/images/icons/bg-wallet.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.30);
+}
+
+.menu-slt img {
+    width: 25px;
+}
+
+.menu-slt:hover {
+    background: var(--lightOrangeColor);
+}
+
+.ranking-container {
+    position: absolute;
+    right: 160px;
+    top: 30px;
+}
+
+.ranking-icon {
+    width: 32px;
+}
+
+.acc-setting-ranking-container .ranking-icon {
+    position: absolute;
+    right: 313px;
+    top: 62px;
+}
+
+/*------------------
+  09. Custom Barcode Pop Up Modal
+--------------------*/
+
+.barcode-big {
+    width: 250px;
+}
+
+.barcode-modal-dialog {
+    max-width: 350px !important;
+}
+
+.warning-icon {
+    width: 160px;
+}
+
+.review-product-img {
+    width: 150px;
+}
+
+.upload-img-container {
+    padding: 30px;
+    border: 2px solid var(--lighGreyBColor);
+    border-radius: 5px;
+}
+
+/*------------------
+  10. Border outline box
+--------------------*/
+
+.portlet {
+    border: 1px solid var(--lighGreyCColor);
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+/*------------------
+  11. Checkout 
+--------------------*/
+
+.page__subtitle {
+    color: var(--greyColor) !important;
+    text-transform: capitalize;
+}
+
+hr.subtitle {
+    border: 1px solid var(--greyColor);
+}
+
+.checkbox-all-container {
+    background: var(--lighGreyAColor) !important;
+    padding: 1rem;
+}
+
+.border-container {
+    border: 1px solid var(--lighGreyCColor);
+    border-radius: 5px;
+    padding: 1.1rem;
+}
+
+.border-container:hover {
+    background: var(--lightOrangeColor) !important;
+}
+
+.bank-container {
+    background: var(--lighGreyCColor) !important;
+    border-radius: 5px;
+    padding: 3rem;
+}
+
+.payment-icons-1 {
+    width: 100px;
+}
+
+.payment-icons-2 {
+    width: 72px;
+}
+
+.payment-icons-3 {
+    width: 150px;
+}
+
+.success-checkout-icons img {
+    width: 300px;
+}
+
+.product_name {
+    font-weight: 500;
+    color: var(--blackColor);
+}
+
+.product_option {
+    color: var(--greyColor);
+}
+
+.offer_price {
+    font-weight: 500;
+    color: var(--orangeColor);
+}
+
+.unit_price {
+    color: var(--blackColor);
+}
+
+.custom-qty {
+    width: 70%;
+    background-color: #F0F0F0;
+    border: none;
+    border-radius: 20px;
+    padding: 0.4rem 0.6rem;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: checkbox;
+}
+
+/*------------------
+  12. Custom Checkbox
+--------------------*/
+
+.checkbox {
+    background-color: #fff;
+    display: inline-flex;
+    height: 20px;
+    margin: 0.4em;
+    width: 20px;
+    border: 2px solid #707070;
+}
+
+.checkbox.checked {
+    border: 2px solid var(--font-color);
+}
+
+.checkbox span {
+    display: block;
+    height: 6.98px;
+    position: relative;
+    width: 9.76px;
+    padding: 0;
+}
+
+.checkbox span:after {
+    -moz-transform: scaleX(-1) rotate(135deg);
+    -ms-transform: scaleX(-1) rotate(135deg);
+    -webkit-transform: scaleX(-1) rotate(135deg);
+    transform: scaleX(-1) rotate(135deg);
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    content: '';
+    display: block;
+    height: 9px;
+    left: 2px;
+    position: absolute;
+    top: 8px;
+    width: 6px
+}
+
+.checkbox span:hover:after {
+    border-color: #999
+}
+
+.checkbox input {
+    display: none
+}
+
+.checkbox input:checked+span:after {
+    -webkit-animation: check .8s;
+    -moz-animation: check .8s;
+    -o-animation: check .8s;
+    animation: check .8s;
+    border-color: #555
+}
+
+.checkbox input:checked+.default:after {
+    border-color: var(--font-color);
+}
+
+@keyframes check {
+    0% {
+        height: 0;
+        width: 0;
+    }
+
+    25% {
+        height: 0;
+        width: 6px;
+    }
+
+    50% {
+        height: 9px;
+        width: 6px;
+    }
+}
+
+/*------------------
+  13. Custom Radio Button
+--------------------*/
+
+.custom-radio {
+    border: 1px solid var(--lighGreyCColor);
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+.custom-radio p {
+    padding: 0 0 0 40px;
+    margin-bottom: 0;
+}
+
+.radio-input {
+    opacity: 0;
+    position: absolute;
+}
+
+.radio-input-label {
+    position: relative;
+    height: 38px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.radio-input+.radio-input-label:before {
+    content: '';
+    border: 2px solid #bbbcbc;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.radio-input:checked+.radio-input-label:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    position: absolute;
+    top: calc(50% - 13px);
+    left: 6px;
+    background: var(--orangeColor);
+    border-radius: 50%;
+}
+
+.radio-input:checked+.radio-input-label:before {
+    border: 2px solid var(--orangeColor);
+}
+
+/*------------------
+  14. Custom Banking Radio Button
+--------------------*/
+
+.banking-radio {
+    border: 1px solid var(--lighGreyCColor);
+    padding: 1.5rem;
+}
+
+.banking-radio img {
+    width: 50px;
+}
+
+.banking-radio-label {
+    position: relative;
+    height: 41px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.radio-input+.banking-radio-label:before {
+    content: '';
+    border: 2px solid #bbbcbc;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.radio-input:checked+.banking-radio-label:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    position: absolute;
+    top: calc(50% - 13px);
+    left: 6px;
+    background: var(--orangeColor);
+    border-radius: 50%;
+}
+
+.radio-input:checked+.banking-radio-label:before {
+    border: 2px solid var(--orangeColor);
+}
+
+/*------------------
+  15. Custom Small Radio Button
+--------------------*/
+
+.sm-radio-input {
+    opacity: 0;
+    position: absolute;
+}
+
+.sm-radio-input-label {
+    position: relative;
+    height: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sm-radio-input+.sm-radio-input-label:before {
+    content: '';
+    border: 2px solid #bbbcbc;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.sm-radio-input:checked+.sm-radio-input-label:after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    position: absolute;
+    top: calc(50% - 3px);
+    left: 5px;
+    background: var(--orangeColor);
+    border-radius: 50%;
+}
+
+.sm-radio-input:checked+.sm-radio-input-label:before {
+    border: 2px solid var(--orangeColor);
+}
+
+/*------------------
+  16. Price Slider Filter
+--------------------*/
+
+.ui-slider-horizontal {
+    height: 0.3em;
+}
+
+.ui-slider {
+    position: relative;
+    width: 80%;
+    left: 2%;
+    border: 0;
+    text-align: left;
+    background: #D8D8D8;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: unset !important;
+}
+
+.ui-slider .ui-slider-handle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white !important;
+    border: 14px solid #ff6600 !important;
+    outline: none;
+    margin: -9px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.30);
+    cursor: pointer;
+    transition: box-shadow 150ms linear, background-color 150ms linear, transform 150ms linear;
+}
+
+.ui-slider .ui-slider-range {
+    font-size: .7em;
+    border: 0;
+    background: #ff6600;
+}
+
+.ui-slider-handle:hover {
+    transform: scale(.92);
+    background-color: #ff6600, 10%;
+    box-shadow: 6px 8px 8px -6px rgba(216, 78, 20, 0.30);
+}
+
+.ui-slider .ui-slider-handle:active {
+    transform: scale(.90);
+    box-shadow: 1px 1px 1px 1px rgba(216, 78, 20, 0.30);
+}
+
+.ui-widget-content {
+    border: none !important;
+    background: var(--lightOrangeColor) 50% 50% repeat-x !important;
+    color: #DE593B;
+}
+
+.pslider {
+    color: black;
+}
+
+/*------------------
+  17. Rating Filter
+--------------------*/
+
+.rating-stars ul {
+    list-style-type: none;
+    padding: 0;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+.rating-stars ul>li.star {
+    display: inline-block;
+
+}
+
+/* Idle State of the stars */
+.rating-stars ul>li.star>i.fa {
+    font-size: 2em;
+    /* Change the size of the stars */
+    color: #ccc;
+    /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul>li.star.hover>i.fa {
+    color: #ff6600;
+}
+
+/* Selected state of the stars */
+.rating-stars ul>li.star.selected>i.fa {
+    color: var(--orangeColor) !important;
+}
+
+.stars-filter li.active::before,
+.stars-filter li.active~li::before {
+    content: "";
+}
+
+/*------------------
+  18. Notification Page
+--------------------*/
+
+.notification-item-box {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 10px;
+}
+
+.notidication-container:hover {
+    background: var(--lighGreyAColor) !important;
+}
+
+/*------------------
+  19. Address Container
+--------------------*/
+
+.ship-bill-container {
+    background: var(--lighGreyAColor) !important;
+    border: 1px solid var(--lighGreyCColor);
+    border-radius: 5px;
+    padding: 1.8rem;
+}
+
+
+.address-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*------------------
+  19. My Order Page 
+--------------------*/
+
+.order-item-header {
+    padding: 0.2rem 0 0.8rem 0;
+    /* min-height: 3.5rem;
+    line-height: 1.25rem; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.order-item-header::after {
+    content: "\002B";
+    font-size: 1.8rem;
+    font-weight: bold;
+    position: absolute;
+    right: 1rem;
+}
+
+.order-item-header.active::after {
+    content: "\2212";
+}
+
+.order-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.order-item-body-content {
+    padding: 1rem;
+    line-height: 1.5;
+    border-top: 1px solid #34495e;
+}
+
+.status-delivery {
+    background: var(--greenColor);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #fff;
+    margin-right: 4rem;
+    text-align: center;
+    width: 110px;
+}
+
+.quanlity-item {
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.contact-seller {
+    background: var(--lighGreyCColor);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: #fff;
+    margin-right: 4rem;
+}
+
+.contact-phone:before {
+    content: "";
+    display: block;
+    background: url(../assets/images/icons/phone.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+/* Tab Bar */
+.nav-order-status {
+    padding: 1rem !important;
+}
+
+/*------------------
+  20. Wallet Page
+--------------------*/
+
+.wallet-desc-icon {
+    width: 40px;
+}
+
+.bg-wallet-box {
+    background-image: url(../assets/images/icons/bg-wallet-2.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 450px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.30);
+}
+
+.bg-topupWallet-box {
+    background-image: url(../assets/images/icons/bg-wallet.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.30);
+}
+
+.bg-wallet-box.active {
+    background-image: url(../assets/images/icons/bg-wallet.png);
+}
+
+.wallet-icon {
+    width: 70px;
+}
+
+.wallet-btn {
+    z-index: 10;
+}
+
+.wallet-input-content {
+    padding-top: 50px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper input {
+    background: transparent;
+}
+
+.input-wrapper .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--yellowColor);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.2s ease-out;
+}
+
+.input-wrapper input {
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    width: 100%;
+}
+
+.input-wrapper input:focus {
+    outline: none;
+}
+
+.input-wrapper input:focus~.line {
+    transform: scaleX(1);
+}
+
+.input-wrapper input:focus~label {
+    -webkit-animation: anim-1 0.3s forwards;
+    animation: anim-1 0.3s forwards;
+}
+
+@-webkit-keyframes anim-1 {
+    50% {
+        opacity: 0;
+        -webkit-transform: translate3d(1em, 0, 0);
+        transform: translate3d(1em, 0, 0);
+    }
+
+    51% {
+        opacity: 0;
+        -webkit-transform: translate3d(-1em, 0, 0);
+        transform: translate3d(-1em, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes anim-1 {
+    50% {
+        opacity: 0;
+        -webkit-transform: translate3d(1em, 0, 0);
+        transform: translate3d(1em, 0, 0);
+    }
+
+    51% {
+        opacity: 0;
+        -webkit-transform: translate3d(-1em, 0, 0);
+        transform: translate3d(-1em, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 40, 0);
+    }
+}
+
+.custom-border {
+    padding: 8px 32px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    cursor: pointer;
+}
+
+.custom-border:hover {
+    color: #fff !important;
+    background-color: var(--orangeColor);
+}
+
+.custom-border__selected {
+    color: #fff !important;
+    background-color: var(--orangeColor);
+}
+
+/*------------------
+  21. Product Details Swiper
+--------------------*/
+
+.swiper-container {
+    width: 100%;
+    height: 500px;
+}
+
+.product-carousel {
+    box-sizing: border-box;
+    height: 127px;
+    padding: 10px 0;
+}
+
+.product-carousel .swiper-slide-thumb-active {
+    opacity: 1 !important;
+}
+
+.product-carousel .swiper-slide {
+    opacity: 0.4;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.opt-header {
+    width: 100px;
+}
+
+/*------------------
+  22. Color Radio Button
+--------------------*/
+
+.choice-1 {
+    background-color: #837fff;
+}
+
+.choice-2 {
+    background-color: #ff4949;
+}
+
+.choice-3 {
+    background-color: #399d89;
+}
+
+.color-choices {
+    /* width: 100%; */
+    float: left;
+    position: relative;
+}
+
+.color-choices div {
+    padding: 0 5px;
+    width: 33%;
+    height: 35px;
+    float: left;
+    text-align: center;
+}
+
+.color-choices div input {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+}
+
+.color-choices div input:checked~label:after {
+    width: 49px;
+    height: 49px;
+    margin-top: -32.5px;
+    margin-left: -31.5px;
+}
+
+.color-choices div:nth-of-type(1) label:before {
+    background-color: #837fff;
+}
+
+.color-choices div:nth-of-type(1) label:after {
+    background-color: #cdccff;
+}
+
+.color-choices div:nth-of-type(2) label:before {
+    background-color: #ff4949;
+}
+
+.color-choices div:nth-of-type(2) label:after {
+    background-color: #ff9696;
+}
+
+.color-choices div:nth-of-type(3) label:before {
+    background-color: #399d89;
+}
+
+.color-choices div:nth-of-type(3) label:after {
+    background-color: #5ec5b0;
+}
+
+.color-choices div label {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    z-index: 20;
+}
+
+.color-choices div label:before {
+    content: "";
+    width: 37px;
+    height: 37px;
+    display: inline-block;
+    background: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -26px;
+    margin-left: -26px;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 10;
+}
+
+.color-choices div label:after {
+    content: "";
+    width: 37px;
+    height: 37px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -26px;
+    margin-left: -26px;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 9;
+}
+
+.color-choices div label:hover {
+    cursor: pointer;
+}
+
+/*------------------
+  23. Custom Quantity Input 
+--------------------*/
+
+.qty-input {
+    width: 80px;
+}
+
+/*------------------
+  24. Custom Product Details & Review Tab
+--------------------*/
+
+#desc-nav-tab.nav-tabs {
+    border-bottom: 0px;
+}
+
+#desc-nav-tab .nav-item.show .nav-link,
+#desc-nav-tab .nav-link.active {
+    color: var(--orangeColor) !important;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 4px solid !important;
+}
+
+#desc-nav-tab .nav-link:hover,
+#desc-nav-tab .nav-link:focus {
+    border: 0px;
+}
+
+#desc-nav-tab .nav-link {
+    color: var(--greyColor) !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    border: 0px;
+}
+
+.desc-info-txt p {
+    line-height: 2rem;
+    font-size: 1rem;
+    color: var(--greyColor);
+}
+
+/*------------------
+    25. Banner Offer Ribbon Box
+--------------------*/
+
+.offer-ribbon {
+    padding: 0.5rem;
+    background-color: var(--yellowColor);
+    border-radius: 5px;
+}
+
+/*------------------
+    26. Filter Box
+--------------------*/
+
+.filter-box {
+    border: 1px solid var(--orangeColor) !important;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 1rem !important;
+    border: none;
+}

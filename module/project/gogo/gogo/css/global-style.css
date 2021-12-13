@@ -1,0 +1,144 @@
+/* global style */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 1rem;
+    background-color: #fff;
+    font-family: "Avenir", sans-serif;
+    /* background-color: #0F1932; */
+    /* color: #fff; */
+}
+
+a {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FF503B;
+}
+
+a:focus {
+    outline: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+input {
+    outline: none !important;
+    border: none
+}
+
+
+::placeholder {
+    color: #AAAAAA;
+}
+
+ul li {
+    padding-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.list {
+    width: 20px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+
+.line {
+    margin: auto;
+    width: 120px;
+    border-bottom: 5px solid #fff;
+}
+
+.bg-parallax-main {
+    background: url(../assets/images/bg-main.png) center center no-repeat;
+    background-attachment: fixed;
+    /* background-position: top center !important; */
+    background-size: cover;
+}
+
+/* ---- Button ---- */
+
+.g-btn {
+    font-size: 0.9rem;
+    width: 200px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.g-btn-submit {
+    transition: all 0.5s;
+    font-size: 1rem;
+    width: inherit;
+    padding: 10px;
+}
+
+.g-btn-submit:hover {
+    background: #fff;
+    color: #333333;
+    font-size: 1.1rem
+}
+
+.g-btn-reg {
+    border-radius: 10px;
+    padding: 15px;
+    width: inherit;
+}
+
+
+/* ---- background/text/button color theme ---- */
+
+.bg-red-theme {
+    background-color: #F41E21;
+}
+
+.bg-orange-theme {
+    background-color: #FF503B;
+}
+
+.bg-dgrey-theme {
+    background-color: #222222;
+}
+
+.text-title {
+    color: #FF503B;
+    font-weight: bold;
+}
+
+.text-label {
+    color: #FF503B;
+}
+
+.text-desc {
+    color: #333333;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-reminder {
+    color: #6E6E6E;
+}
+
+.btn-orange {
+    background-color: #FF503B;
+    color: #fff;
+}
+
+.btn-bolder {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}

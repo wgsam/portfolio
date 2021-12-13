@@ -1,0 +1,105 @@
+/*======================================
+
+[  Custom Components -  Checkout Progress Bar]
+
+  01.  Checkout Progress Bar
+  
+[ End Checkout Progress Bar ]
+======================================*/
+
+/*------------------
+  01. Checkout Progress Bar
+--------------------*/
+.customize-progress-bar-wrapper {
+    width: 100%;
+    margin: auto;
+}
+
+.customize-progress-bar {
+    overflow: hidden;
+    text-align: center;
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+.customize-progress-bar li {
+    float: left;
+    font-size: 1rem;
+    line-height: 30px;
+    width: 25%;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    color: var(--lighGreyCColor);
+}
+
+.customize-progress-bar li:before {
+    content: "04";
+    display: block;
+    font-size: 1rem;
+    line-height: 35px;
+    color: #ffffff;
+    background: var(--lighGreyCColor);
+    width: 40px;
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+    border: 3px var(--lighGreyCColor) solid;
+}
+
+.customize-progress-bar li:after {
+    content: "";
+    width: 180%;
+    height: 4px;
+    border-radius: 3px;
+    background: var(--lighGreyCColor);
+    position: absolute;
+    margin: auto;
+    left: 10%;
+    top: 20px;
+    z-index: -1;
+}
+
+.customize-progress-bar li.markdone:last-child:after {
+    display: none;
+}
+
+.customize-progress-bar li.markdone:first-child:before {
+    content: url(../assets/images/icons/mark.png);
+    font-size: 1.6rem !important;
+}
+
+.customize-progress-bar li.markdone:nth-child(2):before {
+    content: url(../assets/images/icons/mark.png);
+    font-size: 1.6rem !important;
+}
+
+.customize-progress-bar li.markdone:nth-child(3):before {
+    content: url(../assets/images/icons/mark.png);
+    font-size: 1.6rem !important;
+}
+
+.customize-progress-bar li:last-child:after {
+    display: none;
+}
+
+.customize-progress-bar li:first-child:before {
+    content: "01";
+}
+
+.customize-progress-bar li:nth-child(2):before {
+    content: "02";
+}
+
+.customize-progress-bar li:nth-child(3):before {
+    content: "03";
+}
+
+.customize-progress-bar li.active:before {
+    background: #ffffff;
+    color: var(--orangeColor);
+    border-color: rgba(238, 77, 45, 0.5);
+}
+
+.customize-progress-bar li.active {
+    color: var(--orangeColor);
+}
