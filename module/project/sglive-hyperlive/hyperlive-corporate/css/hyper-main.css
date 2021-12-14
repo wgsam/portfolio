@@ -1,0 +1,259 @@
+/* Nav Header Section Start */
+.hyperlive-logo {
+    width: 110px;
+}
+
+.navbar-toggler {
+    background-color: red;
+    padding: 0.5rem 1rem 0.8rem;
+}
+
+/* Nav Header Section End */
+
+/* Banner Section Start*/
+.hyperlive-banner-bg {
+    width: 100%;
+    height: 600px;
+    background: url(../assets/images/banner-empty.png) center center no-repeat;
+    background-size: cover;
+    box-shadow: 0 3px 5px rgb(57 63 72 / 30%);
+}
+
+/* Banner Section End*/
+
+.w-caption {
+    width: 75%;
+}
+
+/* Feature Section Start*/
+.feature-container {
+    padding: 3rem 0.5rem;
+    height: 250px;
+}
+
+/* Feature Section End*/
+
+
+/* Ticker Content */
+.ticket-bg {
+    background: url(../assets/images/ticket-bg.png) center center no-repeat;
+    background-size: cover;
+
+}
+
+/* Analytic Content */
+.analytic-bg {
+    background: url(../assets/images/analytic-bg.png) center center no-repeat;
+    background-size: cover;
+}
+
+/* Platfrom Content */
+.platform-bg {
+    background: url(../assets/images/platfrom-bg.png) center center no-repeat;
+    background-size: cover;
+}
+
+/* Feature Section End */
+
+
+/* Enquire Section Start*/
+.enquire-section {
+    padding: 5rem;
+}
+
+.enquire-info-container {
+    padding: 3rem 1rem;
+}
+
+.circle-bg {
+    background: url(../assets/images/circle.png) center center no-repeat;
+    background-size: contain;
+
+}
+
+/* Enquire Section End*/
+
+
+/* Tool Function Section Start*/
+.label-rotation {
+    width: 120px;
+    margin: 1em;
+    height: 150px;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+}
+
+.rotation-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120x;
+    line-height: 120px;
+    padding: 0 1em;
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-100%);
+}
+
+.stoke {
+    font-size: 2.8rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #707070;
+}
+
+.stoke-sm {
+    font-size: 1.5rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #707070;
+}
+
+.tool-icon {
+    width: 120px;
+}
+
+.tool-icon2 {
+    width: 90px;
+}
+
+.ftn-icon {
+    width: 40px;
+}
+
+.ftn-icon2 {
+    width: 33px;
+}
+
+.ftn-icon3 {
+    width: 30px;
+}
+
+/* Tool Function Section End*/
+
+
+/* Revenue Section Start*/
+.revenue-img {
+    width: 500px;
+}
+
+/* Revenue Section End*/
+
+
+/* Partner Section Start*/
+.partner-section {
+    padding: 4rem 0;
+}
+
+.slickPartner .slick-track {
+    display: flex;
+}
+
+.partner-img {
+    width: 200px;
+}
+
+.partner-img2 {
+    width: 160px;
+}
+
+.partner-content {
+    align-self: center;
+}
+
+/* Partner Section End*/
+
+
+/* Client Section */
+.client-section {
+    padding: 4rem 0;
+}
+
+.testimonials-caption {
+    padding: 80px 0;
+    width: 600px;
+    margin: auto;
+}
+
+/* Client Section End*/
+
+/* Contact us */
+.contact-bg {
+    background: url(../assets/images/contact.png) center center no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+/* Footer Section Start */
+footer {
+    background: #1f1f1f;
+    color: #fff;
+    padding: 20px 0 0;
+    font-size: 0.8rem;
+}
+
+.social-media-icon {
+    width: 40px;
+}
+
+.footer-hyperlive-logo {
+    width: 150px;
+}
+
+/* Footer Section End */
+
+@media (max-width: 992px) {
+    .testimonials-caption {
+        width: auto;
+        margin: auto;
+    }
+
+    .contact-bg {
+        height: 300px;
+    }
+
+    .btn-submit {
+        width: 100%;
+    }
+
+}
+
+/* iphone x landscape */
+@media only screen and (max-width: 375px) and (max-height: 812px) {}
+
+/* iphone x landscape */
+@media only screen and (max-width: 812px) and (max-height: 375px) {}
+
+/* iphone 6/7/8 plus portrait */
+@media only screen and (max-width: 414px) and (max-height: 736px) {}
+
+/* iphone 6/7/8 plus landscape */
+@media only screen and (max-width: 736px) and (max-height: 414px) {}
+
+/* iphone 6/7/8  portrait */
+@media only screen and (max-width: 375px) and (max-height: 667px) {}
+
+/* iphone 6/7/8 landscape */
+@media only screen and (max-width: 667px) and (max-height: 375px) {}
+
+/* iphone 5SE  portrait */
+@media only screen and (max-width: 320px) and (max-height: 568px) {}
+
+/* iphone 5SE landscape */
+@media only screen and (max-width: 568px) and (max-height: 320px) {}
+
+/* PIXEL 2XL portrait */
+@media only screen and (max-width: 411px) and (max-height: 823px) {}
+
+/* PIXEL 2XL landscape */
+@media only screen and (max-width: 823px) and (max-height: 411px) {}
+
+/*  PIXEL 2 portrait */
+@media only screen and (max-width: 411px) and (max-height: 731px) {}
+
+/*  PIXEL 2 landscape */
+@media only screen and (max-width: 731px) and (max-height: 411px) {}
+
+/*  Galaxy S5  portrait */
+@media only screen and (max-width: 360px) and (max-height: 640px) {}
+
+/*  Galaxy S5 landscape */
+@media only screen and (max-width: 640px) and (max-height: 360px) {}

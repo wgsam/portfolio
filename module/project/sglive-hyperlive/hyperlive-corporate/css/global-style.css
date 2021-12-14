@@ -1,0 +1,179 @@
+/* global style */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-size: 1rem;
+    background-color: #fff;
+    font-family: futura, sans-serif;
+}
+
+a {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FF503B;
+}
+
+a:focus {
+    outline: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+input {
+    outline: none !important;
+    border: none
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #AAAAAA;
+    font-weight: 100 !important;
+    opacity: 0.5;
+}
+
+.nav ul li {
+    padding: 0 5px;
+}
+
+.nav-link {
+    color: #000000;
+    font-weight: 500 !important;
+    font-family: 'Arial', sans-serif !important;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+    color: #E41C26;
+}
+
+::placeholder {
+    color: #AAAAAA;
+}
+
+.w-200 {
+    width: 200px;
+}
+
+/* ---- Button ---- */
+.red-btn {
+    background-image: linear-gradient(to top right, #E41C26, #FE6D6A);
+    padding: 15px;
+}
+
+.enq-btn {
+    background-image: linear-gradient(to top right, #E41C26, #FE6D6A);
+    padding: 15px;
+    width: inherit;
+}
+
+/* ---- background/text/button color theme ---- */
+.bg-red-theme {
+    background-color: #F41E21;
+}
+
+.bg-light-theme {
+    background-color: #ffffff;
+}
+
+.bg-grey-theme {
+    background-color: #292A2C;
+}
+
+.bg-dark-theme {
+    background-color: #111111;
+}
+
+.bg-light-grey-theme {
+    background-color: #F5F7FB;
+}
+
+.nav-bg {
+    background-color: #ffffff;
+}
+
+/* font/text */
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-black {
+    color: #000000;
+}
+
+.text-red {
+    color: #E41C26;
+}
+
+.text-grey {
+    color: #A2A3A4;
+}
+
+.fs-small {
+    font-size: 0.8rem;
+}
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+/* hr */
+hr.redline {
+    border: 2px solid #E41C26;
+    width: 150px;
+    margin: auto;
+    opacity: 100%;
+    border-radius: 7px 7px 7px 7px;
+}
+
+hr.blackline {
+    border: 2px solid #000000;
+    width: 150px;
+    margin: auto;
+    opacity: 100%;
+    border-radius: 7px 7px 7px 7px;
+}
+
+hr.greyline {
+    border: 2px solid #524F4F;
+    width: 150px;
+    margin: auto;
+    opacity: 100%;
+    border-radius: 7px 7px 7px 7px;
+}
+
+hr.greylongline {
+    border: 0.2px solid #524F4F;
+    width: 100%;
+    margin: auto;
+    opacity: 100%;
+}
+
+hr.grey-light-longline {
+    border: 2px solid #E3E5E9;
+    width: 100%;
+    margin: auto;
+    opacity: 100%;
+}
+
+@media (max-width: 992px) {
+    .nav-bg {
+        background-color: #111111;
+    }
+
+    .nav-link {
+        color: #ffffff;
+    }
+}
