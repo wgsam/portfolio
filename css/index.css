@@ -31,6 +31,22 @@ a img {
   padding-top: 10px;
 }
 
+.brown{
+  color: #86684C;
+}
+
+.black{
+  color: #000000;
+}
+
+p{
+  color: #8F9EA5;
+  opacity: 0.8;
+  font-weight:100;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
 ul li {
   list-style: none;
   margin: 70px 5px;
@@ -202,3 +218,26 @@ ul li:hover:nth-child(8) a:before {
 ul li:hover:nth-child(8) a:after {
   background: #688fe4;
 }
+
+/* landing */
+
+.landing{
+  height: 100vh;
+  position: relative;
+  display: flex; 
+  align-items: center; 
+}
+
+.skill{
+  margin-top: 30px;
+  line-height: 30px;
+  padding: 0;
+}
+
+.skill li{
+  margin: 0;
+  display: block;
+  justify-content: start;
+}
+
+
