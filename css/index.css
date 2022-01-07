@@ -263,6 +263,31 @@ a.photo-portfolio:hover{
 .social a:hover{
   color: #86684C;
 }
+.avatar-img{
+  padding: 12px;
+}
+
+.avatar-img img{
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  border: 2px solid #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  margin: 0 30px;
+}
+
+.title{
+  line-height: 22px;
+  font-size: 20px;
+  color: #3e4555;
+}
+
+.subtitle{
+    color: #8d97ad;
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
 
 @media (max-width: 500px) {
   .landing{
