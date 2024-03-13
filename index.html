@@ -4,57 +4,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Main Page </title>
     <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.css">
-    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/testing.css">
+    <title>Main Page</title>
 </head>
 
 <body>
-    <div class="landing">
+    <!-- Header Navigation Section -->
+    <div class="nav-header bg-light">
         <div class="container">
-            <div class="col-12 col-md-6">
-                <div class="info">
-                    <h1>I am <span class="brown">Sam Wong</span></h1>
-                    <h1>I'm a UI/UX Designer & Developer</h1>
-                    <p class="mt-4">Welcome to my professional portfolio website, showcasing a collection of my design work and more.</p>
-                    <ul class="skill arrow">
-                        <li><p>UI/UX Design & Development</p></li>
-                        <li><p>Mobile Appllication Design</p></li>
-                        <li><p>Responsive Web Design & Development</p></li>
-                        <li><p>Front-end Development</p></li>
-                        <li><p>Wireframe and Prototyping</p></li>
-                        <li><a href="https://rebrand.ly/thesnrcreation" class="photo-portfolio">Photographer</a></li>
-                    </ul>
-
-                    <a href="module/project/project.html" class="btn">PROJECTS >></a>
-                    <a href="https://rebrand.ly/wgsam-cv" target="_blank" class="project-btn mx-4">Download CV</a>  
+            <header
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+                <div class="col-md-3 mb-2 mb-md-0">
+                    <!-- <a href="index.html"
+                        class="d-flex align-items-center mb-md-0 me-md-auto text-decoration-none txt-l fw-bold">
+                        <img class="avatar-icon me-2" src="./assets/img/avatar-icon.jpg" alt="Avatar Icon">
+                        wgsam
+                    </a> -->
+                    <a href="../index.html">
+                        <div id="shape" class="shape">
+                            <div id="polygon" class="polygon">
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-12 col-md-6">
-                    <div class="social">
-                        <a href="https://rebrand.ly/wgsam_fb"><i class="fab fa-facebook-square"></i></a>
-                        <a href="https://rebrand.ly/wgsam_ig"><i class="fab fa-instagram"></i></a>
-                        <a href="https://rebrand.ly/wgsam_linkedln"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto: samwg16@gmail.com"><i class="fa fa-envelope"></i></a>
-                        <a href="tel:02040306651"><i class="fa fa-phone"></i></a>
+
+                <ul class="nav col-10 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link" aria-current="page">Portfolio</a>
+                    </li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- <div class="col-md-3 text-end">
+                  <button type="button" class="btn btn-outline-secondary me-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                    </svg>                    
+                    Let's Talk
+                  </button>
+                </div> -->
+            </header>
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner poster-home py-5 d-flex align-items-center">
+        <div class="container col-xxl-12">
+            <div class="row flex-lg-row-reverse align-items-center">
+                <div class="col-lg-5 col-md-12">
+                    <div class="testing-img-box ps-0 ps-lg-5">
+                        <img src="./assets/img/profile-img.png" class="d-block mx-lg-auto img-fluid"
+                            alt="About Me Avatar" loading="lazy">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <h2 class="text-body-emphasis">Hi there, I'm Sam Wong.</h2>
+                    <h4 class="txt-thrd-clr">UI/UX Designer & Front-End Developer.</h4>
+
+                    <div class="banner-txt">
+                        <p class="txt-dark">I help companies build designs from the ground up, understanding that
+                            exceptional design enhances user experiences. My belief in creating intuitive, meaningful
+                            interactions is centered on bringing people and communities together.
+                        </p>
+                    </div>
+                    <div class="media-contact d-flex justify-content-md-start justify-content-center">
+                        <!-- <span class="d-inline-flex align-items-center pe-4">Follow Me:</span> -->
+                        <a href="https://rebrand.ly/wgsam_linkedln" class="d-inline-block">
+                            <div class="icon-border bg-light d-inline-flex p-3">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </div>
+                        </a>
+                        <a href="https://rebrand.ly/wgsam_ig" class="d-inline-block">
+                            <div class="icon-border bg-light d-inline-flex p-3">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </div>
+                        </a>
+                        <a href="mailto: samwg16@gmail.com" class="d-inline-block">
+                            <div class="icon-border bg-light d-inline-flex p-3">
+                                <ion-icon name="mail"></ion-icon>
+                            </div>
+                        </a>
+                        <a href="mailto: samwg16@gmail.com" class="d-inline-block">
+                            <div class="icon-border bg-light d-inline-flex p-3">
+                                <ion-icon name="newspaper"></ion-icon>
+                            </div>
+                        </a>
+                        <!-- <a href="mailto: samwg16@gmail.com" class="d-inline-block d-sm-blck d-lg-none">
+                            <div class="icon-border bg-light d-inline-flex p-3">
+                                <ion-icon name="mail"></ion-icon>
+                            </div>
+                        </a> -->
+                    </div>
+                    <div class="banner-txt">
+                        <span class="txt-m">Previosuly at: <br>
+                            <a href="https://silverlakemobility.com/" target="_blank" class="navg">Silverlake
+                                Mobility</a> ,
+                            <a href="https://www.iscity.com.my/v2/index.html" target="_blank" class="navg">ISCiTy</a> ,
+                            <a href="https://worldline.com/" target="_blank" class="navg">Worldline</a>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+    <div>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-3e31337d-07c3-4fa6-a745-aec59f88a481" data-elfsight-app-lazy></div>
+    </div> -->
+    <div class="container col-xxl-12">
+        <div class="row spectrum py-3 py-sm-4 py-md-5 py-lg-6 py-xl-7">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="col-9">
+                    <div class="service-title mb-5 text-center">
+                        <h3 class="mb-4">What Do I help</h3>
+                        <p class="txt-dark mb-2">From intuitive UI/UX design to seamless front-end development, I
+                            provide a
+                            comprehensive range of solutions to enhance your digital presence. Explore the
+                            possibilities and redefine your online
+                            experience with tailored services that deliver results.</p>
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-12">
-                <div class="img-box">
-                    <img src="./assets/img/back.png" class="back-img">
-                    <img src="./assets/img/sam.png" class="man-img">
+            <div class="col-12 col-lg-4 spectrum-illustration">
+                <div class="illustration illustration-web">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="220" height="160" viewBox="0 0 220 160">
+                        <path id="line-web" fill="none" stroke="#a05cff" stroke-width="2"
+                            d="M71 0 0 0 .066 142 71.217 142 141.009 72.207" transform="translate(9 9)"
+                            stroke-dashoffset="385" stroke-dasharray="385" />
+                    </svg>
+                    <span id="blob-1" class="blob"></span>
+                </div>
+                <div>
+                    <h5 class="text-uppercase txt-primary-clr bold mb-1 mb-lg-2">Responsive Web Design</h5>
+                    <span class="txt-m">This is where problem solving meets visual impact. I’ll unite products and
+                        users,
+                        design and experiences.</span>
                 </div>
             </div>
-           
+            <div class="col-12 col-lg-4 mt-3 mt-lg-0 spectrum-illustration">
+                <div class="illustration illustration-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="220" height="160" viewBox="0 0 220 160">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="220" height="160" viewBox="0 0 220 160">
+                            <g fill="none" fill-rule="evenodd" transform="translate(46 28)">
+                                <path id="line-mobile" stroke="#a05cff" stroke-width="2" d="M0,0 L114,77"
+                                    stroke-dashoffset="138" stroke-dasharray="138" />
+                                <path stroke="#FFFFFF" stroke-dasharray="3 6" stroke-width="3" d="M0,0 L114,77" />
+                            </g>
+                        </svg>
+                    </svg>
+                    <span id="blob-2" class="blob"></span>
+                </div>
+                <div>
+                    <h5 class="text-uppercase txt-primary-clr bold mb-1 mb-lg-2">Mobile App Design</h5>
+                    <span class="txt-m">Using iOS, Android and an expert vision, I’ll take your application to the
+                        next level.
+                    </span>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 mt-3 mt-lg-0 spectrum-illustration">
+                <div class="illustration illustration-dev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="220" height="160" viewBox="0 0 220 160">
+                        <path id="line-dev" fill="none" stroke="#a05cff" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-dashoffset="138" stroke-dasharray="138" stroke-width="2"
+                            d="M0.386206897,0.379310345 L31.2568263,34.5147736 C31.9986406,35.3350415 33.4982916,36 34.6003615,36 L120.468966,36"
+                            transform="translate(26 111)" /></svg>
+                    <span id="blob-3" class="blob"></span>
+                </div>
+                <div>
+                    <h5 class="text-uppercase txt-primary-clr bold mb-1 mb-lg-2">Front End Development</h5>
+                    <span class="txt-m">I’ll help you to bridge the gap between design and development.</span>
+                </div>
+            </div>
         </div>
     </div>
-   
-    <script src="assets/vendor/jquery/jquery-3.4.1.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/popper/popper.min.js"></script>
+    <div class="container col-xxl-12">
+        <div class="row project py-3 py-sm-4 py-md-5 py-lg-6 py-xl-7">
+            <div class="col-12">
+                <div class="portfolio-title mb-5">
+                    <h3 class="mb-4">Latest Work</h3>
+                </div>
+            </div>
+            <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+                <div class="container-fluid py-5">
+                    <h4 class="fw-bold">WLLBE (Design System)</h4>
+                    <p class="col-md-8">WLLBE Design System serves as an in-house component library, aiding designers
+                        and developers in streamlining their workflows and ensuring
+                        consistency across projects</p>
+                    <button onclick="location.href='design-system.html'" class="btn btn-primary btn-lg"
+                        type="button">Read the Case Study</button>
+                </div>
+            </div>
+            <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+                <div class="container-fluid py-5">
+                    <h4 class="fw-bold">Custom jumbotron</h4>
+                    <p class="col-md-8">Using a series of utilities, you can create this jumbotron, just like the
+                        one in previous versions of Bootstrap. Check out the examples below for how you can remix and
+                        restyle it to your liking.</p>
+                    <button class="btn btn-primary btn-lg" type="button">Example button</button>
+                </div>
+            </div>
+            <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+                <div class="container-fluid py-5">
+                    <h4 class="fw-bold">Custom jumbotron</h4>
+                    <p class="col-md-8">Using a series of utilities, you can create this jumbotron, just like the
+                        one in previous versions of Bootstrap. Check out the examples below for how you can remix and
+                        restyle it to your liking.</p>
+                    <button class="btn btn-primary btn-lg" type="button">Example button</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container col-xxl-12">
+        <div class="row about py-3 py-sm-4 py-md-5 py-lg-6 py-xl-7">
+            <div class="col-lg-4 col-md-12">
+                <div class="ps-0 ps-lg-5">
+                    <img src="assets/img/about-banner.png" class="d-block mx-lg-auto img-fluid" alt="Avatar"
+                        loading="lazy">
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12"></div>
+            <div class="col-lg-7 col-md-12 align-self-center">
+                <h4>About Me</h4>
+                <div class="banner-txt">
+                    <span class="txt-l">Hello, I'm Sam, a UI/UX designer & developer with 6+ years of experience
+                        crafting
+                        seamless digital experiences in fintech, e-commerce, entertainment, and crypto. I specialize in
+                        creating both
+                        aesthetically pleasing and functional designs. This is my digital corner—let's connect for
+                        innovative and user-friendly digital experiences. <br>For more, visit my <a href="about.html"
+                            class="navg-p">about me</a>
+                        page.</span>
+                </div>
+                <button onclick="location.href='mailto:samwg16@gmail.com'" type="button"
+                    class="d-md-flex align-items-center btn btn-primary-cus btn-lg px-4 mt-3">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span class="px-2">Contact Me</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- Footer Section -->
+    <div class="foote bg-dark">
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 mt-5">
+                <div class="col-lg-4 col-md-1 mb-3 txt-light-clr">
+                    <h3 class="txt-light-clr">Ready to kickstart your idea?</h3>
+                    <button onclick="location.href='mailto:samwg16@gmail.com'" type="button"
+                        class="d-md-flex align-items-center btn btn-primary-cus btn-lg px-4 mt-3">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span class="px-2">Hire Me</span>
+                    </button>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-6 col-md-12 my-3 txt-footer-clr">
+                    <span>Thank you for visiting my website! I appreciate your time and interest in
+                        exploring my work.
+                        It has been a privilage to showcase my skills and experiences through this platform, and
+                        I hope
+                        you have gained valuable insights into my capabilities.</span>
+                    <div class="footer-media-contact d-flex justify-content-md-start justify-content-center">
+                        <span class="d-inline-flex align-items-center pe-4">Follow Me:</span>
+                        <a href="https://rebrand.ly/wgsam_ig" class="d-inline-block white-clr">
+                            <div class="icon-footer-border d-inline-flex p-3">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </div>
+                        </a>
+                        <a href="https://rebrand.ly/wgsam_fb" class="d-inline-block white-clr">
+                            <div class="icon-footer-border d-inline-flex p-3">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </div>
+                        </a>
+                        <a href="https://rebrand.ly/wgsam_linkedln" class="d-inline-block white-clr">
+                            <div class="icon-footer-border d-inline-flex p-3">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </div>
+                        </a>
+                        <!-- <a href="mailto: samwg16@gmail.com" class="d-inline-block">
+                            <div class="icon-footer-border d-inline-flex p-3">
+                                <ion-icon name="mail"></ion-icon>
+                            </div>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <ul class="nav nav-footer justify-content-center border-top pt-3 mb-3">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link" aria-current="page">Portfolio</a>
+                        </li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <p class="text-center">
+                        <span class="txt-s">Design and coded by @wgsam. 2024 version WIP<span>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

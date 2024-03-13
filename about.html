@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/testing.css">
+    <title>Main Page</title>
+</head>
+
+<body>
+    <!-- Header Navigation Section -->
+    <div class="nav-header bg-light">
+        <div class="container">
+            <header
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+                <div class="col-md-3 mb-2 mb-md-0">
+                    <!-- <a href="index.html"
+                        class="d-flex align-items-center mb-md-0 me-md-auto text-decoration-none txt-l fw-bold">
+                        <img class="avatar-icon me-2" src="./assets/img/avatar-icon.jpg" alt="Avatar Icon">
+                        wgsam
+                    </a> -->
+                    <a href="../index.html">
+                        <div id="shape" class="shape">
+                            <div id="polygon" class="polygon">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <ul class="nav col-10 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link" aria-current="page">Portfolio</a>
+                    </li>
+                    <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+
+                <!-- <div class="col-md-3 text-end">
+                  <button type="button" class="btn btn-outline-secondary me-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                    </svg>                    
+                    Let's Talk
+                  </button>
+                </div> -->
+            </header>
+        </div>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner poster-home py-5 d-flex align-items-center">
+        <div class="container col-xxl-12">
+            <div class="row flex-lg-row-reverse align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="testing-img-box ps-0 ps-lg-5">
+                        <img src="./assets/img/about-sam.png" class="d-block mx-lg-auto img-fluid" alt="Avatar"
+                            loading="lazy">
+                    </div>
+                </div>
+                <!-- <div class="col-lg-1 col-md-12"></div> -->
+                <div class="col-lg-6 col-md-12">
+                    <h3 class="text-body-emphasis">About me in 10 seconds...</h3>
+                    <h4 class="txt-thrd-clr">Hey! I'm Sam, UI/UX Designer</h4>
+
+                    <!-- <h4 class="txt-thrd-clr">Hi there, I'm Sam Wong.</h4> -->
+
+                    <div class="banner-txt">
+                        <span class="txt-m">My journey into UI/UX design started in front-end development. Over the
+                            transformative 6 years, I transitioned from a front-end developer to a UI/UX Designer,
+                            honing skills in user research, workflow crafting, and designing solutions across fintech,
+                            e-commerce, entertainment, and crypto.<br><br>
+
+                            With a firm belief in the pivotal role of exceptional UI/UX design, I bring a data-driven
+                            perspective to projects, excelling in responsive web and app design, interactive prototypes,
+                            wireframing, and front-end development.<br><br>
+
+                            What I love most about UX design is solving complex problems and creating solutions that
+                            make lives easier. I enjoy crafting products that are both aesthetically pleasing and
+                            functional, finding it incredibly rewarding to witness users interact with and enjoy the
+                            products I've designed.<br><br>
+
+                            Outside the design realm, I express creativity through
+                            <a href="https://rebrand.ly/thesnrcreation" target="_blank" class="navg-p">photography</a> ,
+                            capturing inspiring
+                            moments and telling unique stories.
+                        </span>
+                    </div>
+                    <div class="media-contact d-flex justify-content-md-start justify-content-center">
+                        <!-- <span class="d-inline-flex align-items-center pe-4">Follow Me:</span> -->
+                        <a href="https://rebrand.ly/wgsam_linkedln" class="d-inline-block">
+                            <div class="icon-border bg-light d-inline-flex p-3">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </div>
+                        </a>
+                        <!-- <a href="https://rebrand.ly/wgsam_fb" class="d-inline-block">
+                            <div class="icon-border bg-light d-inline-flex p-3">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </div>
+                        </a> -->
+                        <a href="mailto: samwg16@gmail.com" class="d-inline-block">
+                            <div class="icon-border bg-light d-inline-flex p-3">
+                                <ion-icon name="mail"></ion-icon>
+                            </div>
+                        </a>
+                        <a href="tel:+60127591758">
+                            <div class="icon-border bg-light d-inline-flex p-3">
+                                <ion-icon name="call"></ion-icon></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="d-flex justify-content-md-start justify-content-center">
+                        <button onclick="openResumePage()" type="button"
+                            class="d-md-flex align-items-center btn btn-primary-cus btn-lg px-4 mt-3">
+                            <ion-icon name="arrow-forward"></ion-icon>
+                            <span class="px-2">View Resume</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-skill">
+        <div class="container col-xxl-12">
+            <div class="row skill-exp">
+                <div class="col-lg-6 col-md-12 text-center pb-5">
+                    <div class="tool-skill">
+                        <h4 class="pb-2">TOOLS</h4>
+                        <span class="txt-m" style="line-height: 32px;">Figma<br>Sketch<br>Adobe Creative
+                            Suite<br>Visual Studio Code<br>Invision<br>Notion<br>HTML,CSS<br>Bootstrap<br>GitHub</span>
+                    </div>
+                    <div class="ux-skill mt-5">
+                        <h4 class="pb-2">UX SKILLSET</h4>
+                        <span class="txt-m pt-5" style="line-height: 32px;"> Web Design & Development<br>Mobile
+                            Application
+                            Design<br>Design System
+                            Development<br>Front End Development<br>Information Architecture<br>Interactive
+                            Prototyping<br>Wireframing<br>User
+                            Flow</span>
+                    </div>
+                    <div class="ux-education mt-5">
+                        <h4 class="pb-2">Education</h4>
+                        <span class="txt-m pt-5" style="line-height: 32px;">Bachelor's Degree in IT •
+                            Multimedia University (MMU)<br>UX/UI Design Process & Principles •
+                            <a href="https://www.linkedin.com/company/atheros-intelligence/" target="_blank"
+                                class="navg-p">Atheros</a>
+                            <br>UX Design Professional Certificate • Google Coursera (In progress..)
+                        </span>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-md-12 text-center pb-5">
+                   
+                </div> -->
+                <div class="col-lg-6 col-md-12">
+                    <h4 class="pb-3">EXPERIENCE</h4>
+                    <!-- <span class="txt-m" style="line-height: 32px;"> UI/UX Product Designer at Worldline<br>UI/UX
+                        Designer & Developer at
+                        ISCity<br>Web Application Developer at Silverlake Mobility<br>Freelance Photographer</span> -->
+                    <div id="timeline" class="cs-offset-section mw-650">
+                        <h5 class="bold">Timeline</h5>
+                        <!-- <div class="timeline-single">
+                            <div class="timeline-left">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-line"></div>
+                            </div>
+                            <div class="timeline-right mb-4">
+                                <div class="timeline-item-title">1994</div>
+                                <span class="txt-m">Born in Segamat, Malaysia</span>
+                            </div>
+                        </div> -->
+                        <div class="timeline-single">
+                            <div class="timeline-left">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-line"></div>
+                            </div>
+                            <div class="timeline-right mb-4">
+                                <div class="timeline-item-title">2016</div>
+                                <strong>Multimedia University (MMU)</strong><br>
+                                <span class="txt-m">Graduated with a Bachelor's in Information Technology (Data
+                                    Communications and Networking)</span>
+                            </div>
+                        </div>
+                        <div class="timeline-single">
+                            <div class="timeline-left">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-line"></div>
+                            </div>
+                            <div class="timeline-right mb-4">
+                                <div class="timeline-item-title">2016</div>
+                                <span class="txt-m">Participated in FIST, winning the championship at IEEE Young
+                                    Professionals Symposium & Innovation Showcase 2016.</span>
+                            </div>
+                        </div>
+                        <div class="timeline-single">
+                            <div class="timeline-left">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-line"></div>
+                            </div>
+                            <div class="timeline-right mb-4">
+                                <div class="timeline-item-title">2016 - 2018</div>
+                                <strong>Web Application Developer • <a
+                                        href="https://www.linkedin.com/company/silverlake/" target="_blank"
+                                        class="navg-p">Silverlake Mobility</a> (Malaysia,Thailand)</strong><br>
+                                <span class="txt-m">Experienced in diverse development initiatives, specializing in
+                                    banking systems, payment gateways, and e-wallet projects. Involved in end-to-end
+                                    development processes and contributed to international projects in Indonesia, the
+                                    Philippines, and Thailand.</span>
+                            </div>
+                        </div>
+                        <div class="timeline-single">
+                            <div class="timeline-left">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-line"></div>
+                            </div>
+                            <div class="timeline-right mb-4">
+                                <div class="timeline-item-title">April 2017 - Current</div>
+                                <strong>Photographer • <a href="https://rebrand.ly/thesnrcreation" target="_blank"
+                                        class="navg-p">@thesnrcreation</a></strong><br>
+                                <span class="txt-m">Started freelancing as a photographer.</span>
+                            </div>
+                        </div>
+                        <div class="timeline-single">
+                            <div class="timeline-left">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-line"></div>
+                            </div>
+                            <div class="timeline-right mb-4">
+                                <div class="timeline-item-title">2018-2022</div>
+                                <strong>UI/UX Designer & Developer • <a
+                                        href="https://www.linkedin.com/company/iscity-sdn-bhd/" target="_blank"
+                                        class="navg-p">ISCity</a> (Malaysia)</strong><br>
+                                <span class="txt-m">Contributing to diverse design and development projects, covering
+                                    crypto wallets, blockchain systems, B2B/B2C e-commerce, payment gateways, live
+                                    content streaming, and charity applications.</span>
+                            </div>
+                        </div>
+                        <div class="timeline-single">
+                            <div class="timeline-left">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-line"></div>
+                            </div>
+                            <div class="timeline-right mb-4">
+                                <div class="timeline-item-title"> April 2022 - Nov 2022</div>
+                                <strong>UI/UX Product Designer • <a
+                                        href="https://www.linkedin.com/company/worldlineglobal/" target="_blank"
+                                        class="navg-p">Worldline</a> (Malaysia)</strong><br>
+                                <span class="txt-m">Assisted in developing an in-house UI/UX design system for banking
+                                    products.</span>
+                            </div>
+                        </div>
+                        <div class="timeline-single">
+                            <div class="timeline-left">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-line"></div>
+                            </div>
+                            <div class="timeline-right mb-4">
+                                <div class="timeline-item-title">2023</div>
+                                <span class="txt-m">Taking a break to travel around New Zealand.</span>
+                            </div>
+                        </div>
+                        <div class="timeline-single">
+                            <div class="timeline-left">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-line last"></div>
+                            </div>
+                            <div class="timeline-right mb-4">
+                                <div class="timeline-item-title">And...</div>
+                                <span class="txt-m">To be continued :)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container col-xxl-12">
+        <div class="row side-skill">
+            <div class="col-lg-5 col-md-12">
+                <div class="pb-4">
+                    <div class="sam-photo">
+                        <img src="assets/img/photo-adventure.png" class="d-block mx-lg-auto img-fluid" alt="photography"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12"></div>
+            <div class="col-lg-6 col-md-12 align-self-center">
+                <h4 class="pb-3">When I'm away from the desk...</h4>
+                <p class="txt-dark pb-3">You can probably find me doing freelance
+                    <a href="https://rebrand.ly/thesnrcreation" target="_blank" class="navg-p">photography</a>,
+                    daydreaming outdoors on a hike, diving, camping, or traveling—or just grabbing coffee with my
+                    friends at our favorite cafes. And occasionally... you'll find me back at my desk, catching up on my
+                    favorite movie with a window cracked open.
+                </p>
+                <div class="media-contact d-flex justify-content-md-start justify-content-center">
+                    <a href="https://rebrand.ly/wgsam_ig" class="d-inline-block">
+                        <div class="icon-border bg-light d-inline-flex p-3">
+                            <ion-icon name="compass"></ion-icon>
+                        </div>
+                    </a>
+                    <a href="https://rebrand.ly/wgsam_ig" class="d-inline-block">
+                        <div class="icon-border bg-light d-inline-flex p-3">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12">
+                <div class="py-5">
+                    <img src="assets/img/photography.png" class="d-block mx-lg-auto img-fluid" alt="photography"
+                        loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="container col-xxl-12">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-center">
+                    <h4>Back to <a href="portfolio.html" class="navg-p">Project.</a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Section -->
+    <div class="foote bg-dark">
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 mt-5">
+                <div class="col-lg-4 col-md-1 mb-3 txt-light-clr">
+                    <h3 class="txt-light-clr">Ready to kickstart your idea?</h3>
+                    <button onclick="location.href='mailto:samwg16@gmail.com'" type="button"
+                        class="d-md-flex align-items-center btn btn-primary-cus btn-lg px-4 mt-3">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span class="px-2">Hire Me</span>
+                    </button>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-6 col-md-12 my-3 txt-footer-clr">
+                    <span>Thank you for visiting my website! I appreciate your time and interest in
+                        exploring my work.
+                        It has been a privilage to showcase my skills and experiences through this platform, and
+                        I hope
+                        you have gained valuable insights into my capabilities.</span>
+                    <div class="footer-media-contact d-flex justify-content-md-start justify-content-center">
+                        <span class="d-inline-flex align-items-center pe-4">Follow Me:</span>
+                        <a href="https://rebrand.ly/wgsam_ig" class="d-inline-block white-clr">
+                            <div class="icon-footer-border d-inline-flex p-3">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </div>
+                        </a>
+                        <a href="https://rebrand.ly/wgsam_fb" class="d-inline-block white-clr">
+                            <div class="icon-footer-border d-inline-flex p-3">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </div>
+                        </a>
+                        <a href="https://rebrand.ly/wgsam_linkedln" class="d-inline-block white-clr">
+                            <div class="icon-footer-border d-inline-flex p-3">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </div>
+                        </a>
+                        <!-- <a href="mailto: samwg16@gmail.com" class="d-inline-block">
+                            <div class="icon-footer-border d-inline-flex p-3">
+                                <ion-icon name="mail"></ion-icon>
+                            </div>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <ul class="nav nav-footer justify-content-center border-top pt-3 mb-3">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link" aria-current="page">Portfolio</a>
+                        </li>
+                        <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <p class="text-center">
+                        <span class="txt-s">Design and coded by @wgsam. 2024 version WIP<span>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap Scripts -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*------------------
+  01. Typography & Global Color
+--------------------*/
+html,
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #3D3D3D !important;
+}
+
+body {
+    --primaryColor: var(--whiteColor);
+    --secondaryColor: #D5B7FF;
+    --thrdColor: #BB8AFF;
+    --lightBgColor: #f8f3ff;
+    --lightColor: #F0E5FF;
+    --accentColor: #a05cff;
+    --blackColor: #000000;
+    --whiteColor: #ffffff;
+    --greyLightColor: #F5F5F5;
+    --darkGreyColor: #3D3D3D;
+    --footerColor: #dee2e6bf;
+}
+
+h1 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+}
+
+h2 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 70px;
+}
+
+h3 {
+    color: #000000;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+h4 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 45px;
+}
+
+h5 {
+    color: #000000;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 35px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.txt-l {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.txt-m {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.txt-s {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.txt-xs {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/*---------------------
+  02. Color
+----------------------*/
+.bg-secondary-clr {
+    background: var(--secondaryColor) !important;
+}
+
+.txt-primary-clr {
+    color: var(--accentColor) !important;
+}
+
+.txt-thrd-clr {
+    color: var(--thrdColor) !important;
+}
+
+.txt-light-clr {
+    color: var(--greyLightColor);
+}
+
+.txt-dark {
+    color: var(--darkGreyColor);
+}
+
+.txt-footer-clr {
+    opacity: 0.8;
+    color: var(--whiteColor);
+}
+
+a {
+    color: var(--blackColor);
+}
+
+a:hover {
+    --bs-link-color-rgb: var(--accentColor) !important;
+}
+
+.bg-skill {
+    background: var(--lightBgColor) !important;
+}
+
+.navg {
+    text-decoration: none;
+}
+
+.navg:hover {
+    text-decoration: underline;
+    color: var(--accentColor) !important;
+}
+
+.navg-p {
+    text-decoration: underline;
+    color: var(--accentColor) !important;
+}
+
+.navg-p:hover {
+    color: var(--thrdColor) !important;
+}
+
+/*---------------------
+  03. Navigation / Header
+----------------------*/
+
+.nav {
+    --bs-nav-link-color: var(--blackColor);
+    --bs-nav-link-hover-color: var(--accentColor);
+    --bs-nav-link-disabled-color: var(--accentColor);
+}
+
+/* .nav-link {
+  color: var(--blackColor);
+} */
+
+.nav-link:hover {
+    color: var(--accentColor);
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    background-position: 0 100%;
+    background-position: 0 calc(100% - 0.1em);
+}
+
+.nav-item .active {
+    color: var(--accentColor);
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    background-position: 0 100%;
+    background-position: 0 calc(100% - 0.1em);
+}
+
+.nav-footer {
+    opacity: 0.9;
+    --bs-nav-link-color: var(--whiteColor) !important;
+}
+
+.nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 1rem 0 1rem;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+    transition-delay: 0.03s;
+}
+
+/*---------------------
+  04. Button
+----------------------*/
+
+.btn-primary-cus {
+    background: var(--accentColor);
+    color: var(--whiteColor);
+    transition: all 0.4s ease;
+}
+
+.btn-primary-cus:hover {
+    background: var(--secondaryColor);
+    color: var(--whiteColor);
+    /* border: 1px solid var(--accentColor); */
+}
+
+.btn-link {
+    --bs-btn-color: var(--blackColor);
+    --bs-btn-hover-color: var(--accentColor);
+}
+
+.btn-outline-secondary {
+    background: transparent;
+    color: var(--accentColor);
+    border: 1px solid var(--accentColor);
+}
+
+.btn-outline-secondary:hover {
+    background: var(--accentColor);
+    color: var(--whiteColor);
+    border: 1px solid var(--secondaryColor);
+}
+
+.btn-rd {
+    border-radius: 50%;
+}
+
+.btn-mail {
+    font-size: 1.8rem;
+}
+
+/*---------------------
+  05. Customise
+----------------------*/
+
+.border-top {
+    border-width: 0.5px !important;
+}
+
+footer {
+    padding: 4rem 0 2rem 0;
+}
+
+.polygon {
+    transition: all 0.35s ease;
+}
+
+.skill-exp {
+    padding: 5rem 0 5rem 0;
+}
+
+.side-skill {
+    padding: 5rem 0 1rem 0;
+}
+
+.sam-photo img {
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 8px 13px 32px rgba(0, 0, 0, .15);
+}
+
+.img-box-sd {
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 8px 13px 32px rgba(0, 0, 0, .15);
+}
+
+.ds-img-box {
+    height: 100%;
+    border-radius: 20px;
+    background: var(--lightBgColor) !important;
+}
+
+.border-img-box {
+    height: 100%;
+    border-radius: 20px;
+}
+/* Timeline */
+
+.timeline-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accentColor);
+    border-radius: 100%;
+    flex: none;
+    margin-top: 6px;
+    margin-bottom: 2px
+}
+
+.timeline-single {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: flex
+}
+
+.timeline-right {
+    margin-left: 20px
+}
+
+.timeline-line {
+    width: 2px;
+    background-color: var(--lightColor);
+    ;
+    flex: 1
+}
+
+.timeline-line.last {
+    opacity: 0
+}
+
+.timeline-left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex
+}
+
+.timeline-item-title {
+    margin-bottom: 4px;
+    font-weight: 600
+}
+
+.timeline-item-description {
+    margin-bottom: 24px
+}
+
+.project-text-block {
+    max-width: 1080px;
+}
+
+
+/* Animations */
+
+.animated {
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+
+@keyframes morph {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(40deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(40deg) scale(1);
+    }
+}
