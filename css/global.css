@@ -231,6 +231,9 @@ a:hover {
 /*---------------------
   05. Customise
 ----------------------*/
+.my-6 {
+    margin: 5rem 0 5rem 0;
+}
 
 .border-top {
     border-width: 0.5px !important;
@@ -274,6 +277,7 @@ footer {
     height: 100%;
     border-radius: 50px;
 }
+
 /* Timeline */
 
 .timeline-dot {
