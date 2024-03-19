@@ -332,6 +332,10 @@ footer {
     max-width: 1060px;
 }
 
+.icon-sm{
+    width: 1.5rem;
+}
+
 
 /* Animations */
 
