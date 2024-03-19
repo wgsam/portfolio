@@ -361,7 +361,7 @@ footer {
     /* position: absolute; */
     /* top: 20px;
     right: 20px; */
-    background-color: #007bff; /* Blue color for the tag */
+    background-color: var(--thrdColor); /* Blue color for the tag */
     padding: 5px 10px;
     border-radius: 20px;
     color: white;
