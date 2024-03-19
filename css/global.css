@@ -332,10 +332,48 @@ footer {
     max-width: 1060px;
 }
 
-.icon-sm{
+.icon-sm {
     width: 1.5rem;
 }
 
+
+/* project */
+
+.card {
+    border-radius: 30px;
+    border-color: transparent; /* Set border color to transparent */
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+    position: relative;
+  }
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow on hover */
+  }
+
+  .card-img-overlay-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #333; /* Dark grey color for the text */
+  }
+  .card-tag {
+    /* position: absolute; */
+    /* top: 20px;
+    right: 20px; */
+    background-color: #007bff; /* Blue color for the tag */
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+  }
+  .card-title-container {
+    display: flex;
+    align-items: center;
+  }
+  .card-title {
+    margin-right: 10px;
+  }
 
 /* Animations */
 
