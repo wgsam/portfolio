@@ -96,5 +96,44 @@ function openResumePage() {
   window.open('https://rebrand.ly/wgsam-cv', '_blank');
 }
 
+$(document).ready(function(){
+
+  $(window).scroll(function(){
+    var scrollPos = $(document).scrollTop();
+    var windowHeight = $(window).height();
+    var contentHeight = $('.content').height();
+    if(scrollPos > windowHeight/2 && scrollPos < (contentHeight - windowHeight/2)){
+      $('.cs-sticky-sidebar').addClass('active'); // Show sidebar with fade-up effect
+    } else {
+      $('.cs-sticky-sidebar').removeClass('active'); // Hide sidebar
+    }
+  });
+
+  $('a.cs-side-nav').on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top - 100 // Adjust scrolling offset for accurate positioning
+      }, {
+        duration: 500, // Set duration to 500 milliseconds
+        easing: "easeInOutQuint" // Use "easeOut" easing function from jQuery UI
+      });
+    }
+  });
+
+  $(window).scroll(function(){
+    var scrollPos = $(document).scrollTop();
+    $('.section').each(function(){
+      var offsetTop = $(this).offset().top - 200; // Adjust offset based on sidebar width
+      var sectionId = $(this).attr('id');
+      if(scrollPos >= offsetTop){
+        $('.cs-side-nav').removeClass('active');
+        $('a[href="#'+sectionId+'"]').addClass('active');
+      }
+    });
+  });
+});
+
 
 
