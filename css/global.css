@@ -6,7 +6,7 @@
 html,
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #ffffff;
+    background-color: #fdfcf9;
     color: #3D3D3D !important;
 }
 
@@ -339,6 +339,11 @@ footer {
 
 
 /* Custom Card */
+a.card-work {
+    text-decoration: none;
+    color: #3D3D3D !important;
+}
+
 .card {
     border-radius: 30px;
     border-color: transparent;
@@ -360,21 +365,26 @@ footer {
 }
 
 .card-tag {
-    background-color: var(--thrdColor);
+    background-color: var(--secondaryColor);
     padding: 5px 10px;
     border-radius: 20px;
     color: white;
     font-size: 12px;
 }
 
-.card-title-container {
+.card-tag-red {
+    background-color: var(--lightBgColor);
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #FA373B;
+    font-size: 12px;
+}
+
+.card-title {
     display: flex;
     align-items: center;
 }
 
-.card-title {
-    margin-right: 10px;
-}
 
 /* Sticky Side Bar */
 .cs-sticky-sidebar {
