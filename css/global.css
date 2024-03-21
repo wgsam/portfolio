@@ -19,7 +19,12 @@ body {
     --accentColor: #a05cff;
     --blackColor: #000000;
     --whiteColor: #ffffff;
-    --greyLightColor: #F5F5F5;
+
+    --darkred:#FF393C;
+
+
+
+        --greyLightColor: #F5F5F5;
     --grey-2: #6b6b6b;
     --grey-3: #3D3D3D;
     --footerColor: #dee2e6bf;
@@ -93,6 +98,10 @@ h5 {
 
 .txt-primary-clr {
     color: var(--accentColor) !important;
+}
+
+.txt-gogo-clr {
+    color: var(--darkred) !important;
 }
 
 .txt-thrd-clr {
