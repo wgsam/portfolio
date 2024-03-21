@@ -21,7 +21,7 @@ body {
     --whiteColor: #ffffff;
 
     --darkred:#FF393C;
-
+    --lightred:#FF7879;
 
 
         --greyLightColor: #F5F5F5;
@@ -386,6 +386,14 @@ a.card-work {
     padding: 5px 10px;
     border-radius: 20px;
     color: #FA373B;
+    font-size: 12px;
+}
+
+.card-tag-gogo {
+    background-color: var(--lightred);
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: var(--whiteColor);
     font-size: 12px;
 }
 
