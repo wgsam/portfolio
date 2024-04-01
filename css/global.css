@@ -283,6 +283,12 @@ footer {
     background: var(--lightBgColor) !important;
 }
 
+.sr-img-box {
+    height: 100%;
+    border-radius: 20px;
+    background: #faeccc;
+}
+
 .border-img-box {
     height: 100%;
     border-radius: 50px;
