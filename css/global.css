@@ -116,6 +116,10 @@ h5 {
     color: var(--grey-3);
 }
 
+.txt-grey {
+    color: var(--grey-2);
+}
+
 .txt-footer-clr {
     opacity: 0.8;
     color: var(--whiteColor);
