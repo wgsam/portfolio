@@ -4,50 +4,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Main Page </title>
     <link rel="stylesheet" href="assets/vendor/font-awesome/css/all.css">
-    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/testing.css">
+    <title>Portfolio - Work</title>
 </head>
 
 <body>
-    <div class="container py-5">
-        <h1> Welcome to WGSAM UI/UX Portfolio
-            <img src="assets/img/rockandroll.png">
-        </h1>
-        <div class="row py-3">
-            <div class="col-md-6 col-12">
-                <div class="portfolio-link">
-                    <a href="module/project/project.html">
-                        <img src="assets/img/blueprint.png" width="55" style="padding-top: 18px;">
-                        <span> - Completed Project</span>
+    <!-- Header Navigation Section -->
+    <div class="nav-header bg-light">
+        <div class="container">
+            <header
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+                <div class="col-md-3 mb-2 mb-md-0">
+                    <a href="../index.html">
+                        <div id="shape" class="shape">
+                            <div id="polygon" class="polygon">
+                            </div>
+                        </div>
                     </a>
                 </div>
-                <div class="portfolio-link">
-                    <a href="module/uncomplete-project/uncomplete-project.html">
-                        <img src="assets/img/blueprint.png" width="55" style="padding-top: 18px;">
-                        <span> - Incomplete Project</span>
-                    </a>
-                </div>                
+
+                <ul class="nav col-10 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="portfolio.html" class="nav-link" aria-current="page">Portfolio</a>
+                    </li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
-            </div>
-            <div class="col-md-6 col-12">
-                <div class="portfolio-link">
-                    <a href="module/rnd/rnd.html">
-                        <img src="assets/img/coding.png" width="50" style="padding-top: 25px;">
-                        <span> - UI Development</span>
-                    </a>
-                </div>
-            </div>
-          
+            </header>
         </div>
     </div>
 
+    <!-- More Work Card Section -->
+    <div class="container col-xxl-12">
+        <div class="row project py-3 py-sm-4 py-md-5 py-lg-6 py-xl-7">
+            <div class="col-12">
+                <div class="portfolio-title mb-5">
+                    <h3 class="mb-4">Latest Work</h3>
+                </div>
+            </div>
+            <div class="col-md-6 pb-3">
+                <a href="design-system.html" class="card-work">
+                    <div class="card">
+                        <!-- UIUX tag -->
+                        <img src="assets/img/work/ds-card.png" class="card-img" alt="Worldline Inhouse Design System">
+                        <div class="card-img-overlay">
+                            <div class="card-img-overlay-text">
+                                <div class="tag pt-2">
+                                    <span class="card-tag">UI/UX</span> <span class="card-tag">Design System</span>
+                                </div>
+                                <div class="pt-3">
+                                    <span class="card-text txt-m">2022-2023</span>
+                                </div>
+                            </div>
 
-    <script src="assets/vendor/jquery/jquery-3.4.1.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/popper/popper.min.js"></script>
+                        </div>
+
+                    </div>
+                    <div class="card-info-container">
+                        <div class="card-title pt-3">
+                            <h5 class="txt-l bold card-title my-0 me-2">WLLBE Design System</h5>
+                            <i class="fas fa-arrow-right"></i> <!-- Arrow icon -->
+                        </div>
+                        <div class="card-des">
+                            <span class="txt-m">UI/UX Design System for Wordline In-house Project</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-6 pb-3">
+                <a href="smart-reward.html" class="card-work">
+                    <div class="card">
+                        <!-- UIUX tag -->
+                        <img src="assets/img/work/smart-reward-card.png" class="card-img" alt="Smart Reward E-Commerce">
+                        <div class="card-img-overlay">
+                            <div class="card-img-overlay-text">
+                                <div class="tag pt-2">
+                                    <span class="card-tag-red">UI/UX</span> <span class="card-tag-red">Mobile</span>
+                                    <span class="card-tag-red">Web</span>
+                                </div>
+                                <div class="pt-3">
+                                    <span class="card-text txt-m txt-light-clr">2020-2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-info-container">
+                        <div class="card-title pt-3">
+                            <h5 class="txt-l bold card-title my-0 me-2">Smart Rewards</h5>
+                            <i class="fas fa-arrow-right"></i> <!-- Arrow icon -->
+                        </div>
+                        <div class="card-des">
+                            <span class="txt-m">Mobile & Web App Design for Smart Reward E-commerce platform</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="container col-xxl-12">
+        <div class="row about py-3 py-sm-4 py-md-5 py-lg-6 py-xl-7">
+            <div class="col-lg-4 col-md-12">
+                <div class="ps-0 ps-lg-5">
+                    <img src="assets/img/about-banner.png" class="d-block mx-lg-auto img-fluid" alt="Avatar"
+                        loading="lazy">
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-12"></div>
+            <div class="col-lg-7 col-md-12 align-self-center">
+                <h4>About Me</h4>
+                <div class="banner-txt">
+                    <span class="txt-l">Hello, I'm Sam, a UI/UX designer & developer with 6+ years of experience
+                        crafting
+                        seamless digital experiences in fintech, e-commerce, entertainment, and crypto. I specialize in
+                        creating both
+                        aesthetically pleasing and functional designs. This is my digital corner—let's connect for
+                        innovative and user-friendly digital experiences. <br>For more, visit my <a href="about.html"
+                            class="navg-p">about me</a>
+                        page.</span>
+                </div>
+                <button onclick="location.href='mailto:samwg16@gmail.com'" type="button"
+                    class="d-md-flex align-items-center btn btn-primary-cus btn-lg px-4 mt-3">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <span class="px-2">Contact Me</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="foote bg-dark">
+        <div class="container">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 mt-5">
+                <div class="col-lg-4 col-md-1 mb-3 txt-light-clr">
+                    <h3 class="txt-light-clr">Ready to kickstart your idea?</h3>
+                    <button onclick="location.href='mailto:samwg16@gmail.com'" type="button"
+                        class="d-md-flex align-items-center btn btn-primary-cus btn-lg px-4 mt-3">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <span class="px-2">Hire Me</span>
+                    </button>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-6 col-md-12 my-3 txt-footer-clr">
+                    <span>Thank you for visiting my website! I appreciate your time and interest in
+                        exploring my work.
+                        It has been a privilage to showcase my skills and experiences through this platform, and
+                        I hope
+                        you have gained valuable insights into my capabilities.</span>
+                    <div class="footer-media-contact d-flex justify-content-md-start justify-content-center">
+                        <span class="d-inline-flex align-items-center pe-4">Follow Me:</span>
+                        <a href="https://rebrand.ly/wgsam_ig" class="d-inline-block white-clr">
+                            <div class="icon-footer-border d-inline-flex p-3">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </div>
+                        </a>
+                        <a href="https://rebrand.ly/wgsam_fb" class="d-inline-block white-clr">
+                            <div class="icon-footer-border d-inline-flex p-3">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </div>
+                        </a>
+                        <a href="https://rebrand.ly/wgsam_linkedln" class="d-inline-block white-clr">
+                            <div class="icon-footer-border d-inline-flex p-3">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <ul class="nav nav-footer justify-content-center border-top pt-3 mb-3">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="portfolio.html" class="nav-link" aria-current="page">Portfolio</a>
+                        </li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <p class="text-center">
+                        <span class="txt-s">Design and coded by @wgsam. 2024 version WIP<span>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
