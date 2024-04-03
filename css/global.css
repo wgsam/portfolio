@@ -20,11 +20,11 @@ body {
     --blackColor: #000000;
     --whiteColor: #ffffff;
 
-    --darkred:#FF7A28;
-    --lightred:#FD9D07;
+    --darkred: #FF7A28;
+    --lightred: #FD9D07;
 
 
-        --greyLightColor: #F5F5F5;
+    --greyLightColor: #F5F5F5;
     --grey-2: #6b6b6b;
     --grey-3: #3D3D3D;
     --footerColor: #dee2e6bf;
@@ -291,6 +291,12 @@ footer {
     height: 100%;
     border-radius: 20px;
     background: #faeccc;
+}
+
+.sr-pain-box {
+    height: 100%;
+    border-radius: 20px;
+    background: #FEBAB9;
 }
 
 .border-img-box {
