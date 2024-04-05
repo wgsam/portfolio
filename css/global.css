@@ -404,6 +404,22 @@ a.card-work {
     font-size: 12px;
 }
 
+.card-tag-yellow {
+    background-color: #FFD400;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: #EC008C;
+    font-size: 12px;
+}
+
+.card-tag-orange {
+    background-color: #F8A019;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: var(--light-color);
+    font-size: 12px;
+}
+
 .card-tag-gogo {
     background-color: var(--light-red);
     padding: 5px 10px;
