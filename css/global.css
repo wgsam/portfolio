@@ -124,6 +124,11 @@ h5 {
     color: var(--white-color);
 }
 
+.txt-footer-end-clr {
+    opacity: 0.5;
+    color: var(--white-color);
+}
+
 a {
     color: var(--black-color);
 }
