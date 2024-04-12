@@ -297,6 +297,12 @@ footer {
     background: #faeccc;
 }
 
+.sr-survey-box {
+    height: 100%;
+    border-radius: 20px;
+    background: #bdd3eb;
+}
+
 .sr-pain-box {
     height: 100%;
     border-radius: 20px;
