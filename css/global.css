@@ -12,8 +12,10 @@
     --dark-red: #FF7A28;
     --light-red: #FD9D07;
     --grey-light-color: #F5F5F5;
+    --auripa:#8e7ffe;
     --grey-2: #6b6b6b;
     --grey-3: #3D3D3D;
+    --dark-light:#6b6b6b;
     --footer-color: #dee2e6bf;
 }
 
@@ -433,6 +435,22 @@ a.card-work {
 
 .card-tag-gogo {
     background-color: var(--light-red);
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: var(--white-color);
+    font-size: 12px;
+}
+
+.card-tag-darklight {
+    background-color: var(--dark-light);
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: var(--white-color);
+    font-size: 12px;
+}
+
+.card-tag-auripa {
+    background-color: var(--auripa);
     padding: 5px 10px;
     border-radius: 20px;
     color: var(--white-color);
